@@ -1,0 +1,2144 @@
+[
+    {
+        "menuid": "dashboard",
+        "url": "/",
+        "title": "แผงควบคุม",
+        "icon": "bi bi-speedometer",
+        "access": false,
+        "active": false,
+        "submenu": []
+    },
+    {
+        "menuid": "pos_panel",
+        "url": "/pos-panel",
+        "title": "ระบบขาย",
+        "icon": "bi bi-receipt-cutoff",
+        "access": false,
+        "active": false,
+        "submenu": []
+    },
+    {
+        "menuid": "admin",
+        "url": "#",
+        "title": "ผู้ใช้",
+        "icon": "bi bi-passport",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "user",
+                "url": "/users",
+                "title": "ผู้ใช้",
+                "icon": "bi bi-person-check",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/users",
+                    "title": "ผู้ใช้ทั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ระบบ"
+                        },
+                        {
+                            "url": "",
+                            "text": "ผู้ใช้ทั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/user",
+                    "title": "แก้ไข/เพิ่มผู้ใช้",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ระบบ"
+                        },
+                        {
+                            "url": "/users",
+                            "text": "ผู้ใช้ทั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "role",
+                "url": "/user-roles",
+                "title": "บทบาท",
+                "icon": "bi bi-person-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/user-roles",
+                    "title": "บทบาททั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ระบบ"
+                        },
+                        {
+                            "url": "",
+                            "text": "บทบาททั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/user-role",
+                    "title": "บทบาท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ระบบ"
+                        },
+                        {
+                            "url": "/user-roles",
+                            "text": "บทบาททั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "owner",
+        "url": "#",
+        "title": "เจ้าของร้าน",
+        "icon": "bi bi-file-person",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "owner_type",
+                "url": "/owner-types",
+                "title": "ประเภท",
+                "icon": "bi bi-list",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/owner-types",
+                    "title": "ประเภททั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "เจ้าของร้าน"
+                        },
+                        {
+                            "url": "",
+                            "text": "ประเภททั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/owner-type",
+                    "title": "แก้ไข/เพิ่มประเภท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "เจ้าของร้าน"
+                        },
+                        {
+                            "url": "/owner-types",
+                            "text": "ประเภททั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "owner",
+                "url": "/owners",
+                "title": "เจ้าของร้าน",
+                "icon": "bi bi-people",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/owners",
+                    "title": "เจ้าของร้านทั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "เจ้าของร้าน"
+                        },
+                        {
+                            "url": "",
+                            "text": "เจ้าของร้านทั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/owner",
+                    "title": "แก้ไข/เพิ่มเจ้าของร้าน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "เจ้าของร้าน"
+                        },
+                        {
+                            "url": "/owners",
+                            "text": "เจ้าของร้านทั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "store",
+        "url": "#",
+        "title": "ร้านค้า",
+        "icon": "bi bi-cart2",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "store_type",
+                "url": "/store-types",
+                "title": "ประเภท",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/store-types",
+                    "title": "ประเภททั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ร้านค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "ประเภททั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store-type",
+                    "title": "แก้ไข/เพิ่มประเภท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ร้านค้า"
+                        },
+                        {
+                            "url": "/store-types",
+                            "text": "ประเภททั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "store",
+                "url": "/stores",
+                "title": "ร้านค้า",
+                "icon": "bi bi-cart2",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/stores",
+                    "title": "ร้านค้าทั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ร้านค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "ร้านค้าทั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store",
+                    "title": "แก้ไข/เพิ่มร้านค้า",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ร้านค้า"
+                        },
+                        {
+                            "url": "/stores",
+                            "text": "ร้านค้าทั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "employee",
+        "url": "#",
+        "title": "พนักงาน",
+        "icon": "bi bi-person-badge",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "employee_type",
+                "url": "/employee-types",
+                "title": "ประเภท",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/employee-types",
+                    "title": "ประเภททั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "พนักงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "ประเภททั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/employee-type",
+                    "title": "แก้ไข/เพิ่มประเภท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "พนักงาน"
+                        },
+                        {
+                            "url": "/employee-types",
+                            "text": "ประเภททั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "holiday",
+                "url": "/holidays",
+                "title": "วันหยุด",
+                "icon": "bi bi-calendar-day",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/holidays",
+                    "title": "วันหยุดทั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "พนักงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "วันหยุดทั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/holiday",
+                    "title": "แก้ไข/เพิ่มวันหยุด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "พนักงาน"
+                        },
+                        {
+                            "url": "/holidays",
+                            "text": "วันหยุดทั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "employee",
+                "url": "/employees",
+                "title": "พนักงาน",
+                "icon": "bi bi-people",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/employees",
+                    "title": "พนักงานทั้งหมด",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "พนักงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "พนักงานทั้งหมด"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/employee",
+                    "title": "แก้ไข/เพิ่มพนักงาน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "พนักงาน"
+                        },
+                        {
+                            "url": "/employees",
+                            "text": "พนักงานทั้งหมด"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "customer",
+        "url": "#",
+        "title": "ผู้ซื้อ",
+        "icon": "bi bi-file-earmark-person",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "customer_type",
+                "url": "/customer-types",
+                "title": "ประเภท",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/customer-types",
+                    "title": "ประเภทต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ผู้ซื้อ"
+                        },
+                        {
+                            "url": "",
+                            "text": "ประเภทต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/customer-type",
+                    "title": "แก้ไข/เพิ่ม ประเภท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ผู้ซื้อ"
+                        },
+                        {
+                            "url": "/customer-types",
+                            "text": "ประเภทต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "customer",
+                "url": "/customers",
+                "title": "ผู้ซื้อ",
+                "icon": "bi bi-people",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/customers",
+                    "title": "ผู้ซื้อต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ผู้ซื้อ"
+                        },
+                        {
+                            "url": "",
+                            "text": "ผู้ซื้อต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/customer",
+                    "title": "แก้ไข/เพิ่ม ผู้ซื้อ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ผู้ซื้อ"
+                        },
+                        {
+                            "url": "/customers",
+                            "text": "ผู้ซื้อต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "supplier",
+        "url": "#",
+        "title": "ซัพพลายเออร์",
+        "icon": "bi bi-truck",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "supplier_type",
+                "url": "/supplier-types",
+                "title": "ประเภท",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/supplier-types",
+                    "title": "ประเภทต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ซัพพลายเออร์"
+                        },
+                        {
+                            "url": "",
+                            "text": "ประเภทต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/supplier-type",
+                    "title": "แก้ไข/เพิ่ม ประเภท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ซัพพลายเออร์"
+                        },
+                        {
+                            "url": "/supplier-types",
+                            "text": "ประเภทต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "supplier",
+                "url": "/suppliers",
+                "title": "องค์กร",
+                "icon": "bi bi-building",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/suppliers",
+                    "title": "องค์กรต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ซัพพลายเออร์"
+                        },
+                        {
+                            "url": "",
+                            "text": "องค์กรต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/supplier",
+                    "title": "แก้ไข/เพิ่ม องค์กร",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ซัพพลายเออร์"
+                        },
+                        {
+                            "url": "/suppliers",
+                            "text": "องค์กรต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "catalogue",
+        "url": "#",
+        "title": "สินค้า",
+        "icon": "bi bi-box",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "category",
+                "url": "/categories",
+                "title": "ประเภท",
+                "icon": "bi bi-list-ul",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/categories",
+                    "title": "ประเภทต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "ประเภทต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/category",
+                    "title": "แก้ไข/เพิ่ม ประเภท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "/categories",
+                            "text": "ประเภทต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sub_category",
+                "url": "/sub-categories",
+                "title": "หมวดย่อย",
+                "icon": "bi bi-list-task",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sub-categories",
+                    "title": "หมวดย่อยต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "หมวดย่อยต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sub-category",
+                    "title": "แก้ไข/เพิ่ม หมวดย่อย",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "/sub-categories",
+                            "text": "หมวดย่อยต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "product",
+                "url": "/products",
+                "title": "ผลิตภัณฑ์",
+                "icon": "bi bi-box-seam",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/products",
+                    "title": "ผลิตภัณฑ์ต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "ผลิตภัณฑ์ต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/product",
+                    "title": "แก้ไข/เพิ่ม ผลิตภัณฑ์",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "/products",
+                            "text": "ผลิตภัณฑ์ต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "variant",
+                "url": "/variants",
+                "title": "ตัวเลือกผลิตภัณฑ์",
+                "icon": "bi bi-boxes",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/variants",
+                    "title": "ตัวเลือกผลิตภัณฑ์ต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "ตัวเลือกผลิตภัณฑ์ต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/variant",
+                    "title": "แก้ไข/เพิ่ม ตัวเลือกผลิตภัณฑ์",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "สินค้า"
+                        },
+                        {
+                            "url": "/variants",
+                            "text": "ตัวเลือกผลิตภัณฑ์ต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "accounting",
+        "url": "#",
+        "title": "การบัญชี",
+        "icon": "bi bi-calculator",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "payable",
+                "url": "/acc-payables",
+                "title": "รายการที่ต้องจ่าย",
+                "icon": "bi bi-file-minus",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/acc-payables",
+                    "title": "รายการที่ต้องจ่ายต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การบัญชี"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการที่ต้องจ่ายต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/acc-payable",
+                    "title": "ดูรายการที่ต้องจ่าย",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การบัญชี"
+                        },
+                        {
+                            "url": "/acc-payables",
+                            "text": "รายการที่ต้องจ่ายต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "receivable",
+                "url": "/acc-receivables",
+                "title": "รายการที่ต้องรับ",
+                "icon": "bi bi-file-plus",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/acc-receivables",
+                    "title": "รายการที่ต้องรับต่างๆ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การบัญชี"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการที่ต้องรับต่างๆ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/acc-receivable",
+                    "title": "ดูรายการที่ต้องรับ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การบัญชี"
+                        },
+                        {
+                            "url": "/acc-receivables",
+                            "text": "รายการที่ต้องรับต่างๆ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "ledger_daily",
+                "url": "/daily-ledgers",
+                "title": "สมุดรายวัน",
+                "icon": "bi bi-journal-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/daily-ledgers",
+                    "title": "รายการสมุดรายวัน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การบัญชี"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการสมุดรายวัน"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/daily-ledger",
+                    "title": "ดูสมุดรายวัน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การบัญชี"
+                        },
+                        {
+                            "url": "/daily-ledgers",
+                            "text": "รายการสมุดรายวัน"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "sales",
+        "url": "#",
+        "title": "การขาย",
+        "icon": "bi bi-bag-heart",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "sale_order",
+                "url": "/sale-orders",
+                "title": "ใบสั่งซื้อ",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-orders",
+                    "title": "รายการใบสั่งซื้อ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การขาย"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการใบสั่งซื้อ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-order",
+                    "title": "เพิ่ม/แก้ไขใบสั่งซื้อ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การขาย"
+                        },
+                        {
+                            "url": "/sale-orders",
+                            "text": "รายการใบสั่งซื้อ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sale_invoice",
+                "url": "/sale-invoices",
+                "title": "ใบแจ้งหนี้",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-invoices",
+                    "title": "รายการใบแจ้งหนี้",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การขาย"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการใบแจ้งหนี้"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-invoice",
+                    "title": "ดูใบแจ้งหนี้",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การขาย"
+                        },
+                        {
+                            "url": "/sale-invoices",
+                            "text": "รายการใบแจ้งหนี้"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sale_refund",
+                "url": "/sale-refunds",
+                "title": "การคืนเงิน",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-refunds",
+                    "title": "รายการการคืนเงิน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การขาย"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการการคืนเงิน"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-refund",
+                    "title": "ดูการคืนเงิน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การขาย"
+                        },
+                        {
+                            "url": "/sale-refunds",
+                            "text": "รายการการคืนเงิน"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "control_price",
+                "url": "/control-prices",
+                "title": "การกำหนดราคา",
+                "icon": "bi bi-tags",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/control-prices",
+                    "title": "การกำหนดราคา",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "",
+                            "text": "การกำหนดราคา"
+                        }
+                    ]
+                },
+                "starter": {
+                    "url": "/control-price",
+                    "title": "กำหนดราคา",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "การกำหนดราคา"
+                        }
+                    ]
+                },
+                "chosen": {
+                    "url": "/control-price",
+                    "title": "เลือกวิธีการ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "การกำหนดราคา"
+                        },
+                        {
+                            "url": "",
+                            "text": "เลือกวิธีการ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/control-price",
+                    "title": "กรอกข้อมูล",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "การกำหนดราคา"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "purchase",
+        "url": "#",
+        "title": "การซื้อ",
+        "icon": "bi bi-bag-plus",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "purchase_invoice",
+                "url": "/purchase-invoices",
+                "title": "ใบแจ้งหนี้",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/purchase-invoices",
+                    "title": "รายการใบแจ้งหนี้",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การซื้อ"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการใบแจ้งหนี้"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/purchase-invoice",
+                    "title": "เพิ่ม/แก้ไขใบแจ้งหนี้",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การซื้อ"
+                        },
+                        {
+                            "url": "/purchase-invoices",
+                            "text": "รายการใบแจ้งหนี้"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "expense",
+                "url": "/expenses",
+                "title": "ค่าใช้จ่าย",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/expenses",
+                    "title": "รายการค่าใช้จ่าย",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การซื้อ"
+                        },
+                        {
+                            "url": "",
+                            "text": "ค่าใช้จ่าย"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/expense",
+                    "title": "เพิ่ม/แก้ไขค่าใช้จ่าย",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การซื้อ"
+                        },
+                        {
+                            "url": "/expenses",
+                            "text": "ค่าใช้จ่าย"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "inventory",
+        "url": "#",
+        "title": "คลังสินค้า",
+        "icon": "bi bi-building-gear",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "damage_invoice",
+                "url": "/damage-invoices",
+                "title": "ความเสียหาย",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/damage-invoices",
+                    "title": "รายการความเสียหาย",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "คลังสินค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการความเสียหาย"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/damage-invoice",
+                    "title": "เพิ่ม/แก้ไขความเสียหาย",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "คลังสินค้า"
+                        },
+                        {
+                            "url": "/damage-invoices",
+                            "text": "รายการความเสียหาย"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "adjust_stock",
+                "url": "/adjust-stocks",
+                "title": "การปรับปรุง",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/adjust-stocks",
+                    "title": "รายการการปรับปรุง",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "คลังสินค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการการปรับปรุง"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/adjust-stock",
+                    "title": "เพิ่ม/แก้ไขการปรับปรุง",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "คลังสินค้า"
+                        },
+                        {
+                            "url": "/adjust-stocks",
+                            "text": "รายการการปรับปรุง"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "promotion",
+        "url": "#",
+        "title": "โปรโมชั่น",
+        "icon": "bi bi-percent",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "coupon_type",
+                "url": "/coupon-types",
+                "title": "ประเภท",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/coupon-types",
+                    "title": "ประเภทโปรโมชั่น",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "",
+                            "text": "ประเภท"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/coupon-type",
+                    "title": "เพิ่ม/แก้ไขประเภท",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "/coupon-types",
+                            "text": "ประเภทโปรโมชั่น"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "coupon_code",
+                "url": "/coupon-codes",
+                "title": "รหัสคูปอง",
+                "icon": "bi bi-ticket-detailed",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/coupon-codes",
+                    "title": "รหัสคูปอง",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "",
+                            "text": "รหัสคูปอง"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/coupon-code",
+                    "title": "เพิ่ม/แก้ไขรหัสคูปอง",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "โปรโมชั่น"
+                        },
+                        {
+                            "url": "/coupon-codes",
+                            "text": "รหัสคูปอง"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "reporting",
+        "url": "#",
+        "title": "รายงาน",
+        "icon": "bi bi-pie-chart",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "daily_sale",
+                "url": "/daily-sales",
+                "title": "ยอดขายรายวัน",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/daily-sales",
+                    "title": "ยอดขายรายวัน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "รายงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "ยอดขายรายวัน"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "weekly_sale",
+                "url": "/weekly-sales",
+                "title": "ยอดขายรายสัปดาห์",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/weekly-sales",
+                    "title": "ยอดขายรายสัปดาห์",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "รายงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "ยอดขายรายสัปดาห์"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "monthly_sale",
+                "url": "/monthly-sales",
+                "title": "ยอดขายรายเดือน",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/monthly-sales",
+                    "title": "ยอดขายรายเดือน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "รายงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "ยอดขายรายเดือน"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "yearly_profit_loss",
+                "url": "/yearly-profit-loss",
+                "title": "กำไร/ขาดทุน",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/yearly-profit-loss",
+                    "title": "กำไร/ขาดทุน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "รายงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "กำไร/ขาดทุน"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "top_sales_items",
+                "url": "/top-sales-items",
+                "title": "สินค้าขายดี",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/top-sales-items",
+                    "title": "สินค้าขายดี",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "รายงาน"
+                        },
+                        {
+                            "url": "",
+                            "text": "สินค้าขายดี"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "setting",
+        "url": "#",
+        "title": "การตั้งค่า",
+        "icon": "bi bi-sliders",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "account",
+                "url": "/account",
+                "title": "บัญชี",
+                "icon": "bi bi-person-gear",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/account",
+                    "title": "บัญชี",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "บัญชี"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/account",
+                    "title": "แก้ไขบัญชี",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "บัญชี"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "notification",
+                "url": "/notifications",
+                "title": "การแจ้งเตือน",
+                "icon": "bi bi-bell",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/notifications",
+                    "title": "การแจ้งเตือน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "การแจ้งเตือน"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/notification",
+                    "title": "ดูการแจ้งเตือน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "/notifications",
+                            "text": "การแจ้งเตือน"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "setting",
+                "url": "/setting",
+                "title": "การตั้งค่า",
+                "icon": "bi bi-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/setting",
+                    "title": "การตั้งค่า",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "การตั้งค่าบัญชี"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/setting",
+                    "title": "การตั้งค่าบัญชี",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "การตั้งค่าบัญชี"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "store_setting",
+                "url": "/store-settings",
+                "title": "การตั้งค่าร้านค้า",
+                "icon": "bi bi-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/store-settings",
+                    "title": "การตั้งค่าร้านค้า",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "การตั้งค่าร้านค้า"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store-setting",
+                    "title": "แก้ไข/เพิ่ม การตั้งค่าร้านค้า",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "/store-settings",
+                            "text": "การตั้งค่าร้านค้า"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "general",
+        "url": "#",
+        "title": "Datahub",
+        "icon": "bi bi-database-gear",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "city",
+                "url": "/cities",
+                "title": "จังหวัด/เขต",
+                "icon": "bi bi-geo-alt",
+                "access": false,
+                "active": false,
+                "display": "developer",
+                "list": {
+                    "url": "/cities",
+                    "title": "จังหวัด/เขต",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "จังหวัด/เขต"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/city",
+                    "title": "แก้ไข/เพิ่มจังหวัด/เขต",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/cities",
+                            "text": "จังหวัด/เขต"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "township",
+                "url": "/townships",
+                "title": "ตำบล",
+                "icon": "bi bi-building",
+                "access": false,
+                "active": false,
+                "display": "developer",
+                "list": {
+                    "url": "/townships",
+                    "title": "ตำบล",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "ตำบล"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/township",
+                    "title": "แก้ไข/เพิ่มตำบล",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/townships",
+                            "text": "ตำบล"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "currency",
+                "url": "/currencies",
+                "title": "สกุลเงิน",
+                "icon": "bi bi-coin",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/currencies",
+                    "title": "สกุลเงิน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "สกุลเงิน"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/currency",
+                    "title": "แก้ไข/เพิ่มสกุลเงิน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/currencies",
+                            "text": "สกุลเงิน"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "bank",
+                "url": "/banks",
+                "title": "ระบบการชำระเงิน",
+                "icon": "bi bi-wallet2",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/banks",
+                    "title": "ระบบการชำระเงิน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "ระบบการชำระเงิน"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/bank",
+                    "title": "แก้ไข/เพิ่มระบบการชำระเงิน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/banks",
+                            "text": "ระบบการชำระเงิน"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "developer",
+        "url": "#",
+        "title": "Developer",
+        "icon": "bi bi-braces",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "application",
+                "url": "/application",
+                "title": "แอปพลิเคชัน",
+                "icon": "bi bi-app-indicator",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/application",
+                    "title": "แอปพลิเคชัน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "แอปพลิเคชัน"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/application",
+                    "title": "แก้ไขแอปพลิเคชัน",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "แอปพลิเคชัน"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "subscription_plan",
+                "url": "/subscription-plans",
+                "title": "แผนการสมัครสมาชิก",
+                "icon": "bi bi-heart",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/subscription-plans",
+                    "title": "แผนการสมัครสมาชิก",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "แผนการสมัครสมาชิก"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/subscription-plan",
+                    "title": "แก้ไข/เพิ่มแผนการสมัครสมาชิก",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "/subscription-plans",
+                            "text": "แผนการสมัครสมาชิก"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "config_app",
+                "url": "/config-apps",
+                "title": "Config app",
+                "icon": "bi bi-code-slash",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/config-apps",
+                    "title": "Config app list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายการ Config app"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/config-app",
+                    "title": "เพิ่ม/แก้ไขการตั้งค่าแอป",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "/config-apps",
+                            "text": "รายการ Config app"
+                        },
+                        {
+                            "url": "",
+                            "text": "รายละเอียด"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "import_data",
+                "url": "/import-data",
+                "title": "นำเข้าข้อมูล",
+                "icon": "bi bi-arrow-up",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/application",
+                    "title": "นำเข้าข้อมูล",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "นำเข้าข้อมูล"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/import-data",
+                    "title": "นำเข้าข้อมูล",
+                    "breadcrumb": [
+                        {
+                            "url": "/import-datas",
+                            "text": "การตั้งค่า"
+                        },
+                        {
+                            "url": "",
+                            "text": "นำเข้าข้อมูล"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    }
+]

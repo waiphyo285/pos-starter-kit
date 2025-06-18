@@ -1,0 +1,59 @@
+extends ../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/list/list-style
+    include ./../includes/list/list-header
+    include ./../includes/modal/modal-filter-table
+
+    table#example.table.table-striped(style='width:100%')
+      thead
+        tr
+          th #
+          th !{content.invoice_no}
+          th !{content.customer_name}
+          th !{content.due_amount}
+          th !{content.state}
+          th !{content.due_date}
+      tbody
+
+  include ./../includes/list/list-script
+
+  script.
+    $(document).ready(function() {
+      pageEntry = '!{page.entry.url}';
+      $.fn.dataTable.ext.errMode = 'none';
+      $.fn.dataTable.ext.classes.sPageButton = 'btn material-button material-button-sm material-primary m-1'; 
+
+      table = $('#example').on('error.dt', dataTableCallback)
+        .DataTable({
+          ...dataTableDef('!{page.list.title}'),
+          "ajax": fetchDataDef(v1 + '!{page.list.url}'),
+          "columns": [
+            { "data": "_id" },
+            { "data": "invoice_no"},
+            { "data": "customer_name" },
+            { "data": "due_amount" },
+            { "data": "state" },
+            { "data": "due_date" },
+          ],
+          "columnDefs": [
+            { targets: 0, render: dataTableIndexRenderer() },
+            { targets: 3, render: dataTableNumberRenderer() },
+            { targets: 4, render: dataTableTypeRenderer() },
+            { targets: 5, render: dataTableDateTimeRenderer() },
+          ]
+      });
+
+      $("#dialogFilter").on("click", function() {
+        $("#filterModalForm").trigger("submit")
+      })
+
+      $("#filterModalForm").submit(function (e) {
+        e.preventDefault();
+        const listUrl = '!{page.list.url}';
+        const query = $(this).serialize();
+        $('#dialogFilterTable').modal('hide');
+
+        table.ajax.url(`./api/${v1}${listUrl}?${query}`).load();
+      });
+    });

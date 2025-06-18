@@ -1,0 +1,291 @@
+extends ../includes/layout-main
+block content
+  -var isEdited = data._id || data.id;
+
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/entry/entry-header
+    
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='information')
+        button#information-tab.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+
+      li.nav-item.ml-auto
+        h6.font-weight-bold !{data.invoice_no}
+        span !{data._created_at}
+
+    #myTabContent.tab-content
+      #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')
+        include ./../includes/entry/entry-form
+          block inputs
+          
+            div.form-group.row
+              div.col-md-4
+                label.control-label(for='damaged_at') !{content.damaged_at} *
+                .input-group
+                  input.form-control.date#damagedAt(type='text', name='damaged_at', value=data.damaged_at editable="false"  autocomplete="off" required) 
+                  .input-group-prepend
+                    span.input-group-text.rounded-right
+                      i.bi.bi-calendar2
+                  span.invalid-feedback
+                    | !{content.common.err_required}
+
+            div.form-group.row
+              div.col-md-4.mb-3
+                label.control-label(for='owner_id') !{content.owner_name} *
+                select.form-control.input-sm.custom-select.all-select2-picker#ownerId(name='owner_id' value=data.owner_id data-value=data.owner_id, data-live-search="true", data-size="8" required)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-4.mb-3
+                label.control-label(for='store_id') !{content.store_name} *
+                select.form-control.input-sm.custom-select.all-select2-picker#storeId(name='store_id' value=data.store_id data-value=data.store_id, data-live-search="true", data-size="8" required)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-4.mb-3
+                label.control-label(for='state') !{content.state} *
+                select.form-control.input-sm.custom-select.all-select2-picker#state(name='state' value=data.state data-value=data.state, data-live-search="true", data-size="8" required)
+                  option(value="" disabled selected) -- Select one --
+                  option(value="draft" selected) Draft
+                  option(value="opened") Opened
+                  option(value="paid") Paid
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+
+            div.p-3.border
+              div.form-group.row
+                div.col-md-12
+                  label.control-label(for='search_item') !{content.search_item} 
+                  select.form-control.input-sm.page-select2-picker#searchItem(data-live-search="true", data-size="8")
+
+            .table-responsive
+              table.table.bg-light.mt-3
+                thead
+                  tr
+                    th 
+                    th #
+                    th.text-center !{content.product}
+                    th.text-center !{content.quantity}
+                    th.text-center !{content.unit_price}
+                    th.text-center !{content.subtotal_amount}
+
+                tbody#itemList
+                  
+                  tr#sampleTr.d-none
+                    td.text-left(width="40")
+                      button.btn.btn-sm.remove-row(type="button" data-id="")
+                        i.text-danger.font-weight-bold.bi.bi-trash
+                    td.text-center(width="40")
+                      input.item-id.d-none(type="hidden")
+                      span.item-key
+                    td.text-left
+                      span.item-name
+                    td.text-center(width="160")
+                      input.item-quantity(type='number', role='number', min='0' max='10000000' onkeyup="if(parseInt(this.value)>this.max){ this.value=this.max; return false; }" autocomplete="off")
+                    td.text-center(width="160")
+                      input.item-retail-price(type='number', role='number', min='0' max='10000000' onkeyup="if(parseInt(this.value)>this.max){ this.value=this.max; return false; }" autocomplete="off")
+                    td.text-right(width="160")
+                      span.item-subtotal-amount
+
+                  if data.damage_items.length > 0
+                    each item,idx in data.damage_items 
+                      tr
+                        td.text-left(width="40")
+                          button.btn.btn-sm.remove-row(type="button" data-id=item.item_id)
+                            i.text-danger.font-weight-bold.bi.bi-trash
+                        td.text-center(width="40")
+                          input.item-id.d-none(type="hidden" name=`damage_items[${idx}][item_id]` value=item.item_id)
+                          span.item-key !{idx+1}
+                        td.text-left
+                          span.item-name !{item.item_name}
+                        td.text-center(width="160")
+                          input.item-quantity(type='number', role='number', min='0' max='10000000' onkeyup="if(parseInt(this.value)>this.max){ this.value=this.max; return false; }" name=`damage_items[${idx}][quantity]` value=item.quantity autocomplete="off")
+                        td.text-center(width="160")
+                          input.item-retail-price(type='number', role='number', min='0' max='10000000' onkeyup="if(parseInt(this.value)>this.max){ this.value=this.max; return false; }" name=`damage_items[${idx}][retail_price]` value=item.retail_price autocomplete="off")
+                        td.text-right(width="160")
+                          span.item-subtotal-amount !{item.subtotal_amount}
+                  else
+                    tr#noRecord.bg-white
+                      td.text-center(colspan='6')
+                        span No records added
+
+                tfoot
+                  tr.border
+                  tr
+                    td.border-0(colspan='4')
+                    td.text-center
+                      strong !{content.subtotal_amount}
+                    td.text-right
+                      strong#subtotalAmount !{data.subtotal_amount || 0}
+
+                  tr
+                    td.border-0(colspan='4')
+                    td.text-center
+                      strong !{content.total_amount}
+                    td.text-right
+                      strong#totalAmount !{data.total_amount || 0}
+
+            div.form-group.row
+              div.col-md-12.mb-3
+                label.control-label(for='remark') !{content.remark} 
+                textarea.form-control.content(name='remark', rows='3')=data.remark
+  
+
+            include ./../includes/entry/entry-btn2
+            +entryButtons({ submitDisabled: !!isEdited })
+            
+        form#postSuccessForm(method='GET', action=page.list.url)
+  script(src="../javascript/lib/onscan.js-1.5/onscan.min.js")
+  script.
+    const existingItems = new Set();
+
+    $(document).ready(function() {
+      const isEdited = $("input[name='id']").val();
+
+      ajaxLoadOption({
+        type: "GET",
+        url:"/owner",
+        showKey: "name",
+        selectId: "#ownerId",
+        filterObj: { status: 1 },
+        isSelected: true,
+      }, (data) => {
+          $("#ownerId").trigger('change');
+      });
+      
+      $("#ownerId").on('change', function() {
+        const owner_id = $(this).val() ||         // get value [new entry]
+                         $(this).data('value');   // get value [edit entry]
+
+        owner_id && ajaxLoadOption({
+          type: "GET",
+          url:"/store",
+          showKey: "name",
+          selectId: "#storeId",
+          filterObj: { status: 1, owner_id },
+        });
+      });
+
+      ajaxLoadOption2({
+        type: "GET",
+        url:"/variant",
+        showKey: "name",
+        filterKey: "barcode",
+        selectId: "#searchItem",
+      });
+
+      onScan.attachTo(document, {
+        onScan: function(barcode, qty) {
+          const apiUrl = `/api/${v1}/variant`
+          commonServiceApi({ 
+            url: apiUrl, 
+            data: { filter: { barcode } } 
+          }, function(res) {
+            if(res.data.length == 0){
+              toastrWarning({
+                title: content['modal'].warning,
+                description: content['user-msg'].item_not_found,
+              })
+              return
+            } 
+            
+            const data = res.data[0] || {}
+            const isExisted = existingItems.has(data?._id)
+
+            if (!isExisted) {
+              existingItems.add(data._id);
+              makeNewTableRow(data);
+            }
+          })
+        }
+      });
+
+      $("#searchItem").on("select2:select", function (e) {
+        const selectedOption = e.params.data;
+        const apiUrl = `/api/${v1}/variant/${selectedOption.id}`
+
+        commonServiceApi({ url: apiUrl }, function(res) {
+          const data = res.data || {}
+          const isExisted = existingItems.has(data?._id)
+
+          if (!isExisted) {
+            existingItems.add(data._id);
+            makeNewTableRow(data);
+          }
+        })
+      });
+
+      $("body").on("input", ".item-quantity, .item-retail-price", function() {
+        var row = $(this).closest('tr');        
+        var quantity = parseFloat(row.find('.item-quantity').val()) || 0;
+        var retailPrice = parseFloat(row.find('.item-retail-price').val()) || 0;
+        var subtotal = quantity * retailPrice;
+
+        row.find('.item-subtotal-amount').text(subtotal);
+
+        calculateNetTotal()
+      });
+
+      $("body").on("click", ".remove-row", function() {
+        const currentR = $(this).closest("tr");
+
+        currentR.remove()
+        calculateNetTotal()
+      });
+
+      if (isEdited && typeof isEdited === "string") {
+        var owner_id = $('#ownerId').data('value');
+        owner_id && $('#ownerId').val(owner_id).change();
+
+        var store_id = $('#storeId').data('value');
+        store_id && $('#storeId').val(store_id).change();
+
+        var damaged_at = $("#damagedAt").val();
+        damaged_at && 
+          $("#damagedAt").datepicker('setDate', new Date(damaged_at));
+      }
+    })
+
+      function calculateNetTotal() {
+        let totalAmt = 0;
+
+        $(".item-subtotal-amount").each(function() {
+          const price = parseFloat($(this).text());
+          totalAmt = !isNaN(price) ? totalAmt + price : 0;
+        });
+
+        $("#subtotalAmount").text(totalAmt)
+        $("#totalAmount").text(totalAmt)
+      }
+
+      function makeNewTableRow(data) {
+        var item = data;
+        var totalRows = existingItems.size;
+        var clonedRow = $("#sampleTr").clone();
+
+        clonedRow.find(".item-key").text(totalRows); 
+        clonedRow.find(".item-name").text(item.name); 
+
+        clonedRow.find(".item-id").attr({ 
+          value: item._id, 
+          name: `damage_items[${totalRows-1}][item_id]`
+        });
+
+        clonedRow.find(".item-quantity").attr({ 
+          value: 0, 
+          name: `damage_items[${totalRows-1}][quantity]`
+        });
+
+        clonedRow.find(".item-retail-price").attr({ 
+          value: item.retail_price, 
+          name: `damage_items[${totalRows-1}][retail_price]`
+        });
+
+        clonedRow.find(".item-subtotal-amount").text(0); 
+    
+        $("#noRecord").addClass('d-none');
+        $("#itemList").append(`<tr>${clonedRow.html()}</tr>`);
+      }

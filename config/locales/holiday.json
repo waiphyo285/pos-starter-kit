@@ -1,0 +1,56 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "date": "Date",
+            "state": "State",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "date": "Date",
+            "state": "State",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "date": "ရက်စွဲ",
+            "state": "အခြေအနေ",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "date": "ရက်စွဲ",
+            "state": "အခြေအနေ",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "date": "วันที่",
+            "state": "สถานะ",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "date": "วันที่",
+            "state": "สถานะ",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "description": "รายละเอียด"
+        }
+    }
+}

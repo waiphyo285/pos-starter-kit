@@ -1,0 +1,95 @@
+{
+    "en_US": {
+        "list": {
+            "invoice_no": "Invoice No.",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "type": "Type",
+            "state": "State",
+            "remark": "Remark",
+            "subtotal_amount": "Total",
+            "total_amount": "Balance",
+            "adjusted_at": "Adjusted At"
+        },
+        "entry": {
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "type": "Type",
+            "state": "State",
+            "remark": "Remark",
+            "adjusted_at": "Adjusted At",
+            "search_item": "Search barcode",
+
+            "product": "Name",
+            "stock": "Stock",
+            "quantity": "Quantity",
+            "unit_price": "Unit Price",
+            "subtotal_amount": "Total",
+            "total_amount": "Balance"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "type": "အမျိုးအစား",
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "subtotal_amount": "ပေါင်း",
+            "total_amount": "သင့်ငွေ",
+            "adjusted_at": "ချိန်ညှိရက်စွဲ"
+        },
+        "entry": {
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "type": "အမျိုးအစား",
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "adjusted_at": "ချိန်ညှိရက်စွဲ",
+            "search_item": "ဘားကုတ်ဖြင့် ရှာပါ",
+
+            "product": "အမျိုးအမည်",
+            "stock": "Stock",
+            "quantity": "အရေအတွက်",
+            "unit_price": "စျေးနှုန်း",
+            "subtotal_amount": "ပေါင်း",
+            "total_amount": "သင့်ငွေ"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "type": "ประเภท",
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "subtotal_amount": "รวมระหว่าง",
+            "total_amount": "ยอดรวม",
+            "adjusted_at": "วันที่ปรับ"
+        },
+        "entry": {
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "type": "ประเภท",
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "adjusted_at": "วันที่ปรับ",
+            "search_item": "ค้นหาด้วยบาร์โค้ด",
+
+            "product": "ชื่อสินค้า",
+            "stock": "สต็อก",
+            "quantity": "จำนวน",
+            "unit_price": "ราคา",
+            "subtotal_amount": "รวมระหว่าง",
+            "total_amount": "ยอดรวม"
+        }
+    }
+}

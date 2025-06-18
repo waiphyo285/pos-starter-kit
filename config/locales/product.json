@@ -1,0 +1,164 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "type": "Type",
+
+            "category": "Category",
+            "sub_category": "Sub Category",
+
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "barcode": "Barcode",
+            "barcode_sym": "Barcode Symbol",
+
+            "cost": "Cost",
+            "retail_price": "Retail Price",
+            "wholesale_price": "Wholesale Price",
+
+            "tax_method": "Tax Method",
+            "tax_percent": "Tax Percent",
+
+            "is_variant": "Do you create variant?",
+            "attribute_variant": "Variant Attribute",
+
+            "images": "Images",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "type": "Type",
+
+            "category": "Category",
+            "sub_category": "Sub Category",
+
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "barcode": "Barcode",
+            "barcode_sym": "Barcode Symbol",
+
+            "cost": "Cost",
+            "retail_price": "Retail Price",
+            "wholesale_price": "Wholesale Price",
+
+            "tax_method": "Tax Method",
+            "tax_percent": "Tax Percent",
+
+            "is_variant": "Do you create variant?",
+            "attribute_variant": "Variant Attribute",
+
+            "images": "Images",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "type": "ပုံစံ",
+
+            "category": "အမျိုးအစား",
+            "sub_category": "အမျိုးအစားခွဲ",
+
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+
+            "barcode": "ဘားကုဒ်",
+            "barcode_sym": "ဘားကုဒ်ဆင်း",
+
+            "cost": "ဝယ်စျေး",
+            "retail_price": "လက်လီစျေး",
+            "wholesale_price": "လက်ကားစျေး",
+
+            "tax_method": "အခွန်ပုံစံ",
+            "tax_percent": "အခွန် (ရာခိုင်နှုန်း)",
+
+            "is_variant": "ထုတ်ကုန်ခွဲ ပြုလုပ်မလား?",
+            "attribute_variant": "ထုတ်ကုန်ခွဲခေါင်းစဉ်",
+
+            "images": "ဓာတ်ပုံများ",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "type": "ပုံစံ",
+
+            "category": "အမျိုးအစား",
+            "sub_category": "အမျိုးအစားခွဲ",
+
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+
+            "barcode": "ဘားကုဒ်",
+            "barcode_sym": "ဘားကုဒ်ဆင်း",
+
+            "cost": "ဝယ်စျေး",
+            "retail_price": "လက်လီစျေး",
+            "wholesale_price": "လက်ကားစျေး",
+
+            "tax_method": "အခွန်ပုံစံ",
+            "tax_percent": "အခွန် (ရာခိုင်နှုန်း)",
+
+            "is_variant": "ထုတ်ကုန်ခွဲ ပြုလုပ်မလား?",
+            "attribute_variant": "ထုတ်ကုန်ခွဲခေါင်းစဉ်",
+
+            "images": "ဓာတ်ပုံများ",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "type": "รูปแบบ",
+
+            "category": "หมวดหมู่",
+            "sub_category": "หมวดหมู่ย่อย",
+
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "barcode": "บาร์โค้ด",
+            "barcode_sym": "บาร์โค้ดซิมโบล",
+
+            "cost": "ต้นทุน",
+            "retail_price": "ราคาขายปลีก",
+            "wholesale_price": "ราคาขายส่ง",
+
+            "tax_method": "รูปแบบภาษี",
+            "tax_percent": "ภาษี (เปอร์เซ็นต์)",
+
+            "is_variant": "ทำเวอร์ชันสินค้าไหม?",
+            "attribute_variant": "หัวข้อเวอร์ชันสินค้า",
+
+            "images": "รูปภาพ",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "type": "รูปแบบ",
+
+            "category": "หมวดหมู่",
+            "sub_category": "หมวดหมู่ย่อย",
+
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "barcode": "บาร์โค้ด",
+            "barcode_sym": "บาร์โค้ดซิมโบล",
+
+            "cost": "ต้นทุน",
+            "retail_price": "ราคาขายปลีก",
+            "wholesale_price": "ราคาขายส่ง",
+
+            "tax_method": "รูปแบบภาษี",
+            "tax_percent": "ภาษี (เปอร์เซ็นต์)",
+
+            "is_variant": "ทำเวอร์ชันสินค้าไหม?",
+            "attribute_variant": "หัวข้อเวอร์ชันสินค้า",
+
+            "images": "รูปภาพ",
+            "description": "รายละเอียด"
+        }
+    }
+}

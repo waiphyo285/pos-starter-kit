@@ -1,0 +1,134 @@
+extends ../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/list/list-style
+    include ./../includes/list/list-header
+      block extend-button
+        button#btnBarcode.btn.btn-sm.mx-1(type='button' role='button' style="width: 38px" data-tooltip="tooltip" data-placement="top" title="Barcode")
+          i.text-dark.bi.bi-upc
+    include ./../includes/modal/modal-filter-table
+    include ./../includes/modal/modal-barcode-form
+
+
+    table#example.table.table-striped(style='width:100%')
+      thead
+        tr
+          th #
+          th !{content.name}
+          th !{content.barcode}
+          th !{content.product}
+          th !{content.category}
+          th !{content.owner_name}
+          th !{content.store_name}
+          th !{content.type}
+          th !{content.barcode_sym} 
+          th !{content.tax_method}
+          th !{content.tax_percent}
+          th !{content.stock}
+          th !{content.cost}
+          th !{content.retail_price}
+          th !{content.wholesale_price}
+          //- th !{content.description}
+          th !{content.common.list_status}
+          th !{content.common.list_updated_at}
+          th.text-right !{content.common.list_actions}
+      tbody
+
+  include ./../includes/list/list-script
+
+  //- script(src="../javascript/lib/barcode-gen/jquery/jquery-barcode.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js")
+  script.
+    $(document).ready(function() {
+      pageEntry = '!{page.entry.url}';
+      $.fn.dataTable.ext.errMode = 'none';
+      $.fn.dataTable.ext.classes.sPageButton = 'btn material-button material-button-sm material-primary m-1'; 
+
+      table = $('#example').on('error.dt', dataTableCallback)
+        .DataTable({
+          ...dataTableDef('!{page.list.title}'),
+          "ajax": fetchDataDef(v1 + '!{page.list.url}'),
+          "columns": [
+            { "data": "_id" },
+            { "data": "name" },
+            { "data": "barcode" },
+            { "data": "product" },
+            { "data": "category" },
+            { "data": "owner_name" },
+            { "data": "store_name" },
+            { "data": "type" },
+            { "data": "barcode_sym" },
+            { "data": "tax_method" },
+            { "data": "tax_percent" },
+            { "data": "stock" },
+            { "data": "cost" },
+            { "data": "retail_price" },
+            { "data": "wholesale_price" },
+            //- { "data": "description" },
+            { "data": "status" },
+            { "data": "updated_at" },
+            { "data": "actions" },
+          ],
+          "columnDefs": [
+            { targets: 0, render: dataTableIndexRenderer() },
+            { targets: 15, render: dataTableActiveRenderer() },
+            { targets: 16, render: dataTableDateTimeRenderer() },
+            { targets: 17, orderable: false, render: dataTableActionsRenderer(
+                ".!{page.entry.url}", "!{page.read}", "!{page.edit}", "!{page.delete}", v1
+              )
+            }
+          ]
+      });
+
+      $("#dialogFilter").on("click", function() {
+        $("#filterModalForm").trigger("submit")
+      })
+
+      $("#filterModalForm").submit(function (e) {
+        e.preventDefault();
+        const listUrl = '!{page.list.url}';
+        const query = $(this).serialize();
+        $('#dialogFilterTable').modal('hide');
+
+        table.ajax.url(`./api/${v1}${listUrl}?${query}`).load();
+      });
+
+      $("#btnBarcode").on("click", function(e) {
+        e.preventDefault();
+        const listUrl = '!{page.list.url}';
+        const pageSize = table.page.len();
+        const currentPage = table.page.info().page;
+        const start = currentPage * pageSize;
+
+        modalServiceApi({
+          url: `./api/${v1}${listUrl}?start=${start}&length=${pageSize}`,
+        }, function(response) {
+          if (response.code == '200') {
+            $("#barcodeList").empty();
+
+            response.data.forEach(item => {
+              const barcode = item.barcode;
+              const barcodeSym = item.barcode_sym;
+
+              //- const canvas = $('<div></div>');
+              //- canvas.barcode(barcode, barcodeSym, {
+              //-   barWidth: 1,
+              //-   barHeight: 50
+              //- });
+
+              const canvas = $('<img>');
+              JsBarcode(canvas[0], barcode, {
+                format: barcodeSym,
+                width: 2,
+                height: 50,
+                displayValue: true
+              });
+
+              $("#barcodeList").append(canvas);
+            });
+
+            $('#dialogBarcodeForm').modal('show');
+          }
+        });
+      });
+    });

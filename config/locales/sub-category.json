@@ -1,0 +1,44 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "category": "Category",
+            "owner_name": "Owner Name",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "category": "Category",
+            "owner_name": "Owner Name",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "category": "အမျိုးအစား",
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "category": "အမျိုးအစား",
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "category": "หมวดหมู่",
+            "owner_name": "ชื่อเจ้าของ",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "category": "หมวดหมู่",
+            "owner_name": "ชื่อเจ้าของ",
+            "description": "รายละเอียด"
+        }
+    }
+}

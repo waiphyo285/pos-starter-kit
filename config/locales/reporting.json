@@ -1,0 +1,164 @@
+{
+    "en_US": {
+        "daily_sale": {
+            "sales": "Sales",
+            "purchases": "Purchases",
+            "expenses": "Expenses",
+            "profit_loss": "Profit/Loss",
+
+            "issued_at": "Date",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        },
+        "weekly_sale": {
+            "sales": "Sales",
+            "purchases": "Purchases",
+            "expenses": "Expenses",
+            "profit_loss": "Profit/Loss",
+
+            "issued_at": "Date",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        },
+        "monthly_sale": {
+            "sales": "Sales",
+            "purchases": "Purchases",
+            "expenses": "Expenses",
+            "profit_loss": "Profit/Loss",
+
+            "issued_at": "Date",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        },
+        "yearly_profit_loss": {
+            "sales": "Sales",
+            "purchases": "Purchases",
+            "expenses": "Expenses",
+            "profit_loss": "Profit/Loss",
+
+            "issued_at": "Date",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        },
+        "top_sales_items": {
+            "cur_month": "Current Month",
+            "cur_year": "Current Month"
+        }
+    },
+    "my_MM": {
+        "daily_sale": {
+            "sales": "အရောင်းများ",
+            "purchases": "အဝယ်များ",
+            "expenses": "အသုံးများ",
+            "profit_loss": "အမြတ်/အရှုံး",
+
+            "issued_at": "ရက်စွဲ",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        },
+        "weekly_sale": {
+            "sales": "အရောင်းများ",
+            "purchases": "အဝယ်များ",
+            "expenses": "အသုံးများ",
+            "profit_loss": "အမြတ်/အရှုံး",
+
+            "issued_at": "ရက်စွဲ",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        },
+        "monthly_sale": {
+            "sales": "အရောင်းများ",
+            "purchases": "အဝယ်များ",
+            "expenses": "အသုံးများ",
+            "profit_loss": "အမြတ်/အရှုံး",
+
+            "issued_at": "ရက်စွဲ",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        },
+        "yearly_profit_loss": {
+            "sales": "အရောင်းများ",
+            "purchases": "အဝယ်များ",
+            "expenses": "အသုံးများ",
+            "profit_loss": "အမြတ်/အရှုံး",
+
+            "issued_at": "ရက်စွဲ",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        },
+        "top_sales_items": {
+            "cur_month": "လက်ရှိလ",
+            "cur_year": "လက်ရှိနှစ်"
+        }
+    },
+    "th_TH": {
+        "daily_sale": {
+            "sales": "ยอดขาย",
+            "purchases": "การซื้อ",
+            "expenses": "ค่าใช้จ่าย",
+            "profit_loss": "กำไร/ขาดทุน",
+
+            "issued_at": "วันที่",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        },
+        "weekly_sale": {
+            "sales": "ยอดขาย",
+            "purchases": "การซื้อ",
+            "expenses": "ค่าใช้จ่าย",
+            "profit_loss": "กำไร/ขาดทุน",
+
+            "issued_at": "วันที่",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        },
+        "monthly_sale": {
+            "sales": "ยอดขาย",
+            "purchases": "การซื้อ",
+            "expenses": "ค่าใช้จ่าย",
+            "profit_loss": "กำไร/ขาดทุน",
+
+            "issued_at": "วันที่",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        },
+        "yearly_profit_loss": {
+            "sales": "ยอดขาย",
+            "purchases": "การซื้อ",
+            "expenses": "ค่าใช้จ่าย",
+            "profit_loss": "กำไร/ขาดทุน",
+
+            "issued_at": "วันที่",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        },
+        "top_sales_items": {
+            "cur_month": "เดือนปัจจุบัน",
+            "cur_year": "ปีปัจจุบัน"
+        }
+    }
+}

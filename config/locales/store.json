@@ -1,0 +1,92 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "email": "Email Address",
+            "phone_1": "Phone Number 1",
+            "phone_2": "Phone Number 2",
+            "address": "Home Address",
+
+            "owner_name": "Owner Name",
+            "store_type": "Store Type",
+
+            "city_mm": "Region",
+            "township_mm": "Township",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "email": "Email Address",
+            "phone_1": "Phone Number 1",
+            "phone_2": "Phone Number 2",
+            "address": "Home Address",
+
+            "owner_name": "Owner Name",
+            "store_type": "Store Type",
+
+            "city_mm": "Region",
+            "township_mm": "Township",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "email": "မေးလ်လိပ်စာ",
+            "phone_1": "ဖုန်းနံပတ် ၁",
+            "phone_2": "ဖုန်းနံပတ် ၂",
+            "address": "ဆိုင်လိပ်စာ",
+
+            "store_type": "အမျိုးအစား",
+            "owner_name": "ပိုင်ရှင်အမည်",
+
+            "city_mm": "တိုင်း/ပြည်နယ်",
+            "township_mm": "မြို့နယ်",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "email": "မေးလ်လိပ်စာ",
+            "phone_1": "ဖုန်းနံပတ် ၁",
+            "phone_2": "ဖုန်းနံပတ် ၂",
+            "address": "ဆိုင်လိပ်စာ",
+
+            "store_type": "အမျိုးအစား",
+            "owner_name": "ပိုင်ရှင်အမည်",
+
+            "city_mm": "တိုင်း/ပြည်နယ်",
+            "township_mm": "မြို့နယ်",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "email": "อีเมล",
+            "phone_1": "หมายเลขโทรศัพท์ 1",
+            "phone_2": "หมายเลขโทรศัพท์ 2",
+            "address": "ที่อยู่ร้าน",
+
+            "store_type": "ประเภท",
+            "owner_name": "ชื่อเจ้าของ",
+
+            "city_mm": "จังหวัด",
+            "township_mm": "อำเภอ",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "email": "อีเมล",
+            "phone_1": "หมายเลขโทรศัพท์ 1",
+            "phone_2": "หมายเลขโทรศัพท์ 2",
+            "address": "ที่อยู่ร้าน",
+
+            "store_type": "ประเภท",
+            "owner_name": "ชื่อเจ้าของ",
+
+            "city_mm": "จังหวัด",
+            "township_mm": "อำเภอ",
+            "description": "รายละเอียด"
+        }
+    }
+}

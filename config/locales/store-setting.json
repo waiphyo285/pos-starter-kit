@@ -1,0 +1,71 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "store_name": "Store Name"
+        },
+        "entry": {
+            "name": "Name",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "currency": "Currency",
+            "rounding": "Rounding",
+            "timezone": "Timezone",
+
+            "header_logo": "Header Logo",
+            "header_addr": "Header Address",
+            "header_phone_1": "Header Phone 1",
+            "header_phone_2": "Header Phone 2",
+
+            "footer_desc_1": "Footer Description 1",
+            "footer_desc_2": "Footer Description 2"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "store_name": "ဆိုင်အမည်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+
+            "currency": "ငွေကြေး",
+            "rounding": "Rounding",
+            "timezone": "Timezone",
+
+            "header_logo": "Header Logo",
+            "header_addr": "Header Address",
+            "header_phone_1": "Header Phone 1",
+            "header_phone_2": "Header Phone 2",
+
+            "footer_desc_1": "Footer Description 1",
+            "footer_desc_2": "Footer Description 2"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "store_name": "ชื่อร้าน"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "currency": "สกุลเงิน",
+            "rounding": "การปัดเศษ",
+            "timezone": "เขตเวลา",
+
+            "header_logo": "โลโก้หัวกระดาษ",
+            "header_addr": "ที่อยู่หัวกระดาษ",
+            "header_phone_1": "เบอร์โทรศัพท์หัวกระดาษ 1",
+            "header_phone_2": "เบอร์โทรศัพท์หัวกระดาษ 2",
+
+            "footer_desc_1": "คำอธิบายท้ายกระดาษ 1",
+            "footer_desc_2": "คำอธิบายท้ายกระดาษ 2"
+        }
+    }
+}

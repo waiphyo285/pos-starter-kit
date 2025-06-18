@@ -1,0 +1,44 @@
+{
+    "en_US": {
+        "welcome": "Welcome back 👋",
+        "quick_link": "Quick links",
+        "today_sale": "Today sales",
+        "summary_sale": "Summary sales",
+
+        "total_sales": "Total sales",
+        "total_invoices": "Total invoices",
+        "total_items": "Products sold",
+        "new_customers": "New customers",
+
+        "last_7_days_sales": "Last 7 Days Sales",
+        "last_7_days_items": "Last 7 Days Items"
+    },
+    "my_MM": {
+        "welcome": "ကြိုဆိုပါ၏ 👋",
+        "quick_link": "ဆက်သွယ်ချက်များ",
+        "today_sale": "ယနေ့ရောင်းအား",
+        "summary_sale": "ရောင်းအားအနှစ်ချုပ်",
+
+        "total_sales": "ရောင်းအားများ",
+        "total_invoices": "ပြေစာများ",
+        "total_items": "ပစ္စည်းများ",
+        "new_customers": "ဝယ်ယူသူများ",
+
+        "last_7_days_sales": "နောက်ဆုံး ၇ ရက်ရောင်းအား",
+        "last_7_days_items": "နောက်ဆုံး ၇ ရက်ထုတ်ကုန်များ"
+    },
+    "th_TH": {
+        "welcome": "ยินดีต้อนรับ 👋",
+        "quick_link": "ลิงก์ด่วน",
+        "today_sale": "ยอดขายวันนี้",
+        "summary_sale": "สรุปยอดขาย",
+
+        "total_sales": "ยอดขายรวม",
+        "total_invoices": "ใบแจ้งหนี้รวม",
+        "total_items": "จำนวนสินค้า",
+        "new_customers": "ลูกค้าใหม่",
+
+        "last_7_days_sales": "ยอดขาย 7 วันที่ผ่านมา",
+        "last_7_days_items": "รายการสินค้า 7 วันที่ผ่านมา"
+    }
+}

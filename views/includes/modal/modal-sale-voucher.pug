@@ -1,0 +1,97 @@
+link(href='/stylesheet/view-invoice.css' rel='stylesheet')
+
+div.modal.fade#dialogPrintInvoice(tabindex='-1', role='dialog', aria-labelledby='dialogPrintInvoice')
+  div.modal-dialog.modal-dialog-centered.modal-md(role='document')
+    div.modal-content
+      div.modal-header
+        h5.modal-title Print voucher
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') &times;
+      
+      div.modal-body
+        #invoice-box.invoice-box
+          table(cellpadding='0' cellspacing='0')
+            tr.topspace
+              td(colspan='12')
+                table.header-table
+                  //- tr
+                  //-   td.align-center
+                  //-     img#headerLogo(src='' style='width: 100px; height: 100px; border-radius: 50%;')
+                  tr
+                    td.align-center#headerInfo
+
+            tr.information
+              td(colspan='12')
+                table
+                  tr
+                    td.voucher-info(colspan="3")
+                    td.customer-info.align-right(colspan="3")
+
+          table#invoice-table(cellpadding='0' cellspacing='0')
+            thead 
+              tr.heading
+                td.align-center Description
+                td.align-right Quantity
+                td.align-right Balance
+            tbody
+
+            tfoot
+              tr.item
+                td(colspan="2").align-right 
+                  b Sub Total
+                td.align-right.sub-total 0
+              tr.item
+                td(colspan="2").align-right 
+                  b Discount
+                td.align-right.dis-total 0
+              tr.item
+                td(colspan="2").align-right 
+                  b VAT
+                td.align-right.tax-total 0
+              tr.total
+                td(colspan="2").align-right 
+                  b Total
+                td.align-right.total-amount 0
+              tr.total
+                td.align-center.paid-by
+                td.align-right.amount
+                td.align-right.change
+
+          p.align-center#footerInfo
+
+      div.modal-footer.justify-content-md-center
+        button.btn.btn-sm.material-button.material-secondary#dialogCancel(type='button', data-dismiss='modal')
+          |  !{content.common.btn_close}
+        button.btn.btn-sm.material-button.material-primary.mx-1#dialogInvoice(type='button', role="button" onclick="return printInvoice()" data-dismiss='modal')
+          i.bi.bi-printer
+          |  !{content.common.btn_print}
+
+script.
+  $(document).ready(function() {
+    if (storeSetting) {
+      const pr = storeSetting.printing;
+
+      //- $('#headerLogo').attr(
+      //-   'src', printing.header_logo
+      //- );
+
+      $('#headerInfo').html(`
+        Store: ${storeSetting.name} </br>
+        Address: ${pr.header_addr} </br> 
+        ${pr.header_phone_1}၊ ${pr.header_phone_2}
+      `);
+
+      $('#footerInfo').html(`
+        ${pr.footer_desc_1} </br>
+        ${pr.footer_desc_2}
+      `)
+    }
+  });
+
+  function printInvoice() {
+    printJS({
+      type: 'html',
+      printable: 'invoice-box',
+      css: '/stylesheet/view-invoice.css'
+    })
+  }

@@ -1,0 +1,44 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "description": "รายละเอียด"
+        }
+    }
+}

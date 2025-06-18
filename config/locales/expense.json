@@ -1,0 +1,65 @@
+{
+    "en_US": {
+        "list": {
+            "invoice_no": "Invoice No.",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "state": "State",
+            "remark": "Remark",
+            "total_amount": "Balance",
+            "expensed_at": "Expensed At"
+        },
+        "entry": {
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "state": "State",
+            "remark": "Remark",
+            "total_amount": "Balance",
+            "expensed_at": "Expensed At"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "total_amount": "သင့်ငွေ",
+            "expensed_at": "သုံးစွဲရက်စွဲ"
+        },
+        "entry": {
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "total_amount": "သင့်ငွေ",
+            "expensed_at": "သုံးစွဲရက်စွဲ"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "total_amount": "ยอดเงินทั้งหมด",
+            "expensed_at": "วันที่ใช้จ่าย"
+        },
+        "entry": {
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "total_amount": "ยอดเงินทั้งหมด",
+            "expensed_at": "วันที่ใช้จ่าย"
+        }
+    }
+}

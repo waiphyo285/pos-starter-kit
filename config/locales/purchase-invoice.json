@@ -1,0 +1,101 @@
+{
+    "en_US": {
+        "list": {
+            "invoice_no": "Invoice No.",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "state": "State",
+            "remark": "Remark",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance",
+            "purchased_at": "Purchased At"
+        },
+        "entry": {
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "supplier_name": "Supplier Name",
+
+            "state": "State",
+            "remark": "Remark",
+            "purchased_at": "Purchased At",
+            "search_item": "Search barcode",
+
+            "product": "Name",
+            "quantity": "Quantity",
+            "unit_price": "Unit Price",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "total_amount": "Balance",
+            "tax_amount": "Tax"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ",
+            "purchased_at": "ဝယ်ယူသည့်နေ့စွဲ"
+        },
+        "entry": {
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+            "supplier_name": "ထုတ်လုပ်သူ",
+
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "purchased_at": "ဝယ်ယူသည့်နေ့စွဲ",
+            "search_item": "ဘားကုတ်ဖြင့် ရှာပါ",
+
+            "product": "အမျိုးအမည်",
+            "quantity": "အရေအတွက်",
+            "unit_price": "စျေးနှုန်း",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "total_amount": "သင့်ငွေ",
+            "tax_amount": "အခွန်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด",
+            "purchased_at": "วันที่ซื้อ"
+        },
+        "entry": {
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "supplier_name": "ผู้จัดจำหน่าย",
+
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "purchased_at": "วันที่ซื้อ",
+            "search_item": "ค้นหาด้วยบาร์โค้ด",
+
+            "product": "ชื่อสินค้า",
+            "quantity": "ปริมาณ",
+            "unit_price": "ราคา",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "total_amount": "ยอดรวมทั้งหมด",
+            "tax_amount": "ภาษี"
+        }
+    }
+}

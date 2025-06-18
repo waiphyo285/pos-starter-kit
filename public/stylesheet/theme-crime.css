@@ -1,0 +1,12 @@
+/* Root variable here */
+
+:root {
+    --primary: #b1a500;
+    --secondary: #d4c100;
+    --text-gray: #bdbdbd;
+    --text-white: #fdfdfd;
+    --text-black: #3d3d3d;
+    --back-gray: #bdbdbd;
+    --back-white: #f9f9f9;
+    --back-black: #3d3d3d;
+}

@@ -1,0 +1,17 @@
+nav#navbar.navbar.sticky-top
+  btn#menuToggle.navbar-brand.pointer
+    i.bi.bi-list.text-white
+
+  .o-nav-items.d-flex.justify-content-end
+    .nav-item
+      a.nav-link(href="/pos-panel")
+        i.bi.bi-receipt-cutoff
+        span.d-none.d-lg-inline &nbsp; !{content.navbar.pos_panel}
+
+    include ./other/nav-notification
+    include ./other/nav-language
+    include ./other/nav-setting
+    
+include ./modal/modal-logout
+include ./modal/modal-theme
+include ./modal/modal-generator

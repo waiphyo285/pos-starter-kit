@@ -1,0 +1,32 @@
+{
+    "en_US": {
+        "list": {},
+        "entry": {
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "download_file": "Download File",
+            "select_option": "Select one type to import bulk data"
+        }
+    },
+    "my_MM": {
+        "list": {},
+        "entry": {
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+
+            "download_file": "ဖိုင်ကိုဒေါင်းလုဒ်လုပ်ပါ",
+            "select_option": "ဒေတာထည့်သွင်းရန်အတွက် အမျိုးအစားတစ်ခုကို ရွေးချယ်ပါ"
+        }
+    },
+    "th_TH": {
+        "list": {},
+        "entry": {
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "download_file": "ดาวน์โหลดไฟล์",
+            "select_option": "กรุณาเลือกประเภทสำหรับการนำเข้าข้อมูล"
+        }
+    }
+}

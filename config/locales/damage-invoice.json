@@ -1,0 +1,86 @@
+{
+    "en_US": {
+        "list": {
+            "invoice_no": "Invoice No.",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "state": "State",
+            "remark": "Remark",
+            "subtotal_amount": "Total",
+            "total_amount": "Balance",
+            "damaged_at": "Damaged At"
+        },
+        "entry": {
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "state": "State",
+            "remark": "Remark",
+            "damaged_at": "Damaged At",
+            "search_item": "Search barcode",
+
+            "product": "Name",
+            "quantity": "Quantity",
+            "unit_price": "Unit Price",
+            "subtotal_amount": "Total",
+            "total_amount": "Balance"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "subtotal_amount": "ပေါင်း",
+            "total_amount": "သင့်ငွေ",
+            "damaged_at": "ပျက်စီးရက်စွဲ"
+        },
+        "entry": {
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "damaged_at": "ပျက်စီးရက်စွဲ",
+            "search_item": "ဘားကုတ်ဖြင့် ရှာပါ",
+
+            "product": "အမျိုးအမည်",
+            "quantity": "အရေအတွက်",
+            "unit_price": "စျေးနှုန်း",
+            "subtotal_amount": "ပေါင်း",
+            "total_amount": "သင့်ငွေ"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "subtotal_amount": "รวม",
+            "total_amount": "ยอดรวม",
+            "damaged_at": "วันที่เสียหาย"
+        },
+        "entry": {
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "damaged_at": "วันที่เสียหาย",
+            "search_item": "ค้นหาด้วยบาร์โค้ด",
+
+            "product": "ชื่อสินค้า",
+            "quantity": "จำนวน",
+            "unit_price": "ราคา",
+            "subtotal_amount": "รวม",
+            "total_amount": "ยอดรวม"
+        }
+    }
+}

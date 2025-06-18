@@ -1,0 +1,47 @@
+{
+    "en_US": {
+        "pay": "Pay",
+        "hold": "Hold",
+        "apply": "Apply",
+        "cancel": "Clear All",
+
+        "customer": "Customer",
+        "refund": "Refund",
+        "hold_list": "Hold List",
+        "shop_cart": "Shopping Cart",
+
+        "customer_name": "Name",
+        "pay_method": "Choose Payment",
+        "description": "Write Note"
+    },
+    "my_MM": {
+        "pay": "ပေးချေ",
+        "hold": "ရပ်ထား",
+        "apply": "သုံးမည်",
+        "cancel": "ရှင်းလင်း",
+
+        "customer": "ဝယ်ယူသူ",
+        "refund": "အလဲအလှယ်",
+        "hold_list": "ရပ်ထားပြေစာ",
+        "shop_cart": "စျေးခြင်းတောင်း",
+
+        "customer_name": "အမည်",
+        "pay_method": "ငွေချေနည်းရွေးပါ",
+        "description": "မှတ်ချက်ရေးပါ"
+    },
+    "th_TH": {
+        "pay": "ชำระเงิน",
+        "hold": "ระงับ",
+        "apply": "ใช้",
+        "cancel": "ยกเลิก",
+
+        "customer": "ลูกค้า",
+        "refund": "คืนเงิน",
+        "hold_list": "ใบแจ้งหนี้ที่ระงับ",
+        "shop_cart": "ตะกร้าสินค้า",
+
+        "customer_name": "ชื่อ",
+        "pay_method": "เลือกวิธีการชำระเงิน",
+        "description": "หมายเหตุ"
+    }
+}

@@ -1,0 +1,2144 @@
+[
+    {
+        "menuid": "dashboard",
+        "url": "/",
+        "title": "Dashboard",
+        "icon": "bi bi-speedometer",
+        "access": false,
+        "active": false,
+        "submenu": []
+    },
+    {
+        "menuid": "pos_panel",
+        "url": "/pos-panel",
+        "title": "POS Panel",
+        "icon": "bi bi-receipt-cutoff",
+        "access": false,
+        "active": false,
+        "submenu": []
+    },
+    {
+        "menuid": "admin",
+        "url": "#",
+        "title": "Users",
+        "icon": "bi bi-passport",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "user",
+                "url": "/users",
+                "title": "User",
+                "icon": "bi bi-person-check",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/users",
+                    "title": "User list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "System"
+                        },
+                        {
+                            "url": "",
+                            "text": "User list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/user",
+                    "title": "Add/edit user",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "System"
+                        },
+                        {
+                            "url": "/users",
+                            "text": "User list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "role",
+                "url": "/user-roles",
+                "title": "User role",
+                "icon": "bi bi-person-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/user-roles",
+                    "title": "User role list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "System"
+                        },
+                        {
+                            "url": "",
+                            "text": "User role list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/user-role",
+                    "title": "Add/edit user role",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "System"
+                        },
+                        {
+                            "url": "/user-roles",
+                            "text": "User role list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "owner",
+        "url": "#",
+        "title": "Owners",
+        "icon": "bi bi-file-person",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "owner_type",
+                "url": "/owner-types",
+                "title": "Type",
+                "icon": "bi bi-list",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/owner-types",
+                    "title": "Owner type list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Owner"
+                        },
+                        {
+                            "url": "",
+                            "text": "Type list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/owner-type",
+                    "title": "Add/edit owner type",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Owner"
+                        },
+                        {
+                            "url": "/owner-types",
+                            "text": "Type list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "owner",
+                "url": "/owners",
+                "title": "Owner",
+                "icon": "bi bi-people",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/owners",
+                    "title": "Owner",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Owner"
+                        },
+                        {
+                            "url": "",
+                            "text": "Owner list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/owner",
+                    "title": "Add/edit owner",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Owner"
+                        },
+                        {
+                            "url": "/owners",
+                            "text": "Owner list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "store",
+        "url": "#",
+        "title": "Stores",
+        "icon": "bi bi-cart2",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "store_type",
+                "url": "/store-types",
+                "title": "Type",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/store-types",
+                    "title": "Store type list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Store"
+                        },
+                        {
+                            "url": "",
+                            "text": "Type list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store-type",
+                    "title": "Add/edit store type",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Store"
+                        },
+                        {
+                            "url": "/store-types",
+                            "text": "Type list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "store",
+                "url": "/stores",
+                "title": "Store",
+                "icon": "bi bi-cart2",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/stores",
+                    "title": "Store",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Store"
+                        },
+                        {
+                            "url": "",
+                            "text": "Store list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store",
+                    "title": "Add/edit store",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Store"
+                        },
+                        {
+                            "url": "/stores",
+                            "text": "Store list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "employee",
+        "url": "#",
+        "title": "Employees",
+        "icon": "bi bi-person-badge",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "employee_type",
+                "url": "/employee-types",
+                "title": "Type",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/employee-types",
+                    "title": "Employee type list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Employee"
+                        },
+                        {
+                            "url": "",
+                            "text": "Type list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/employee-type",
+                    "title": "Add/edit employee type",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Employee"
+                        },
+                        {
+                            "url": "/employee-types",
+                            "text": "Type list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "holiday",
+                "url": "/holidays",
+                "title": "Holiday",
+                "icon": "bi bi-calendar-day",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/holidays",
+                    "title": "Holiday list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Employee"
+                        },
+                        {
+                            "url": "",
+                            "text": "Holiday list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/holiday",
+                    "title": "Add/edit holiday",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Employee"
+                        },
+                        {
+                            "url": "/holidays",
+                            "text": "Holiday list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "employee",
+                "url": "/employees",
+                "title": "Employee",
+                "icon": "bi bi-people",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/employees",
+                    "title": "Employee list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Employee"
+                        },
+                        {
+                            "url": "",
+                            "text": "Employee list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/employee",
+                    "title": "Add/edit employee",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Employee"
+                        },
+                        {
+                            "url": "/employees",
+                            "text": "Employee list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "customer",
+        "url": "#",
+        "title": "Customers",
+        "icon": "bi bi-file-earmark-person",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "customer_type",
+                "url": "/customer-types",
+                "title": "Type",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/customer-types",
+                    "title": "Customer type list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Customer"
+                        },
+                        {
+                            "url": "",
+                            "text": "Type list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/customer-type",
+                    "title": "Add/edit customer type",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Customer"
+                        },
+                        {
+                            "url": "/customer-types",
+                            "text": "Type list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "customer",
+                "url": "/customers",
+                "title": "Customer",
+                "icon": "bi bi-people",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/customers",
+                    "title": "Customer",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Customer"
+                        },
+                        {
+                            "url": "",
+                            "text": "Customer list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/customer",
+                    "title": "Add/edit edit",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Customer"
+                        },
+                        {
+                            "url": "/customers",
+                            "text": "Customer list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "supplier",
+        "url": "#",
+        "title": "Suppliers",
+        "icon": "bi bi-truck",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "supplier_type",
+                "url": "/supplier-types",
+                "title": "Type",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/supplier-types",
+                    "title": "Supplier type list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Supplier"
+                        },
+                        {
+                            "url": "",
+                            "text": "Type list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/supplier-type",
+                    "title": "Add/edit supplier type",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Supplier"
+                        },
+                        {
+                            "url": "/supplier-types",
+                            "text": "Type list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "supplier",
+                "url": "/suppliers",
+                "title": "Company",
+                "icon": "bi bi-building",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/suppliers",
+                    "title": "Company list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Supplier"
+                        },
+                        {
+                            "url": "",
+                            "text": "Company list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/supplier",
+                    "title": "Add/edit company",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Supplier"
+                        },
+                        {
+                            "url": "/suppliers",
+                            "text": "Company list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "catalogue",
+        "url": "#",
+        "title": "Catalogues",
+        "icon": "bi bi-box",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "category",
+                "url": "/categories",
+                "title": "Category",
+                "icon": "bi bi-list-ul",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/categories",
+                    "title": "Category list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "",
+                            "text": "Category list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/category",
+                    "title": "Add/edit category",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "/categories",
+                            "text": "Category list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sub_category",
+                "url": "/sub-categories",
+                "title": "Sub category",
+                "icon": "bi bi-list-task",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sub-categories",
+                    "title": "Sub category list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "",
+                            "text": "Sub category list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sub-category",
+                    "title": "Add/edit sub category",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "/sub-categories",
+                            "text": "Sub category list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "product",
+                "url": "/products",
+                "title": "Product",
+                "icon": "bi bi-box-seam",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/products",
+                    "title": "Product list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "",
+                            "text": "Product list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/product",
+                    "title": "Add/edit product",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "/products",
+                            "text": "Product list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "variant",
+                "url": "/variants",
+                "title": "Variant",
+                "icon": "bi bi-boxes",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/variants",
+                    "title": "Variant list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "",
+                            "text": "Variant list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/variant",
+                    "title": "Add/edit variant",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Catalogue"
+                        },
+                        {
+                            "url": "/variants",
+                            "text": "Variant list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "accounting",
+        "url": "#",
+        "title": "Accounting",
+        "icon": "bi bi-calculator",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "payable",
+                "url": "/acc-payables",
+                "title": "Payable",
+                "icon": "bi bi-file-minus",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/acc-payables",
+                    "title": "Payable list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Payable list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/acc-payable",
+                    "title": "Add/edit payable",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "/acc-payables",
+                            "text": "Payable list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "receivable",
+                "url": "/acc-receivables",
+                "title": "Receivable",
+                "icon": "bi bi-file-plus",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/acc-receivables",
+                    "title": "Receivable list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Receivable list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/acc-receivable",
+                    "title": "Add/edit receivable",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "/acc-receivables",
+                            "text": "Receivable list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "ledger_daily",
+                "url": "/daily-ledgers",
+                "title": "Daily Ledger",
+                "icon": "bi bi-journal-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/daily-ledgers",
+                    "title": "Daily ledger list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Daily ledger list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/daily-ledger",
+                    "title": "View daily ledger",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "/daily-ledgers",
+                            "text": "Daily ledger list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "sales",
+        "url": "#",
+        "title": "Sales",
+        "icon": "bi bi-bag-heart",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "sale_order",
+                "url": "/sale-orders",
+                "title": "Order",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-orders",
+                    "title": "Order list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "",
+                            "text": "Order list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-order",
+                    "title": "Add/edit order",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "/sale-orders",
+                            "text": "Order list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sale_invoice",
+                "url": "/sale-invoices",
+                "title": "Invoice",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-invoices",
+                    "title": "Invoice list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "",
+                            "text": "Invoice list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-invoice",
+                    "title": "View invoice",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "/sale-invoices",
+                            "text": "Invoice list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sale_refund",
+                "url": "/sale-refunds",
+                "title": "Refund",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-refunds",
+                    "title": "Refund list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "",
+                            "text": "Refund list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-refund",
+                    "title": "Add/edit refund",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "/sale-refunds",
+                            "text": "Refund list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "control_price",
+                "url": "/control-prices",
+                "title": "Pricing",
+                "icon": "bi bi-tags",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/control-prices",
+                    "title": "Pricing",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "",
+                            "text": "Pricing"
+                        }
+                    ]
+                },
+                "starter": {
+                    "url": "/control-price",
+                    "title": "Start control price",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "Pricing"
+                        }
+                    ]
+                },
+                "chosen": {
+                    "url": "/control-price",
+                    "title": "Chose method",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "Pricing"
+                        },
+                        {
+                            "url": "",
+                            "text": "Choose method"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/control-price",
+                    "title": "Add control price",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "Pricing"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "purchase",
+        "url": "#",
+        "title": "Purchases",
+        "icon": "bi bi-bag-plus",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "purchase_invoice",
+                "url": "/purchase-invoices",
+                "title": "Invoice",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/purchase-invoices",
+                    "title": "Invoice list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Purchase"
+                        },
+                        {
+                            "url": "",
+                            "text": "Invoice list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/purchase-invoice",
+                    "title": "Add/edit invoice",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Purchase"
+                        },
+                        {
+                            "url": "/purchase-invoices",
+                            "text": "Invoice list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "expense",
+                "url": "/expenses",
+                "title": "Expense",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/expenses",
+                    "title": "Expense list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Purchase"
+                        },
+                        {
+                            "url": "",
+                            "text": "Expense list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/expense",
+                    "title": "Add/edit expense",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Purchase"
+                        },
+                        {
+                            "url": "/expenses",
+                            "text": "Expense list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "inventory",
+        "url": "#",
+        "title": "Inventory",
+        "icon": "bi bi-building-gear",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "damage_invoice",
+                "url": "/damage-invoices",
+                "title": "Damage",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/damage-invoices",
+                    "title": "Damage list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "",
+                            "text": "Damage list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/damage-invoice",
+                    "title": "Add/edit damage",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "/damage-invoices",
+                            "text": "Damage list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "adjust_stock",
+                "url": "/adjust-stocks",
+                "title": "Adjustment",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/adjust-stocks",
+                    "title": "Adjustment list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "",
+                            "text": "Adjustment list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/adjust-stock",
+                    "title": "Add/edit adjustment",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "/adjust-stocks",
+                            "text": "Adjustment list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "promotion",
+        "url": "#",
+        "title": "Promotions",
+        "icon": "bi bi-percent",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "coupon_type",
+                "url": "/coupon-types",
+                "title": "Coupon type",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/coupon-types",
+                    "title": "Coupon type list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "",
+                            "text": "Coupon type list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/coupon-type",
+                    "title": "Add/edit coupon type",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "/coupon-types",
+                            "text": "Coupon type list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "coupon_code",
+                "url": "/coupon-codes",
+                "title": "Coupon code",
+                "icon": "bi bi-ticket-detailed",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/coupon-codes",
+                    "title": "Coupon code list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "",
+                            "text": "Coupon code list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/coupon-code",
+                    "title": "Add/edit coupon code",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Promotion"
+                        },
+                        {
+                            "url": "/coupon-codes",
+                            "text": "Coupon code list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "reporting",
+        "url": "#",
+        "title": "Reports",
+        "icon": "bi bi-pie-chart",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "daily_sale",
+                "url": "/daily-sales",
+                "title": "Daily Sales",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/daily-sales",
+                    "title": "Daily sales",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Report"
+                        },
+                        {
+                            "url": "",
+                            "text": "Daily sales"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "weekly_sale",
+                "url": "/weekly-sales",
+                "title": "Weekly Sales",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/weekly-sales",
+                    "title": "Weekly sales",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Report"
+                        },
+                        {
+                            "url": "",
+                            "text": "Weekly sales"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "monthly_sale",
+                "url": "/monthly-sales",
+                "title": "Monthly Sales",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/monthly-sales",
+                    "title": "Monthly sales",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Report"
+                        },
+                        {
+                            "url": "",
+                            "text": "Monthly sales"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "yearly_profit_loss",
+                "url": "/yearly-profit-loss",
+                "title": "Profit/Loss",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/yearly-profit-loss",
+                    "title": "Profit/Loss",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Report"
+                        },
+                        {
+                            "url": "",
+                            "text": "Profit/Loss"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "top_sales_items",
+                "url": "/top-sales-items",
+                "title": "Top Selling",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/top-sales-items",
+                    "title": "Top Selling Items",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Report"
+                        },
+                        {
+                            "url": "",
+                            "text": "Top Selling Items"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "setting",
+        "url": "#",
+        "title": "Settings",
+        "icon": "bi bi-sliders",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "account",
+                "url": "/account",
+                "title": "Account",
+                "icon": "bi bi-person-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/account",
+                    "title": "Account",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Account"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/account",
+                    "title": "Edit account",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Account"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "notification",
+                "url": "/notifications",
+                "title": "Notification",
+                "icon": "bi bi-bell",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/notifications",
+                    "title": "Notification list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Notification list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/notification",
+                    "title": "View notification",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "/notifications",
+                            "text": "Notification list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "setting",
+                "url": "/setting",
+                "title": "Setting",
+                "icon": "bi bi-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/setting",
+                    "title": "Setting",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Account setting"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/setting",
+                    "title": "Edit account setting",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Account setting"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "store_setting",
+                "url": "/store-settings",
+                "title": "Store setting",
+                "icon": "bi bi-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/store-settings",
+                    "title": "Store setting list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Store setting list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store-setting",
+                    "title": "Add/edit store setting",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "/store-settings",
+                            "text": "Store setting list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "general",
+        "url": "#",
+        "title": "Datahub",
+        "icon": "bi bi-database-gear",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "city",
+                "url": "/cities",
+                "title": "Region",
+                "icon": "bi bi-geo-alt",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/cities",
+                    "title": "Region list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "Region list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/city",
+                    "title": "Add/edit region",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/cities",
+                            "text": "Region list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "township",
+                "url": "/townships",
+                "title": "Township",
+                "icon": "bi bi-building",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/townships",
+                    "title": "Township list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "Township list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/township",
+                    "title": "Add/edit township",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/townships",
+                            "text": "Township list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "currency",
+                "url": "/currencies",
+                "title": "Currency",
+                "icon": "bi bi-coin",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/currencies",
+                    "title": "Currency list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "Currency list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/currency",
+                    "title": "Add/edit currency",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/currencies",
+                            "text": "Currency list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "bank",
+                "url": "/banks",
+                "title": "Pay method",
+                "icon": "bi bi-wallet2",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/banks",
+                    "title": "Pay method list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "Pay method list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/bank",
+                    "title": "Add/edit pay method",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/banks",
+                            "text": "Pay method list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "developer",
+        "url": "#",
+        "title": "Developer",
+        "icon": "bi bi-braces",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "application",
+                "url": "/application",
+                "title": "Application",
+                "icon": "bi bi-app-indicator",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/application",
+                    "title": "Application",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Application"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/application",
+                    "title": "Edit application",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Application"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "subscription_plan",
+                "url": "/subscription-plans",
+                "title": "Subscription",
+                "icon": "bi bi-heart",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/subscription-plans",
+                    "title": "Subscription list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Subscription list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/subscription-plan",
+                    "title": "Add/edit subscription",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "/subscription-plans",
+                            "text": "Subscription list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "config_app",
+                "url": "/config-apps",
+                "title": "Config app",
+                "icon": "bi bi-code-slash",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/config-apps",
+                    "title": "Config app list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Config app list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/config-app",
+                    "title": "Add/edit configure app",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "/config-apps",
+                            "text": "Config app list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "import_data",
+                "url": "/import-data",
+                "title": "Import data",
+                "icon": "bi bi-arrow-up",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/import-data",
+                    "title": "Import data",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Import data"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/import-data",
+                    "title": "Import data",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Import data"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    }
+]

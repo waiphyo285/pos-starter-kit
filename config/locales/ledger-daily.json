@@ -1,0 +1,65 @@
+{
+    "en_US": {
+        "list": {
+            "date": "Date",
+            "store_name": "Store Name",
+            "total_credit": "Total Credit",
+            "total_debit": "Total Debit",
+            "balance": "Balance"
+        },
+        "entry": {
+            "date": "Date",
+            "store_name": "Store Name",
+            "total_credit": "Total Credit",
+            "total_debit": "Total Debit",
+            "balance": "Balance",
+
+            "invoice_no": "Invoice No",
+            "invoice_type": "Invoice Type",
+            "account_type": "Account Type",
+            "amount": "Amount"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "date": "ရက်စွဲ",
+            "store_name": "ဆိုင်အမည်",
+            "total_credit": "စုစုပေါင်းပေးရန်ရှိ",
+            "total_debit": "စုစုပေါင်းရရန်ရှိ",
+            "balance": "လက်ကျန်"
+        },
+        "entry": {
+            "date": "ရက်စွဲ",
+            "store_name": "ဆိုင်အမည်",
+            "total_credit": "စုစုပေါင်းပေးရန်ရှိ",
+            "total_debit": "စုစုပေါင်းရရန်ရှိ",
+            "balance": "လက်ကျန်",
+
+            "invoice_no": "အမှာစာအမှတ်",
+            "invoice_type": "အမှာစာအမျိုးအစား",
+            "account_type": "အကောင့်အမျိုးအစား",
+            "amount": "ပမာဏ"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "date": "วันที่",
+            "store_name": "ชื่อร้าน",
+            "total_credit": "ยอดเครดิตรวม",
+            "total_debit": "ยอดเดบิตรวม",
+            "balance": "ยอดคงเหลือ"
+        },
+        "entry": {
+            "date": "วันที่",
+            "store_name": "ชื่อร้าน",
+            "total_credit": "ยอดเครดิตรวม",
+            "total_debit": "ยอดเดบิตรวม",
+            "balance": "ยอดคงเหลือ",
+
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "invoice_type": "ประเภทใบแจ้งหนี้",
+            "account_type": "ประเภทบัญชี",
+            "amount": "จำนวนเงิน"
+        }
+    }
+}

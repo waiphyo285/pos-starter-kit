@@ -1,0 +1,91 @@
+extends ../../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../../includes/list/list-style
+    
+    .d-flex(style="height: 42px;")
+      include ./../../includes/list/list-title
+        block extend-text 
+          |  - !{data.cur_day}
+      include ./../../includes/list/list-history
+
+    .col-12.my-3
+      .row
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  i.bi.bi-coin.text-success.float-left(style='font-size: 32px')
+                .media-body.text-right
+                  h6 !{data.sales}
+                  span.text-secondary !{content.sales}
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  i.bi.bi-coin.text-primary.float-left(style='font-size: 32px')
+                .media-body.text-right
+                  h6 !{data.purchases}
+                  span.text-secondary !{content.purchases}
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  i.bi.bi-coin.text-warning.float-left(style='font-size: 32px')
+                .media-body.text-right
+                  h6 !{data.expenses}
+                  span.text-secondary !{content.expenses}
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  -var textColor = data.profits.includes('-') ? 'text-danger' : ''
+                  i.bi.bi-coin.text-info.float-left(style='font-size: 32px' class=textColor)
+                .media-body.text-right
+                  h6 !{data.profits}
+                  span.text-secondary !{content.profit_loss}
+
+    table#example.table.table-striped(style='width:100%')
+      thead
+        tr
+          th #
+          th !{content.issued_at}
+          th.text-center !{content.subtotal_amount}
+          th.text-center !{content.discount_amount}
+          th.text-center !{content.tax_amount}
+          th.text-center !{content.total_amount}
+      tbody
+
+  include ./../../includes/list/list-script
+
+  script.
+    $(document).ready(function() {
+      $.fn.dataTable.ext.errMode = 'none';
+      $.fn.dataTable.ext.classes.sPageButton = 'btn material-button material-button-sm material-primary m-1'; 
+
+      table = $('#example').on('error.dt', dataTableCallback)
+        .DataTable({
+          ...dataTableDef('!{page.list.title}'),
+          "ajax": fetchDataDef(v1 + '!{page.list.url}'),
+          "columns": [
+            { "data": "_id" },
+            { "data": "issued_at" },
+            { "data": "subtotal_amount"},
+            { "data": "discount_amount" },
+            { "data": "tax_amount" },
+            { "data": "total_amount" },
+          ],
+          "columnDefs": [
+            { targets: 0, render: dataTableIndexRenderer() },
+            { targets: 1, render: dataTableDateRenderer() },
+            { targets: 2, render: dataTableNumberRenderer() },
+            { targets: 3, render: dataTableNumberRenderer() },
+            { targets: 4, render: dataTableNumberRenderer() },
+            { targets: 5, render: dataTableNumberRenderer() },
+          ]
+      });
+    })

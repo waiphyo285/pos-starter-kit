@@ -1,0 +1,50 @@
+{
+    "en_US": {
+        "list": {
+            "image": "Image",
+            "title": "Title",
+            "message": "Message",
+            "store_name": "Store Name",
+            "priority": "Priority"
+        },
+        "entry": {
+            "image": "Image",
+            "title": "Title",
+            "message": "Message",
+            "store_name": "Store Name",
+            "priority": "Priority"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "image": "ပုံ",
+            "title": "ခေါင်းစဉ်",
+            "message": "စာတို",
+            "store_name": "ဆိုင်အမည်",
+            "priority": "ဦးစားပေး"
+        },
+        "entry": {
+            "image": "ပုံ",
+            "title": "ခေါင်းစဉ်",
+            "message": "စာတို",
+            "store_name": "ဆိုင်အမည်",
+            "priority": "ဦးစားပေး"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "image": "ภาพ",
+            "title": "หัวข้อ",
+            "message": "ข้อความ",
+            "store_name": "ชื่อร้าน",
+            "priority": "ลำดับความสำคัญ"
+        },
+        "entry": {
+            "image": "ภาพ",
+            "title": "หัวข้อ",
+            "message": "ข้อความ",
+            "store_name": "ชื่อร้าน",
+            "priority": "ลำดับความสำคัญ"
+        }
+    }
+}

@@ -1,0 +1,59 @@
+extends ../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/entry/entry-header2
+    +entryHeader({ titleKey: "chosen", breadcrumbKey: 'chosen' })
+
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='presentation')
+        button#information-tab.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+          
+
+    #myTabContent.tab-content
+      #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')
+    
+       .row
+          .col-sm-6.col-md-4.col-xl-3.mb-4
+            .border.rounded.d-flex.flex-column.h-100
+              .card-header
+                .d-flex.justify-content-between
+                  h6.chosen-header.pt-2
+                    i.bi.bi-box
+                    |  By each
+                    
+              .card-body
+                p.chosen-description 
+                  | Manage individual items with ease, adjusting pricing and details as needed.
+
+              .card-footer
+                .d-flex.justify-content-center
+                  .btn-group.btn-group-md
+                    a.btn.btn-light(href=`/control-prices/${data.category}/by-each` type='button')
+                      i.bi.bi-arrow-right
+                      |   Go
+
+          .col-sm-6.col-md-4.col-xl-3.mb-4
+            .border.rounded.d-flex.flex-column.h-100
+              .card-header
+                .d-flex.justify-content-between
+                  h6.chosen-header.pt-2
+                    i.bi.bi-boxes
+                    |  By category
+                    
+              .card-body
+                p.chosen-description 
+                  | Organize and adjust pricing for entire categories efficiently, ensuring consistency.
+
+              .card-footer
+                .d-flex.justify-content-center
+                  .btn-group.btn-group-md
+                    a.btn.btn-light(href=`/control-prices/${data.category}/by-category` type='button')
+                      i.bi.bi-arrow-right
+                      |   Go
+
+  script.
+    $(document).ready(function() {
+        // 
+    });

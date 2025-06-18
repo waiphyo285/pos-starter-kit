@@ -1,0 +1,92 @@
+{
+    "en_US": {
+        "list": {
+            "phone": "Phone Number",
+            "username": "Username",
+            "user_type": "User Type",
+
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "employee_name": "Employee Name",
+
+            "access_role": "Access Role",
+            "access_level": "Access Level",
+
+            "theme": "Theme",
+            "locale": "Locale"
+        },
+        "entry": {
+            "phone": "Phone Number",
+            "user_type": "User Type",
+            "username": "Username",
+            "password": "Password",
+
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "employee_name": "Employee Name",
+
+            "access_role": "Access Role",
+            "access_level": "Access Level"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "phone": "ဖုန်းနံပါတ်",
+            "username": "အသုံးပြုသူအမည်",
+            "user_type": "အသုံးပြုသူအမျိုးအစား",
+
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "စျေးဆိုင်အမည်",
+            "employee_name": "ဝန်ထမ်းအမည်",
+
+            "access_role": "အဆင့်",
+            "access_level": "သတ်မှတ်ချက်",
+
+            "theme": "အရောင်",
+            "locale": "ဘာသာစကား"
+        },
+        "entry": {
+            "phone": "ဖုန်းနံပါတ်",
+            "username": "အသုံးပြုသူအမည်",
+            "user_type": "အသုံးပြုသူအမျိုးအစား",
+            "password": "လျို့ဝှက်နံပါတ်",
+
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "စျေးဆိုင်အမည်",
+            "employee_name": "ဝန်ထမ်းအမည်",
+
+            "access_role": "အဆင့်",
+            "access_level": "သတ်မှတ်ချက်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "phone": "หมายเลขโทรศัพท์",
+            "username": "ชื่อผู้ใช้",
+            "user_type": "ประเภทผู้ใช้",
+
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "employee_name": "ชื่อพนักงาน",
+
+            "access_role": "ระดับ",
+            "access_level": "ข้อกำหนด",
+
+            "theme": "ธีม",
+            "locale": "ภาษา"
+        },
+        "entry": {
+            "phone": "หมายเลขโทรศัพท์",
+            "username": "ชื่อผู้ใช้",
+            "user_type": "ประเภทผู้ใช้",
+            "password": "รหัสผ่าน",
+
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "employee_name": "ชื่อพนักงาน",
+
+            "access_role": "ระดับ",
+            "access_level": "ข้อกำหนด"
+        }
+    }
+}

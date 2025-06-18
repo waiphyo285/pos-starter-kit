@@ -1,0 +1,62 @@
+{
+    "en_US": {
+        "list": {
+            "plan_type": "Plan Type",
+            "max_store": "Max Store",
+            "max_user": "Max User",
+            "max_item": "Max Item",
+            "max_device": "Max Device",
+            "all_module": "All Module",
+            "duration": "Duration (Month)"
+        },
+        "entry": {
+            "plan_type": "Plan Type",
+            "max_store": "Max Store",
+            "max_user": "Max User",
+            "max_item": "Max Item",
+            "max_device": "Max Device",
+            "all_module": "All Module",
+            "duration": "Duration (Month)"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "plan_type": "Plan အမျိုးအစား",
+            "max_store": "ဆိုင်အရေတွက် (Max)",
+            "max_user": "အသုံးပြုသူအရေတွက် (Max)",
+            "max_item": "ပစ္စည်းအရေတွက် (Max)",
+            "max_device": "Device (Max)",
+            "all_module": " Device အားလုံး",
+            "duration": "ကာလ (Month)"
+        },
+        "entry": {
+            "plan_type": "Plan အမျိုးအစား",
+            "max_store": "ဆိုင်အရေတွက် (Max)",
+            "max_user": "အသုံးပြုသူအရေတွက် (Max)",
+            "max_item": "ပစ္စည်းအရေတွက် (Max)",
+            "max_device": "Device (Max)",
+            "all_module": " Device အားလုံး",
+            "duration": "ကာလ (Month)"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "plan_type": "ประเภทแผน",
+            "max_store": "จำนวนร้านค้า (สูงสุด)",
+            "max_user": "จำนวนผู้ใช้ (สูงสุด)",
+            "max_item": "จำนวนสินค้า (สูงสุด)",
+            "max_device": "อุปกรณ์ (สูงสุด)",
+            "all_module": "อุปกรณ์ทั้งหมด",
+            "duration": "ระยะเวลา (เดือน)"
+        },
+        "entry": {
+            "plan_type": "ประเภทแผน",
+            "max_store": "จำนวนร้านค้า (สูงสุด)",
+            "max_user": "จำนวนผู้ใช้ (สูงสุด)",
+            "max_item": "จำนวนสินค้า (สูงสุด)",
+            "max_device": "อุปกรณ์ (สูงสุด)",
+            "all_module": "อุปกรณ์ทั้งหมด",
+            "duration": "ระยะเวลา (เดือน)"
+        }
+    }
+}

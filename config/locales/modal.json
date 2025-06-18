@@ -1,0 +1,47 @@
+{
+    "en_US": {
+        "warning": "Warning",
+        "success": "Success",
+        "shop_cart": "Shopping cart",
+        "new_customer": "New customer",
+        "link_person": "Link account",
+        "unlink_person": "Unlink account",
+        "change_theme": "Change theme",
+        "new_template": "New template",
+        "filter_table": "Filter table",
+        "print_barcode": "Print barcode",
+        "edit_plan": "Edit subscription",
+        "subscribe_plan": "Subscribe plan",
+        "subscription_plan": "Subscription plan"
+    },
+    "my_MM": {
+        "warning": "သတိ",
+        "success": "အောင်မြင်",
+        "shop_cart": "စျေးဝယ်ခြင်းတောင်း",
+        "new_customer": "ဝယ်ယူသူထည့်ပါ",
+        "link_person": "အကောင့် ချိတ်မည်",
+        "unlink_person": "အကောင့် ဖြုတ်မည်",
+        "change_theme": "အရောင် ပြောင်းမည်",
+        "new_template": "အပိုင်းသစ် ယူမည်",
+        "filter_table": "ဇယား စစ်ထုတ်ပါ",
+        "print_barcode": "ဘားကုဒ် ထုတ်ပါ",
+        "edit_plan": "စာရင်းပြင်မည်",
+        "subscribe_plan": "စာရင်းသွင်းမည်",
+        "subscription_plan": "စာရင်းသွင်းရန်"
+    },
+    "th_TH": {
+        "warning": "คำเตือน",
+        "success": "สำเร็จ",
+        "shop_cart": "ตะกร้าสินค้า",
+        "new_customer": "เพิ่มลูกค้าใหม่",
+        "link_person": "เชื่อมต่อบัญชี",
+        "unlink_person": "ยกเลิกการเชื่อมต่อบัญชี",
+        "change_theme": "เปลี่ยนธีม",
+        "new_template": "ใช้เทมเพลตใหม่",
+        "filter_table": "กรองตาราง",
+        "print_barcode": "พิมพ์บาร์โค้ด",
+        "edit_plan": "แก้ไขแผน",
+        "subscribe_plan": "สมัครแผน",
+        "subscription_plan": "แผนการสมัคร"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "en_US": {
+        "list": {
+            "city_mm": "Name",
+            "description": "Description"
+        },
+        "entry": {
+            "city_mm": "Name",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "city_mm": "အမည်",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "city_mm": "အမည်",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "city_mm": "ชื่อ",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "city_mm": "ชื่อ",
+            "description": "รายละเอียด"
+        }
+    }
+}

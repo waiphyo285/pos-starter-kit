@@ -1,0 +1,29 @@
+{
+    "en_US": {
+        "entry": {
+            "theme": "Theme",
+            "locale": "Locale",
+            "currency": "Currency",
+            "rounding": "Rounding",
+            "timezone": "Timezone"
+        }
+    },
+    "my_MM": {
+        "entry": {
+            "theme": "အရောင်",
+            "locale": "ဘာသာစကား",
+            "currency": "ငွေကြေး",
+            "rounding": "Rounding",
+            "timezone": "Timezone"
+        }
+    },
+    "th_TH": {
+        "entry": {
+            "theme": "ธีม",
+            "locale": "ภาษา",
+            "currency": "สกุลเงิน",
+            "rounding": "การปัดเศษ",
+            "timezone": "เขตเวลา"
+        }
+    }
+}

@@ -1,0 +1,2144 @@
+[
+    {
+        "menuid": "dashboard",
+        "url": "/",
+        "title": "စီမံခန့်ခွဲရန်",
+        "icon": "bi bi-speedometer",
+        "access": false,
+        "active": false,
+        "submenu": []
+    },
+    {
+        "menuid": "pos_panel",
+        "url": "/pos-panel",
+        "title": "အ‌ရောင်းစနစ်",
+        "icon": "bi bi-receipt-cutoff",
+        "access": false,
+        "active": false,
+        "submenu": []
+    },
+    {
+        "menuid": "admin",
+        "url": "#",
+        "title": "အသုံးပြုသူများ",
+        "icon": "bi bi-passport",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "user",
+                "url": "/users",
+                "title": "အသုံးပြုသူ",
+                "icon": "bi bi-person-check",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/users",
+                    "title": "အသုံးပြုသူများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စနစ်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသုံးပြုသူများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/user",
+                    "title": "အသုံးပြုသူ ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စနစ်"
+                        },
+                        {
+                            "url": "/users",
+                            "text": "အသုံးပြုသူများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "role",
+                "url": "/user-roles",
+                "title": "သတ်မှတ်ချက်",
+                "icon": "bi bi-person-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/user-roles",
+                    "title": "သတ်မှတ်ချက်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စနစ်"
+                        },
+                        {
+                            "url": "",
+                            "text": "သတ်မှတ်ချက်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/user-role",
+                    "title": "သတ်မှတ်ချက်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စနစ်"
+                        },
+                        {
+                            "url": "/user-roles",
+                            "text": "သတ်မှတ်ချက်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "owner",
+        "url": "#",
+        "title": "ဆိုင်ပိုင်ရှင်များ",
+        "icon": "bi bi-file-person",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "owner_type",
+                "url": "/owner-types",
+                "title": "အမျိုးအစား",
+                "icon": "bi bi-list",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/owner-types",
+                    "title": "အမျိုးအစားများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဆိုင်ပိုင်ရှင်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစားများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/owner-type",
+                    "title": "အမျိုးအစား ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဆိုင်ပိုင်ရှင်"
+                        },
+                        {
+                            "url": "/owner-types",
+                            "text": "အမျိုးအစားများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "owner",
+                "url": "/owners",
+                "title": "ဆိုင်ပိုင်ရှင်",
+                "icon": "bi bi-people",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/owners",
+                    "title": "ဆိုင်ပိုင်ရှင်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဆိုင်ပိုင်ရှင်"
+                        },
+                        {
+                            "url": "",
+                            "text": "ပိုင်ရှင်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/owner",
+                    "title": "ဆိုင်ပိုင်ရှင် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဆိုင်ပိုင်ရှင်"
+                        },
+                        {
+                            "url": "/owners",
+                            "text": "ပိုင်ရှင်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "store",
+        "url": "#",
+        "title": "စျေးဆိုင်များ",
+        "icon": "bi bi-cart2",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "store_type",
+                "url": "/store-types",
+                "title": "အမျိုးအစား",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/store-types",
+                    "title": "အမျိုးအစားများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စျေးဆိုင်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစားများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store-type",
+                    "title": "အမျိုးအစား ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စျေးဆိုင်"
+                        },
+                        {
+                            "url": "/store-types",
+                            "text": "အမျိုးအစားများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "store",
+                "url": "/stores",
+                "title": "စျေးဆိုင်",
+                "icon": "bi bi-cart2",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/stores",
+                    "title": "စျေးဆိုင်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စျေးဆိုင်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အရောင်းဆိုင်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store",
+                    "title": "စျေးဆိုင် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "စျေးဆိုင်"
+                        },
+                        {
+                            "url": "/stores",
+                            "text": "အရောင်းဆိုင်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "employee",
+        "url": "#",
+        "title": "ဝန်ထမ်းများ",
+        "icon": "bi bi-person-badge",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "employee_type",
+                "url": "/employee-types",
+                "title": "အမျိုးအစား",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/employee-types",
+                    "title": "အမျိုးအစားများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝန်ထမ်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစားများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/employee-type",
+                    "title": "အမျိုးအစား ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝန်ထမ်း"
+                        },
+                        {
+                            "url": "/employee-types",
+                            "text": "အမျိုးအစား"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "holiday",
+                "url": "/holidays",
+                "title": "အားလပ်ရက်",
+                "icon": "bi bi-calendar-day",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/holidays",
+                    "title": "အားလပ်ရက်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝန်ထမ်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "အားလပ်ရက်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/holiday",
+                    "title": "အားလပ်ရက်များ ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝန်ထမ်း"
+                        },
+                        {
+                            "url": "/holidays",
+                            "text": "အားလပ်ရက်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "employee",
+                "url": "/employees",
+                "title": "ဝန်ထမ်း",
+                "icon": "bi bi-people",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/employees",
+                    "title": "ဝန်ထမ်း",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝန်ထမ်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "ဝန်ထမ်းများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/employee",
+                    "title": "ဝန်ထမ်း ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝန်ထမ်း"
+                        },
+                        {
+                            "url": "/employees",
+                            "text": "ဝန်ထမ်းများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "customer",
+        "url": "#",
+        "title": "ဝယ်ယူသူများ",
+        "icon": "bi bi-file-earmark-person",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "customer_type",
+                "url": "/customer-types",
+                "title": "အမျိုးအစား",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/customer-types",
+                    "title": "အမျိုးအစားများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝယ်ယူသူ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစားများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/customer-type",
+                    "title": "အမျိုးအစား ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝယ်ယူသူ"
+                        },
+                        {
+                            "url": "/customer-types",
+                            "text": "အမျိုးအစားများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "customer",
+                "url": "/customers",
+                "title": "ဝယ်ယူသူ",
+                "icon": "bi bi-people",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/customers",
+                    "title": "ဝယ်ယူသူများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝယ်ယူသူ"
+                        },
+                        {
+                            "url": "",
+                            "text": "ဝယ်ယူသူများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/customer",
+                    "title": "ဝယ်ယူသူ ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ဝယ်ယူသူ"
+                        },
+                        {
+                            "url": "/customers",
+                            "text": "ဝယ်ယူသူများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "supplier",
+        "url": "#",
+        "title": "ကုန်သွင်းသူများ",
+        "icon": "bi bi-truck",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "supplier_type",
+                "url": "/supplier-types",
+                "title": "အမျိုးအစား",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/supplier-types",
+                    "title": "အမျိုးအစားများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်သွင်းသူ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစားများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/supplier-type",
+                    "title": "အမျိုးအစား ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်သွင်းသူ"
+                        },
+                        {
+                            "url": "/supplier-types",
+                            "text": "အမျိုးအစားများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "supplier",
+                "url": "/suppliers",
+                "title": "အဖွဲ့အစည်း",
+                "icon": "bi bi-building",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/suppliers",
+                    "title": "အဖွဲ့အစည်းများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်သွင်းသူ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အဖွဲ့အစည်းများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/supplier",
+                    "title": "အဖွဲ့အစည်း ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်သွင်းသူ"
+                        },
+                        {
+                            "url": "/suppliers",
+                            "text": "အဖွဲ့အစည်းများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "catalogue",
+        "url": "#",
+        "title": "ကုန်ပစ္စည်းများ",
+        "icon": "bi bi-box",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "category",
+                "url": "/categories",
+                "title": "အမျိုးအစား",
+                "icon": "bi bi-list-ul",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/categories",
+                    "title": "အမျိုးအစားများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစားများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/category",
+                    "title": "အမျိုးအစား ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "/categories",
+                            "text": "အမျိုးအစားများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sub_category",
+                "url": "/sub-categories",
+                "title": "အမျိုးအစားခွဲ",
+                "icon": "bi bi-list-task",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sub-categories",
+                    "title": "အမျိုးအစားခွဲများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစားခွဲများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sub-category",
+                    "title": "အမျိုးအစားခွဲ ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "/sub-categories",
+                            "text": "အမျိုးအစားခွဲများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "product",
+                "url": "/products",
+                "title": "ထုတ်ကုန်",
+                "icon": "bi bi-box-seam",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/products",
+                    "title": "ထုတ်ကုန်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "ထုတ်ကုန်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/product",
+                    "title": "ထုန်ကုန် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "/products",
+                            "text": "ထုတ်ကုန်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "variant",
+                "url": "/variants",
+                "title": "ထုတ်ကုန်ခွဲ",
+                "icon": "bi bi-boxes",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/variants",
+                    "title": "ထုတ်ကုန်ခွဲများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "ထုတ်ကုန်ခွဲများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/variant",
+                    "title": "ထုတ်ကုန်ခွဲ ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ကုန်ပစ္စည်း"
+                        },
+                        {
+                            "url": "/variants",
+                            "text": "ထုတ်ကုန်ခွဲများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "accounting",
+        "url": "#",
+        "title": "Accounting",
+        "icon": "bi bi-calculator",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "payable",
+                "url": "/acc-payables",
+                "title": "ပေးရန်ရှိစာရင်း",
+                "icon": "bi bi-file-minus",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/acc-payables",
+                    "title": "ပေးရန်ရှိစာရင်းများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "",
+                            "text": "ပေးရန်ရှိစာရင်းများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/acc-payable",
+                    "title": "ပေးရန်ရှိစာရင်း ကြည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "/acc-payables",
+                            "text": "ပေးရန်ရှိစာရင်းများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "receivable",
+                "url": "/acc-receivables",
+                "title": "ရရန်ရှိစာရင်း",
+                "icon": "bi bi-file-plus",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/acc-receivables",
+                    "title": "ရရန်ရှိစာရင်းများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "",
+                            "text": "ရရန်ရှိစာရင်းများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/acc-receivable",
+                    "title": "ရရန်ရှိစာရင်း ကြည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "/acc-receivables",
+                            "text": "ရရန်ရှိစာရင်းများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "ledger_daily",
+                "url": "/daily-ledgers",
+                "title": "Daily Ledger",
+                "icon": "bi bi-journal-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/daily-ledgers",
+                    "title": "Daily ledger list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Daily ledger list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/daily-ledger",
+                    "title": "View daily ledger",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Accounting"
+                        },
+                        {
+                            "url": "/daily-ledgers",
+                            "text": "Daily ledger list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "sales",
+        "url": "#",
+        "title": "အရောင်းများ",
+        "icon": "bi bi-bag-heart",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "sale_order",
+                "url": "/sale-orders",
+                "title": "အမှာစာ",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-orders",
+                    "title": "အမှာစာများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အရောင်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမှာစာများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-order",
+                    "title": "Add/edit order",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အရောင်း"
+                        },
+                        {
+                            "url": "/sale-orders",
+                            "text": "အမှာစာများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sale_invoice",
+                "url": "/sale-invoices",
+                "title": "ပြေစာများ",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-invoices",
+                    "title": "ပြေစာများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အရောင်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "ပြေစာများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-invoice",
+                    "title": "ပြေစာ ကြည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အရောင်း"
+                        },
+                        {
+                            "url": "/sale-invoices",
+                            "text": "ပြေစာများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "sale_refund",
+                "url": "/sale-refunds",
+                "title": "Refund",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/sale-refunds",
+                    "title": "Refund list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "",
+                            "text": "Refund list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/sale-refund",
+                    "title": "View refund",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Sales"
+                        },
+                        {
+                            "url": "/sale-refunds",
+                            "text": "Refund list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "control_price",
+                "url": "/control-prices",
+                "title": "ဈေးသတ်မှတ်",
+                "icon": "bi bi-tags",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/control-prices",
+                    "title": "ဈေးသတ်မှတ်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "ဈေးသတ်မှတ်"
+                        }
+                    ]
+                },
+                "starter": {
+                    "url": "/control-price",
+                    "title": "ဈေးသတ်မှတ်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "ဈေးသတ်မှတ်"
+                        }
+                    ]
+                },
+                "chosen": {
+                    "url": "/control-price",
+                    "title": "နည်းလမ်းရွေးမည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "ဈေးသတ်မှတ်"
+                        },
+                        {
+                            "url": "",
+                            "text": "နည်းလမ်းရွေးမည်"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/control-price",
+                    "title": "အချက်လက်ဖြည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "/control-prices",
+                            "text": "ဈေးသတ်မှတ်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "purchase",
+        "url": "#",
+        "title": "အဝယ်များ",
+        "icon": "bi bi-bag-plus",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "purchase_invoice",
+                "url": "/purchase-invoices",
+                "title": "ပြေစာများ",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/purchase-invoices",
+                    "title": "ပြေစာများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အဝယ်"
+                        },
+                        {
+                            "url": "",
+                            "text": "ပြေစာများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/purchase-invoice",
+                    "title": "ပြေစာ ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အဝယ်"
+                        },
+                        {
+                            "url": "/purchase-invoices",
+                            "text": "ပြေစာများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "expense",
+                "url": "/expenses",
+                "title": "အသုံးစရိတ်",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/expenses",
+                    "title": "အသုံးစရိတ်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အဝယ်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသုံးစရိတ်"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/expense",
+                    "title": "အသုံးစရိတ် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အဝယ်"
+                        },
+                        {
+                            "url": "/expenses",
+                            "text": "အသုံးစရိတ်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "inventory",
+        "url": "#",
+        "title": "Inventory",
+        "icon": "bi bi-building-gear",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "damage_invoice",
+                "url": "/damage-invoices",
+                "title": "အပျက်အစီး",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/damage-invoices",
+                    "title": "အပျက်အစီးများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "",
+                            "text": "အပျက်အစီးများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/damage-invoice",
+                    "title": "အပျက်အစီး ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "/damage-invoices",
+                            "text": "အပျက်အစီးများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "adjust_stock",
+                "url": "/adjust-stocks",
+                "title": "Adjustment",
+                "icon": "bi bi-file-earmark-text",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/adjust-stocks",
+                    "title": "Adjustment list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "",
+                            "text": "Adjustment list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/adjust-stock",
+                    "title": "Add/edit adjustment",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Inventory"
+                        },
+                        {
+                            "url": "/adjust-stocks",
+                            "text": "Adjustment list"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "promotion",
+        "url": "#",
+        "title": "ပရိုမိုးရှင်းများ",
+        "icon": "bi bi-percent",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "coupon_type",
+                "url": "/coupon-types",
+                "title": "အမျိုးအစား",
+                "icon": "bi bi-list",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/coupon-types",
+                    "title": "အမျိုးအစားများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမျိုးအစား"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/coupon-type",
+                    "title": "အမျိုးအစား ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "/coupon-types",
+                            "text": "အမျိုးအစားများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "coupon_code",
+                "url": "/coupon-codes",
+                "title": "ကူပွန်ကုဒ်",
+                "icon": "bi bi-ticket-detailed",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/coupon-codes",
+                    "title": "ကူပွန်ကုဒ်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "",
+                            "text": "ကူပွန်ကုဒ်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/coupon-code",
+                    "title": "ကူပွန်ကုဒ် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပရိုမိုးရှင်း"
+                        },
+                        {
+                            "url": "/coupon-codes",
+                            "text": "ကူပွန်ကုဒ်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "reporting",
+        "url": "#",
+        "title": "အစီရင်ခံစာများ",
+        "icon": "bi bi-pie-chart",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "daily_sale",
+                "url": "/daily-sales",
+                "title": "နေ့စဉ်ရောင်းအား",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/daily-sales",
+                    "title": "နေ့စဉ်ရောင်းအား",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အစီရင်ခံစာ"
+                        },
+                        {
+                            "url": "",
+                            "text": "နေ့စဉ်ရောင်းအား"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "weekly_sale",
+                "url": "/weekly-sales",
+                "title": "အပတ်စဉ်ရောင်းအား",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/weekly-sales",
+                    "title": "အပတ်စဉ်ရောင်းအား",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အစီရင်ခံစာ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အပတ်စဉ်ရောင်းအား"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "monthly_sale",
+                "url": "/monthly-sales",
+                "title": "လစဉ်ရောင်းအား",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/monthly-sales",
+                    "title": "လစဉ်ရောင်းအား",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အစီရင်ခံစာ"
+                        },
+                        {
+                            "url": "",
+                            "text": "လစဉ်ရောင်းအား"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "yearly_profit_loss",
+                "url": "/yearly-profit-loss",
+                "title": "အမြတ်/အရှုံး",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/yearly-profit-loss",
+                    "title": "အမြတ်/အရှုံး",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အစီရင်ခံစာ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အမြတ်/အရှုံး"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "top_sales_items",
+                "url": "/top-sales-items",
+                "title": "အရောင်းရဆုံးထုတ်ကုန်",
+                "icon": "bi bi-file-earmark-spreadsheet",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/top-sales-items",
+                    "title": "အရောင်းရဆုံးထုတ်ကုန်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "အစီရင်ခံစာ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အရောင်းရဆုံးထုတ်ကုန်"
+                        }
+                    ]
+                },
+                "entry": {},
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "setting",
+        "url": "#",
+        "title": "ပြင်ဆင်ချက်များ",
+        "icon": "bi bi-sliders",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "account",
+                "url": "/account",
+                "title": "အကောင့်",
+                "icon": "bi bi-person-gear",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/account",
+                    "title": "အကောင့်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အကောင့်"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/account",
+                    "title": "အကောင့် ပြင်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အကောင့်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "notification",
+                "url": "/notifications",
+                "title": "အသိပေးချက်",
+                "icon": "bi bi-bell",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/notifications",
+                    "title": "အသိပေးချက်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသိပေးချက်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/notification",
+                    "title": "အသိပေးချက် ကြည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "/notifications",
+                            "text": "အသိပေးချက်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "setting",
+                "url": "/setting",
+                "title": "ပြင်ဆင်ချက်",
+                "icon": "bi bi-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/setting",
+                    "title": "ပြင်ဆင်ချက်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အကောင့်ပြင်ဆင်ချက်"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/setting",
+                    "title": "အကောင့်ပြင်ဆင်ချက်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အကောင့်ပြင်ဆင်ချက်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "store_setting",
+                "url": "/store-settings",
+                "title": "ဆိုင်ပြင်ဆင်ချက်",
+                "icon": "bi bi-gear",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/store-settings",
+                    "title": "ဆိုင်ပြင်ဆင်ချက်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "ဆိုင်ပြင်ဆင်ချက်"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/store-setting",
+                    "title": "ဆိုင်ပြင်ဆင်ချက် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "/store-settings",
+                            "text": "ဆိုင်ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "general",
+        "url": "#",
+        "title": "Datahub",
+        "icon": "bi bi-database-gear",
+        "display": "developer",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "city",
+                "url": "/cities",
+                "title": "တိုင်း/ပြည်နယ်",
+                "icon": "bi bi-geo-alt",
+                "access": false,
+                "active": false,
+                "display": "developer",
+                "list": {
+                    "url": "/cities",
+                    "title": "တိုင်း/ပြည်နယ်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "တိုင်း/ပြည်နယ်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/city",
+                    "title": "တိုင်း/ပြည်နယ် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/cities",
+                            "text": "တိုင်း/ပြည်နယ်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "township",
+                "url": "/townships",
+                "title": "မြို့နယ်",
+                "icon": "bi bi-building",
+                "access": false,
+                "active": false,
+                "display": "developer",
+                "list": {
+                    "url": "/townships",
+                    "title": "မြို့နယ်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "မြို့နယ်များ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/township",
+                    "title": "မြို့နယ် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/townships",
+                            "text": "မြို့နယ်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "currency",
+                "url": "/currencies",
+                "title": "ငွေကြေး",
+                "icon": "bi bi-coin",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/currencies",
+                    "title": "ငွေကြေးများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "ငွေကြေး"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/currency",
+                    "title": "ငွေကြေး ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/currencies",
+                            "text": "ငွေကြေးများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "bank",
+                "url": "/banks",
+                "title": "ငွေချေစနစ်",
+                "icon": "bi bi-wallet2",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/banks",
+                    "title": "ငွေချေစနစ်များ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "",
+                            "text": "ငွေချေစနစ်"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/bank",
+                    "title": "ငွေချေစနစ် ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Datahub"
+                        },
+                        {
+                            "url": "/banks",
+                            "text": "ငွေချေစနစ်များ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    },
+    {
+        "menuid": "developer",
+        "url": "#",
+        "title": "Developer",
+        "icon": "bi bi-braces",
+        "access": false,
+        "active": false,
+        "submenu": [
+            {
+                "menuid": "application",
+                "url": "/application",
+                "title": "အက်ပလီကေးရှင်း",
+                "icon": "bi bi-app-indicator",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/application",
+                    "title": "အက်ပလီကေးရှင်း",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အက်ပလီကေးရှင်း"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/application",
+                    "title": "အက်ပလီကေးရှင်း ပြင်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "အက်ပလီကေးရှင်း"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "subscription_plan",
+                "url": "/subscription-plans",
+                "title": "စာရင်းသွင်းမှုများ",
+                "icon": "bi bi-heart",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/subscription-plans",
+                    "title": "စာရင်းသွင်းမှုများ",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "စာရင်းသွင်းမှုများ"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/subscription-plan",
+                    "title": "စာရင်းသွင်းမှု ပြင်/ထည့်မည်",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "/subscription-plans",
+                            "text": "စာရင်းသွင်းမှုများ"
+                        },
+                        {
+                            "url": "",
+                            "text": "အသေးစိတ်"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "config_app",
+                "url": "/config-apps",
+                "title": "Config app",
+                "icon": "bi bi-code-slash",
+                "display": "developer",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/config-apps",
+                    "title": "Config app list",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "",
+                            "text": "Config app list"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/config-app",
+                    "title": "Add/edit configure app",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "Setting"
+                        },
+                        {
+                            "url": "/config-apps",
+                            "text": "Config app list"
+                        },
+                        {
+                            "url": "",
+                            "text": "Details"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            },
+            {
+                "menuid": "import_data",
+                "url": "/import-data",
+                "title": "Import data",
+                "icon": "bi bi-arrow-up",
+                "access": false,
+                "active": false,
+                "list": {
+                    "url": "/application",
+                    "title": "Import data",
+                    "breadcrumb": [
+                        {
+                            "url": "#",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "Import data"
+                        }
+                    ]
+                },
+                "entry": {
+                    "url": "/import-data",
+                    "title": "Import data",
+                    "breadcrumb": [
+                        {
+                            "url": "/import-datas",
+                            "text": "ပြင်ဆင်ချက်"
+                        },
+                        {
+                            "url": "",
+                            "text": "Import data"
+                        }
+                    ]
+                },
+                "read": false,
+                "edit": false,
+                "delete": false
+            }
+        ]
+    }
+]

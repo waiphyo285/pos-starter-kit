@@ -1,0 +1,74 @@
+{
+    "en_US": {
+        "list": {
+            "invoice_no": "Invoice No.",
+            "order_no": "Order No.",
+            "remark": "Remark",
+            "printed": "Printed",
+            "state": "State",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        },
+        "view": {
+            "invoice_no": "Invoice No.",
+            "order_no": "Order No.",
+            "product": "Name",
+            "quantity": "Quantity",
+            "unit_price": "Unit Price",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "order_no": "အမှာစာအမှတ်",
+            "remark": "မှတ်ချက်",
+            "printed": "ပြေစာယူ",
+            "state": "အခြေအနေ",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        },
+        "view": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "order_no": "အမှာစာအမှတ်",
+            "product": "အမျိုးအမည်",
+            "quantity": "အရေအတွက်",
+            "unit_price": "စျေးနှုန်း",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "order_no": "หมายเลขคำสั่งซื้อ",
+            "remark": "หมายเหตุ",
+            "printed": "พิมพ์ใบแจ้งหนี้",
+            "state": "สถานะ",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        },
+        "view": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "order_no": "หมายเลขคำสั่งซื้อ",
+            "product": "ชื่อสินค้า",
+            "quantity": "จำนวน",
+            "unit_price": "ราคา",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        }
+    }
+}

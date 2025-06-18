@@ -1,0 +1,110 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "email": "Email Address",
+            "phone_1": "Phone Number 1",
+            "phone_2": "Phone Number 2",
+            "address": "Home Address",
+
+            "reward_point": "Reward Point",
+            "customer_type": "Customer Type",
+
+            "city_mm": "Region",
+            "township_mm": "Township",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "email": "Email Address",
+            "phone_1": "Phone Number 1",
+            "phone_2": "Phone Number 2",
+            "address": "Home Address",
+
+            "reward_point": "Reward Point",
+            "customer_type": "Customer Type",
+
+            "city_mm": "Region",
+            "township_mm": "Township",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "email": "မေးလ်လိပ်စာ",
+            "phone_1": "ဖုန်းနံပတ် ၁",
+            "phone_2": "ဖုန်းနံပတ် ၂",
+            "address": "အိမ်လိပ်စာ",
+
+            "reward_point": "ရမှတ်",
+            "customer_type": "အမျိုးအစား",
+
+            "city_mm": "တိုင်း/ပြည်နယ်",
+            "township_mm": "မြို့နယ်",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+
+            "email": "မေးလ်လိပ်စာ",
+            "phone_1": "ဖုန်းနံပတ် ၁",
+            "phone_2": "ဖုန်းနံပတ် ၂",
+            "address": "အိမ်လိပ်စာ",
+
+            "reward_point": "ရမှတ်",
+            "customer_type": "အမျိုးအစား",
+
+            "city_mm": "တိုင်း/ပြည်နယ်",
+            "township_mm": "မြို့နယ်",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "email": "อีเมล",
+            "phone_1": "เบอร์โทรศัพท์ ๑",
+            "phone_2": "เบอร์โทรศัพท์ ๒",
+            "address": "ที่อยู่",
+
+            "reward_point": "คะแนนสะสม",
+            "customer_type": "ประเภท",
+
+            "city_mm": "จังหวัด",
+            "township_mm": "เขต",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "email": "อีเมล",
+            "phone_1": "เบอร์โทรศัพท์ ๑",
+            "phone_2": "เบอร์โทรศัพท์ ๒",
+            "address": "ที่อยู่",
+
+            "reward_point": "คะแนนสะสม",
+            "customer_type": "ประเภท",
+
+            "city_mm": "จังหวัด",
+            "township_mm": "เขต",
+            "description": "รายละเอียด"
+        }
+    }
+}

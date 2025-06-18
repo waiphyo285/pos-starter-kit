@@ -1,0 +1,50 @@
+{
+    "en_US": {
+        "list": {
+            "invoice_no": "Invoice No",
+            "customer_name": "Customer Name",
+            "due_amount": "Amount Due",
+            "due_date": "Due Date",
+            "state": "State"
+        },
+        "entry": {
+            "invoice_no": "Invoice No",
+            "customer_name": "Customer Name",
+            "due_amount": "Amount Due",
+            "due_date": "Due Date",
+            "state": "State"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "customer_name": "ဝယ်ယူသူ",
+            "due_amount": "ငွေပမာဏ",
+            "due_date": "သတ်မှတ်ချိန်းရက်",
+            "state": "အခြေအနေ"
+        },
+        "entry": {
+            "invoice_no": "ပြေစာအမှတ်",
+            "customer_name": "ဝယ်ယူသူ",
+            "due_amount": "ငွေပမာဏ",
+            "due_date": "သတ်မှတ်ချိန်းရက်",
+            "state": "အခြေအနေ"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "customer_name": "ชื่อผู้ซื้อ",
+            "due_amount": "จำนวนเงินที่ต้องชำระ",
+            "due_date": "วันที่ครบกำหนด",
+            "state": "สถานะ"
+        },
+        "entry": {
+            "invoice_no": "หมายเลขใบแจ้งหนี้",
+            "customer_name": "ชื่อผู้ซื้อ",
+            "due_amount": "จำนวนเงินที่ต้องชำระ",
+            "due_date": "วันที่ครบกำหนด",
+            "state": "สถานะ"
+        }
+    }
+}

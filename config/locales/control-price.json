@@ -1,0 +1,68 @@
+{
+    "en_US": {
+        "stater": {},
+        "chosen": {},
+        "entry": {
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "category": "Category",
+
+            "product": "Name",
+            "quantity": "Quantity",
+            "retail_price": "Retail Price",
+            "wholesale_price": "Wholesale Price",
+            "search_item": "Search barcode",
+
+            "change_method": "Change Method",
+            "discount_method": "Discount Method",
+            "change_retail_price": "Change Price (Retail)",
+            "change_wholesale_price": "Change Price (Wholesale)",
+            "add_discount_price": "Add Discount Amount",
+            "remove_discount_price": "Remove Discount Amount"
+        }
+    },
+    "my_MM": {
+        "stater": {},
+        "chosen": {},
+        "entry": {
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+            "category": "အမျိုးအစား",
+
+            "product": "အမျိုးအမည်",
+            "quantity": "အရေအတွက်",
+            "retail_price": "လက်လီစျေးနှုန်း",
+            "wholesale_price": "လက်ကားစျေးနှုန်း",
+            "search_item": "ဘားကုတ်ဖြင့် ရှာပါ",
+
+            "change_method": "ပြောင်းလဲမည့် နည်းလမ််း",
+            "discount_method": "လျော့ချမည့် နည်းလမ်း",
+            "change_retail_price": "ပြောင်းလဲမည့် စျေးနှုန်း (လက်လီ)",
+            "change_wholesale_price": "ပြောင်းလဲမည့် စျေးနှုန်း (လက်ကား)",
+            "add_discount_price": "လျော့ချ ပမာဏ ထည့်ပါ",
+            "remove_discount_price": "လျော့ချမည့် ပမာဏ ပယ်ဖျက်ပါ"
+        }
+    },
+    "th_TH": {
+        "stater": {},
+        "chosen": {},
+        "entry": {
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "category": "ประเภท",
+
+            "product": "ชื่อสินค้า",
+            "quantity": "จำนวน",
+            "retail_price": "ราคาขายปลีก",
+            "wholesale_price": "ราคาขายส่ง",
+            "search_item": "ค้นหาด้วยบาร์โค้ด",
+
+            "change_method": "วิธีการเปลี่ยนแปลง",
+            "discount_method": "วิธีการลดราคา",
+            "change_retail_price": "ราคาขายปลีกที่เปลี่ยนแปลง",
+            "change_wholesale_price": "ราคาขายส่งที่เปลี่ยนแปลง",
+            "add_discount_price": "เพิ่มจำนวนลดราคา",
+            "remove_discount_price": "ลบจำนวนลดราคา"
+        }
+    }
+}

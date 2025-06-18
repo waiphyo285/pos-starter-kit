@@ -1,0 +1,32 @@
+extends ../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/entry/entry-header
+
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='presentation')
+        button#information-tab.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+          
+    include ./../includes/entry/entry-form
+      block inputs
+        #myTabContent.tab-content
+          #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')
+            div.form-group.row
+              div.col-md-12.mb-3
+                label.control-label(for='title') !{content.title} *
+                input.form-control.input-sm#title(type='text', name='title', value=data.title, maxlength="55" autocomplete="off" readonly autofocus)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+            
+              div.col-md-12.mb-3
+                label.control-label(for='message') !{content.message}
+                textarea.form-control.input-sm#message(name='message', rows='3' readonly)=data.message
+
+              div.col-md-12.mb-3
+                include ./../includes/common/input-status
+
+        include ./../includes/entry/entry-btn
+
+    form#postSuccessForm(method='GET', action=page.list.url)

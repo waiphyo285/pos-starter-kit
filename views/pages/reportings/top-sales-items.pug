@@ -1,0 +1,39 @@
+extends ../../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../../includes/list/list-style
+    
+    .d-flex(style="height: 42px;")
+      include ./../../includes/list/list-title
+      include ./../../includes/list/list-history
+
+    .col-12.my-3
+      .row
+        .col-12.col-lg-6.my-2
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title 
+            .panel-content.text-center
+              canvas#currentMonthBarChart.chart(height='380')
+            .panel-footer.text-center 
+              p.pt-3 !{content.cur_month}
+
+        .col-12.col-lg-6.my-2
+          .panel.panel-default
+            .panel-heading
+              h4.panel-title 
+            .panel-content.text-center
+              canvas#currentYearBarChart.chart(height='380')
+            .panel-footer.text-center 
+              p.pt-3 !{content.cur_year}
+
+  script(src='../../javascript/lib/chart-js/chart.bundle.min.js')
+  script(src='../../javascript/reporting.js')
+
+  script.
+    $(document).ready(function() {
+      var barchartData = !{JSON.stringify(data)};
+      
+      drawTopSalesItemChart(barchartData.cur_month_results, 'currentMonthBarChart') 
+      drawTopSalesItemChart(barchartData.cur_year_results, 'currentYearBarChart') 
+    });

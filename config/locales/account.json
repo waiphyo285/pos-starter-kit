@@ -1,0 +1,35 @@
+{
+    "en_US": {
+        "entry": {
+            "phone": "Phone Number",
+            "username": "Username",
+            "user_type": "User Type",
+            "old_password": "Password (Old)",
+            "new_password": "Password (New)",
+            "theme": "Theme",
+            "locale": "Locale"
+        }
+    },
+    "my_MM": {
+        "entry": {
+            "phone": "ဖုန်းနံပါတ်",
+            "username": "အသုံးပြုသူအမည်",
+            "user_type": "အသုံးပြုသူအမျိုးအစား",
+            "old_password": "လျို့ဝှက်စကား (အဟောင်း)",
+            "new_password": "လျို့ဝှက်စကား (အသစ်)",
+            "theme": "အရောင်",
+            "locale": "ဘာသာစကား"
+        }
+    },
+    "th_TH": {
+        "entry": {
+            "phone": "หมายเลขโทรศัพท์",
+            "username": "ชื่อผู้ใช้",
+            "user_type": "ประเภทผู้ใช้",
+            "old_password": "รหัสผ่านเก่า",
+            "new_password": "รหัสผ่านใหม่",
+            "theme": "ธีม",
+            "locale": "ภาษา"
+        }
+    }
+}

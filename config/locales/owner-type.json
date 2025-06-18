@@ -1,0 +1,32 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "description": "รายละเอียด"
+        }
+    }
+}

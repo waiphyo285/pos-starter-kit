@@ -1,0 +1,65 @@
+extends ../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/list/list-style
+    
+    .d-flex(style="height: 42px;")
+      include ./../includes/list/list-title
+      include ./../includes/list/list-history
+
+    .col-12.my-3
+      .row
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  i.bi.bi-shop.text-success.float-left(style='font-size: 32px')
+                .media-body.text-right
+                  h6 !{data.store_name}
+                  span.text-secondary !{content.store_name}
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  i.bi.bi-coin.text-primary.float-left(style='font-size: 32px')
+                .media-body.text-right
+                  h6 !{data.total_debit}
+                  span.text-secondary !{content.total_debit}
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  i.bi.bi-coin.text-warning.float-left(style='font-size: 32px')
+                .media-body.text-right
+                  h6 !{data.total_credit}
+                  span.text-secondary !{content.total_credit}
+        .col.border
+          .card-content
+            .card-body
+              .d-flex
+                .align-self-center(style="font-size: 26px")
+                  -var textColor = data.balance < 0 ? 'text-danger' : ''
+                  i.bi.bi-coin.text-info.float-left(style='font-size: 32px' class=textColor)
+                .media-body.text-right
+                  h6 !{data.balance}
+                  span.text-secondary !{content.balance}
+
+    table#example.table.table-striped(style='width:100%')
+      thead
+        tr
+          th #
+          th !{content.invoice_no}
+          th !{content.invoice_type}
+          th.text-center !{content.account_type}
+          th.text-center !{content.amount}
+      tbody
+        each trans, idx in data.transactions
+          tr
+            td #{idx + 1}
+            td #{trans.invoice_id}
+            td #{trans.invoice_type}
+            td.text-center #{trans.type}
+            td.text-center #{trans.amount}

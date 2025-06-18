@@ -1,0 +1,135 @@
+extends ../../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../../includes/entry/entry-header
+
+    //- this is single file upload
+    form.d-none#uploadForm(method='POST' action='/file/upload/importing' enctype="multipart/form-data")
+      input#fileInput(type='file' name='uploaded_file' accept='.xls,.xlsx,.csv')
+
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='presentation')
+        button#information-tab.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+          
+    include ./../../includes/entry/entry-form
+      block inputs
+        #myTabContent.tab-content
+          #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')   
+            input.input-sm#filePath(type='hidden', name='path', value='')
+
+            div.form-group.row
+              div.col-md-6
+                div.form-group.row
+                  div.col-md-12.mb-3
+                    label.control-label(for='owner_id') !{content.owner_name} *
+                    select.form-control.input-sm.custom-select.all-select2-picker#ownerId(name='owner_id' value=data.owner_id data-value=data.owner_id, data-live-search="true", data-size="8" required)
+                    span.invalid-feedback
+                      | !{content.common.err_required}
+
+                  div.col-md-12.mb-3
+                    label.control-label(for='store_id') !{content.store_name} *
+                    select.form-control.input-sm.custom-select.all-select2-picker#storeId(name='store_id' value=data.store_id data-value=data.store_id, data-live-search="true", data-size="8" required)
+                    span.invalid-feedback
+                      | !{content.common.err_required}
+
+              div.col-md-6
+                div.form-group.row
+                  div.col-md-12.mb-3
+                    label.control-label(for='name') !{content.select_option} *
+                    select.form-control.input-sm.custom-select.all-select2-picker#collection(name='collection'  data-live-search="true", data-size="8" required)
+                      option(value="") -- Select one ---
+                      option(value="product") Product
+                      option(value="variant") Variant
+                    span.invalid-feedback
+                      | !{content.common.err_required}
+
+                  div.col-md-12.mb-3
+                    .d-flex.justify-content-between.border.rounded.bg-light.p-2
+                      p.text-muted
+                        b
+                          | The first line in the downloaded CSV file should remain unchanged to preserve the original headers, ensuring the order of columns is not altered
+                      a#downloadLink.material-button.material-primary.mt-1.d-none(href="#", download="") 
+                        i.bi.bi-arrow-down
+                        | !{content.download_file}
+
+              #uploadFile.col-md-12.mb-3
+                .d-flex.justify-content-center.border.rounded.bg-light.p-5
+                  h5.card-title
+                    i.bi.bi-arrow-up
+                    | Upload file (.csv)
+
+
+          include ./../../includes/entry/entry-btn
+
+    form#postSuccessForm(method='GET', action=page.list.url)
+
+
+  script.
+    $(document).ready(function() {
+      ajaxLoadOption({
+        type: "GET",
+        url:"/owner",
+        showKey: "name",
+        selectId: "#ownerId",
+        filterObj: { status: 1 },
+        isSelected: true,
+      }, (data) => {
+          $("#ownerId").trigger('change');
+      });
+
+      $("#ownerId").on('change', function() {
+        const owner_id = $(this).val() ||         // get value [new entry]
+                         $(this).data('value');   // get value [edit entry]
+
+        owner_id && ajaxLoadOption({
+          type: "GET",
+          url:"/store",
+          showKey: "name",
+          selectId: "#storeId",
+          filterObj: { status: 1, owner_id },
+        });
+      });
+
+      $('#uploadFile').on('click', function () {
+        $('#fileInput').trigger('click')
+      })
+
+      $('#fileInput').on('change', function (e) {
+          e.preventDefault()
+          if ($(this).val() != '') {
+              $('#uploadForm').submit()
+          }
+      })
+
+      // multi/part  form submit
+      $('#uploadForm').submit(function (e) {
+          e.preventDefault()
+          ajaxUploadForm(
+            {
+              _this: this,
+              token: token,
+            },
+            (data) => {
+              data.code == '200' && 
+                $("#filePath").val(data.data.path);
+            }
+          )
+          $('#fileInput').val(null)
+      })
+
+      $("#collection").on('change', function() {
+        let currentFile = $(this).val();
+        let downloadLink = $("#downloadLink");
+
+        if (currentFile) {
+          downloadLink.removeClass('d-none');
+          downloadLink.attr("download", currentFile + ".csv");
+          downloadLink.attr("href", "/file/" + currentFile + ".csv");
+          return
+        }
+
+        downloadLink.addClass('d-none');
+      });
+    })

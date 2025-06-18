@@ -1,0 +1,74 @@
+{
+    "en_US": {
+        "list": {
+            "code": "Code",
+            "coupon_type": "Coupon Type",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "max_times": "Max Usage Used",
+            "current_times": "Current Usage Times",
+            "expired_at": "Expired Date",
+            "promo_amount": "Promo Amount",
+            "description": "Description"
+        },
+        "entry": {
+            "code": "Code",
+            "coupon_type": "Coupon Type",
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "max_times": "Max Usage Used",
+            "current_times": "Current Usage Times",
+            "expired_at": "Expired Date",
+            "promo_amount": "Promo Amount",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "code": "ကုဒ်",
+            "coupon_type": "အမျိုးအစား",
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+            "max_times": "အများဆုံးသုံးနိုင်သည့် အကြိမ်",
+            "current_times": "လက်ရှိအသုံးပြုပြီး အကြိမ်",
+            "expired_at": "သက်တမ်းကုန်မည့် ရက်",
+            "promo_amount": "ပရိုမို ပမာဏ",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "code": "ကုဒ်",
+            "coupon_type": "အမျိုးအစား",
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+            "max_times": "အများဆုံးသုံးနိုင်သည့် အကြိမ်",
+            "current_times": "လက်ရှိအသုံးပြုပြီး အကြိမ်",
+            "expired_at": "သက်တမ်းကုန်မည့် ရက်",
+            "promo_amount": "ပရိုမို ပမာဏ",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "code": "รหัส",
+            "coupon_type": "ประเภท",
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "max_times": "จำนวนครั้งสูงสุดที่ใช้ได้",
+            "current_times": "จำนวนครั้งที่ใช้ไปแล้ว",
+            "expired_at": "วันหมดอายุ",
+            "promo_amount": "จำนวนโปรโมชัน",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "code": "รหัส",
+            "coupon_type": "ประเภท",
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "max_times": "จำนวนครั้งสูงสุดที่ใช้ได้",
+            "current_times": "จำนวนครั้งที่ใช้ไปแล้ว",
+            "expired_at": "วันหมดอายุ",
+            "promo_amount": "จำนวนโปรโมชัน",
+            "description": "รายละเอียด"
+        }
+    }
+}

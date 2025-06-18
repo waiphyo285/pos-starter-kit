@@ -1,0 +1,211 @@
+extends ../includes/layout-main
+block content
+  -var isEdited = data._id || data.id;
+  -var isLinkedAccount = data.account_id || "";
+  -var isSystemRecord = data.role == "developer" ? true : false;
+  -var isOwnerRecord = data.role == "owner" ? true : false;
+
+  -var isSystemLogin = user.role == "developer"
+  -var isOwnerLogin = user.role == "owner"
+
+
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/entry/entry-header
+    include ./../includes/modal/modal-user-link
+    include ./../includes/modal/modal-user-unlink
+
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='presentation')
+        button#information-tab.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+          
+    include ./../includes/entry/entry-form
+      block inputs
+        #myTabContent.tab-content
+          #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')
+            -var isDisplayed = isEdited && ((isSystemLogin && !isSystemRecord) || (isOwnerLogin && !isOwnerRecord && !isSystemRecord))
+            
+            if (isDisplayed)
+              .d-flex.justify-content-end
+                .btn-group.btn-group-md
+                  if isLinkedAccount
+                    button.btn.btn-warning(type="button" role='button' data-toggle="modal", data-target="#dialogUnlinkAccount")
+                      i.bi.bi-person-dash-fill
+                      |   !{content.modal.unlink_person}
+                  else
+                    button.btn.material-primary(type="button" role='button' data-toggle="modal", data-target="#dialogLinkAccount")
+                      i.bi.bi-person-plus
+                      |   !{content.modal.link_person}
+
+              hr
+
+            div.form-group.row(class=isSystemRecord ? "d-none" : "")
+              div.col-md-6.mb-3
+                label.control-label(for='userrole') !{content.access_role} *
+                select.form-control.input-sm.custom-select.all-select2-picker#userRole(name='role' value=data.role data-value=data.role, data-live-search="true", data-size="8" required disabled=isSystemRecord)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-6.mb-3
+                label.control-label(for='level') !{content.access_level} *
+                select.form-control.input-sm.custom-select.all-select2-picker#levelId(name='level_id' value=data.level_id data-value=data.level_id, data-live-search="true", data-size="8" required disabled=isSystemRecord)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+            hr(class=isSystemRecord ? "d-none" : "")
+        
+            div.form-group.row       
+              div.col-md-6.mb-3
+                label.control-label(for='username') !{content.username} *
+                input.form-control.input-sm.username#username(type='text', name='username', value=data.username, maxlength="55" autocomplete="off" required autofocus)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-6.mb-3
+                label.control-label(for='password') !{content.password} *
+                div.input-group
+                  input.form-control.input-sm.password#password(type='password', name='password', role='password' value="" data-toggle="password-validator" data-match-pass=".conf-pass" data-target=".pwd-errors" required)
+                  div.input-group-append
+                    div.input-group-text.rounded-right
+                      i.bi.bi-eye-slash(aria-hidden='true')
+                  span.invalid-feedback
+                    | !{content.common.err_required}
+
+            hr
+
+            div.form-group.row
+              div.col-md-6.mb-3
+                label.control-label(for='phone') !{content.phone} *
+                input.form-control.input-sm#phone(type='tel', name='phone', max='12' value=data.phone  pattern="[+,0][1-9]{1}[0-9]{1,2}[0-9]{4,12}" autocomplete="off" required)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+                  
+              div.col-md-6.mb-3
+                include ./../includes/common/input-status
+
+            if (!isEdited)
+              #staffDiv2.border.bg-light.d-none
+                div.form-group.row.p-3
+                  input.input-sm#accountType(type='hidden', name='account[account_type]', value='')
+
+                  div.col-sm-6.mb-3
+                    label.control-label(for='owner_id') !{content.owner_name} *
+                    select.form-control.input-sm.custom-select.all-select2-picker#ownerId2(name='account[owner_id]' data-live-search="true", data-size="8")
+                    span.invalid-feedback
+                      | !{content.common.err_required}
+
+                  div.col-sm-3.mb-3
+                    label.control-label(for='store_id') !{content.store_name} *
+                    select.form-control.input-sm.custom-select.all-select2-picker#storeId2(name='account[store_id]' data-live-search="true", data-size="8")
+                    span.invalid-feedback
+                      | !{content.common.err_required}
+
+                  div.col-sm-3.mb-3
+                    label.control-label(for='staff_id') !{content.employee_name} *
+                    select.form-control.input-sm.custom-select.all-select2-picker#staffId2(name='account[staff_id]' data-live-search="true", data-size="8")
+                    span.invalid-feedback
+                      | !{content.common.err_required}
+
+        include ./../includes/entry/entry-btn
+
+    form#postSuccessForm(method='GET', action=page.list.url)
+
+  script.
+    $(document).ready(function() {
+
+      const editMode = $("input[name='id']").val();
+
+      ajaxLoadOption({
+        type: "GET",
+        url:"/config-roles",
+        selectId: "#userRole",
+        showKey: "display",
+        filterObj: {},
+      });
+
+      $('#userRole').on('change', function() {
+        const user_role = $(this).val() ||         // get value [new entry]
+                          $(this).data('value');   // get value [edit entry]
+
+        user_role && ajaxLoadOption({
+          type: "GET",
+          url:"/user-role",
+          showKey: "level",
+          selectId: "#levelId",
+          filterObj: { status: 1, role: user_role },
+        });
+
+        if (!editMode && user_role !== 'owner') {
+          $("#accountType").val('employee');
+          $('#staffDiv2').removeClass('d-none')
+
+          $('#ownerId2').attr({ required: true }).val('').change();
+          $('#storeId2').attr({ required: true }).val('').change();
+          $('#staffId2').attr({ required: true }).val('').change();
+      
+          ajaxLoadOption({
+            type: "GET",
+            url:"/owner",
+            showKey: "name",
+            selectId: "#ownerId2",
+            filterObj: { status: 1 },
+            isSelected: true,
+          }, (data) => {
+            $("#ownerId2").trigger('change');
+          });
+        }
+        else {
+          $("#accountType").val('');
+          $('#staffDiv2').addClass('d-none')
+
+          $('#ownerId2').attr({ required: false }).val('').change();
+          $('#storeId2').attr({ required: false }).val('').change();
+          $('#staffId2').attr({ required: false }).val('').change();
+        }
+      });
+
+      $("#ownerId2").on('change', function() {
+        const owner_id = $(this).val() ||         // get value [new entry]
+                         $(this).data('value');   // get value [edit entry]
+
+        owner_id && ajaxLoadOption({
+          type: "GET",
+          url:"/store",
+          showKey: "name",
+          selectId: "#storeId2",
+          filterObj: { status: 1, owner_id },
+        });
+      });
+
+      $("#storeId2").on('change', function() {
+        const store_id = $(this).val() ||         // get value [new entry]
+                         $(this).data('value');   // get value [edit entry]
+
+        store_id && ajaxLoadOption({
+          type: "GET",
+          url:"/employee",
+          showKey: "name",
+          selectId: "#staffId2",
+          filterObj: { status: 1, store_id },
+        });
+      });
+
+      $(".input-group-append").on('click', function(event) {
+        event.preventDefault();
+        if($("#password").attr("type") == "password"){
+          $("#password").prop("type", "text");
+          $('.input-group-text i').addClass( "bi-eye" );
+          $('.input-group-text i').removeClass( "bi-eye-slash" );
+        }
+        else if($("#password").attr("type") == "text"){
+          $("#password").prop("type", "password");
+          $('.input-group-text i').addClass( "bi-eye-slash" );
+          $('.input-group-text i').removeClass( "bi-eye" );
+        }
+      });
+
+      if (editMode && typeof editMode === "string") {
+        $('#userRole').trigger('change');
+      }
+    });

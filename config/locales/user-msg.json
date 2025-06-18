@@ -1,0 +1,92 @@
+{
+    "en_US": {
+        "req_success": "The action you requested is successful.",
+        "req_failed": "The action you requested is something wrong.",
+
+        "unknown_desc": "The request found something wrong. Try again.",
+        "unauthorized": "Authorization is required for the request.",
+
+        "no_data_search": "No data available in table to search.",
+        "no_data_print": "No data available in table to print file.",
+        "no_data_excel": "No data available in table to export excel.",
+        "no_data_pdf": "No data available in table to export pdf.",
+
+        "max_images": "The number of images has been limited.",
+
+        "lang_warning": "Sorry, the language is not changed.",
+        "lang_success": "The language is successfully changed.",
+
+        "theme_warning": "Sorry, the theme is not changed.",
+        "theme_success": "The theme is successfully changed.",
+
+        "template_warning": "Sorry, new template is not generated.",
+        "template_success": "New template is successfully generated.",
+
+        "cart_warning": "Sorry, your shopping cart is not updated.",
+        "cart_success": "Your shopping cart is successfully updated.",
+        "cart_remove": "Your cart item is successfully removed.",
+
+        "pay_success": "Your sale invoice is successfully created.",
+        "item_not_found": "Barcode was not found in your products"
+    },
+    "my_MM": {
+        "req_success": "သင်တောင်းဆိုသော လုပ်ဆောင်ချက် အောင်မြင်ပါသည်။",
+        "req_failed": "သင်တောင်းဆိုသော လုပ်ဆောင်ချက် တစုံတရာ မှားယွင်းနေပါသည်။",
+
+        "unknown_desc": "တစုံတရာ မှားယွင်းနေပါသည် ပြန်လည်ကြိုးစားပါ။",
+        "unauthorized": "တောင်းဆိုချက်သည် ခွင့်ပြုချက် လိုအပ်ပါသည်။",
+
+        "no_data_search": "ရှာဖွေရန် အချက်အလက်များ မရှိသေးပါ။",
+        "no_data_print": "ပရင့်ထုတ်ရန် အချက်အလက်များ မရှိသေးပါ။",
+        "no_data_excel": "excel ထုတ်ရန် အချက်အလက်များ မရှိသေးပါ။",
+        "no_data_pdf": "pdf ထုတ်ရန် အချက်အလက်များ မရှိသေးပါ။",
+
+        "max_images": "သတ်မှတ်ထားသော ပုံအရေအတွက် ပြည့်သွားပါပြီ။",
+
+        "lang_warning": "ဝမ်းနည်းပါတယ်၊ ဘာသာစကားကို မပြောင်းထားပါ။",
+        "lang_success": "ဘာသာစကားကို အောင်မြင်စွာ ပြောင်းလဲလိုက်ပါပြီ။",
+
+        "theme_warning": "ဝမ်းနည်းပါတယ်၊ ပြင်ဆင်ချက်ကို မပြောင်းထားပါ။",
+        "theme_success": "ပြင်ဆင်ချက်ကို အောင်မြင်စွာ ပြောင်းလဲလိုက်ပါပြီ။",
+
+        "template_warning": "ဝမ်းနည်းပါသည်၊ ပုံစံပလိတ်ကို မထုတ်လုပ်ထားပါ။",
+        "template_success": "ပုံစံပလိတ်ကို အောင်မြင်စွာ ထုတ်လုပ်ပြီးပါပြီ။",
+
+        "cart_warning": "ဝမ်းနည်းပါသည်၊ စျေးခြင်းတောင်းထဲသို့ မထည့်ထားပါ။",
+        "cart_success": "စျေးခြင်းတောင်းထဲသို့ အောင်မြင်စွာ ထည့်ပြီးပါပြီ။",
+        "cart_remove": "စျေးခြင်းတောင်းထဲမှ​ အောင်မြင်စွာ ပယ်ဖျက်ပြီးပါပြီ။",
+
+        "pay_success": "အရောင်းပြေစာကို အောင်မြင်စွာ ဖွင့်ပြီးပါပြီ။",
+        "item_not_found": "Barcode was not found in your products"
+    },
+    "th_TH": {
+        "req_success": "คำขอของคุณสำเร็จแล้ว",
+        "req_failed": "คำขอของคุณล้มเหลวบางประการ",
+
+        "unknown_desc": "เกิดข้อผิดพลาดบางประการ กรุณาลองใหม่อีกครั้ง",
+        "unauthorized": "คำขอต้องการการอนุญาต",
+
+        "no_data_search": "ไม่มีข้อมูลในการค้นหา",
+        "no_data_print": "ไม่มีข้อมูลในการพิมพ์",
+        "no_data_excel": "ไม่มีข้อมูลในการส่งออกเป็น Excel",
+        "no_data_pdf": "ไม่มีข้อมูลในการส่งออกเป็น PDF",
+
+        "max_images": "จำนวนรูปภาพที่กำหนดครบถ้วนแล้ว",
+
+        "lang_warning": "ขออภัย, ภาษาไม่ได้รับการเปลี่ยนแปลง",
+        "lang_success": "เปลี่ยนภาษาสำเร็จแล้ว",
+
+        "theme_warning": "ขออภัย, การปรับเปลี่ยนไม่ได้รับการบันทึก",
+        "theme_success": "การปรับเปลี่ยนสำเร็จแล้ว",
+
+        "template_warning": "ขออภัย, เทมเพลตไม่ได้รับการสร้าง",
+        "template_success": "เทมเพลตถูกสร้างเรียบร้อยแล้ว",
+
+        "cart_warning": "ขออภัย, ไม่ได้เพิ่มรายการในตะกร้า",
+        "cart_success": "เพิ่มรายการในตะกร้าสำเร็จแล้ว",
+        "cart_remove": "ลบรายการออกจากตะกร้าสำเร็จแล้ว",
+
+        "pay_success": "เปิดใบเสร็จการขายสำเร็จแล้ว",
+        "item_not_found": "ไม่พบรหัสบาร์โค้ดในผลิตภัณฑ์ของคุณ"
+    }
+}

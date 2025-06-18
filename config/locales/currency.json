@@ -1,0 +1,38 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "sign": "Sign",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "sign": "Sign",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "sign": "သင်္ကေတ",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "sign": "သင်္ကေတ",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "sign": "สัญลักษณ์",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "sign": "สัญลักษณ์",
+            "description": "รายละเอียด"
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.nav-item.dropdown
+  a.nav-link#notificationDropdown(href='#' role='button' data-toggle='dropdown' aria-expanded='true')
+    i.bi.bi-bell
+    span.d-none.d-lg-inline &nbsp; !{content.navbar.notification}
+    span#notificationCount.badge.badge-danger(style='position: absolute; top: 0; right: 0;')
+  
+  #notificationCountDropdown.dropdown-menu(aria-labelledby='notificationDropdown', style="min-width: 300px; max-height: 360px; overflow-y: scroll;")
+    .dropdown-item(style="width: 280px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-all; white-space: normal;")
+      strong Hello 💙,
+      br
+      span
+      | No notification here!
+
+script.
+  $(document).ready(function() {
+    const fetchedNotiApi = localStoreService({ key: 'hasNotifications' });
+
+    if (role !== DVL && !fetchedNotiApi) {
+      const apiUrl = `/api/${v1}/notification`;
+
+      commonServiceApi({ url: apiUrl }, function (data) {
+        if (data?.code != 200) {
+          $('#notificationCountDropdown').hide();
+          return
+        }
+
+        const notificationCount = data.data.length;
+
+        $('#notificationCountDropdown').empty();
+        $('#notificationCount').text(notificationCount);
+
+        data.data.forEach((item, idx) => {
+          const { title = '', message = '', created_at: date = '', ref_link: refLink } = item;
+          const notificationItem = `
+            <div class="dropdown-item" id="${idx}" title="${title}" style="width: 280px; overflow-wrap: break-word; word-wrap: break-word; word-break: break-all; white-space: normal;">
+              <strong>${title}</strong><br>
+              <span>${message}${refLink ? ` <a href="${refLink}"> See here</a>` : ''}</span>
+            </div>`;
+          $('#notificationCountDropdown').append(notificationItem);
+        });
+
+        localStoreService({
+          key: 'hasNotifications',
+          value: 'done',
+          method: 'set'
+        });
+      });
+    }
+  });

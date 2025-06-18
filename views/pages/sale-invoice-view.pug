@@ -1,0 +1,162 @@
+extends ../includes/layout-main
+
+block content
+  -var isEdited = data._id || data.id;
+
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/entry/entry-header
+
+    // https://dribbble.com/shots/3857446-ServiceFusion-Inventory-Order-Details
+
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='information')
+        button#information-tab.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+
+      //-   li.nav-item.mx-1(role='timeline')
+      //-     button#timeline-tab.nav-link(data-toggle='tab' data-target='#timeline' type='button' role='tab' aria-controls='timeline' aria-selected='false')
+      //-       i.bi.bi-signpost-split
+      //-       span.d-none.d-lg-block !{content.common.tab_timeline}
+
+      li.nav-item.m-auto
+        .d-none.d-md-inline
+          ul.steps
+            li.step.step-success
+              .step-content
+                span.step-circle 1
+                span.step-text Draft
+            li.step.step-success
+              .step-content
+                span.step-circle 2
+                span.step-text Opened
+            li.step.step-success
+              .step-content
+                span.step-circle 3
+                span.step-text Paid
+
+      li.nav-item
+        h6.font-weight-bold !{data.invoice_no}
+        span !{data._created_at}
+
+    #myTabContent.tab-content
+      #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')
+        include ./../includes/entry/entry-form
+          block inputs
+
+          .col-12
+            .row
+              .col.border
+                .card-content
+                  .card-body
+                    .d-flex
+                      .align-self-center(style="font-size: 26px")
+                        i.bi.bi-person-heart.text-danger.float-left(style='font-size: 32px')
+                      .media-body.text-right
+                        h6 !{data.customer_name}
+                        span.text-secondary !{data.customer_address}
+              .col.border
+                .card-content
+                  .card-body
+                    .d-flex
+                      .align-self-center(style="font-size: 26px")
+                        i.bi.bi-person-fill.text-primary.float-left(style='font-size: 32px')
+                      .media-body.text-right
+                        h6 !{data.employee_name}
+                        span.text-secondary !{data.employee_email}
+              .col.border
+                .card-content
+                  .card-body
+                    .d-flex
+                      .align-self-center(style="font-size: 26px")
+                        i.bi.bi-coin.text-info.float-left(style='font-size: 32px')
+                      .media-body.text-right
+                        h6 !{data.total_amount}
+                        span.text-secondary !{content.total_amount}
+                        
+
+          .table-responsive
+            table.table.bg-light.mt-3
+              thead
+                tr
+                  th #
+                  th.text-center !{content.product}
+                  th.text-center !{content.quantity}
+                  th.text-center !{content.unit_price}
+                  th.text-center !{content.subtotal_amount}
+                  th.text-center  !{content.total_amount}
+  
+              tbody
+                if data.order_items && data.order_items.length > 0
+                  each item, index in data.order_items
+                    tr
+                      td.text-center(width="40") !{index+1}
+                      td.text-left
+                        | !{item.barcode}
+                        br
+                        | !{item.name}
+                      td.text-center(width="160") !{item.quantity}
+                      td.text-center(width="160") !{item.retail_price}
+                      td.text-center(width="160") !{item.subtotal_amount}
+                      td.text-right(width="160") !{item.total_amount}
+                else
+                  tr
+                    td(colspan="6" class="text-center") No items to display               
+              tfoot
+                tr.border
+                tr
+                  td.border-0(colspan='4')
+                  td.text-center
+                    strong !{content.subtotal_amount}
+                  td.text-right
+                    strong !{data.subtotal_amount}
+                tr
+                  td.border-0(colspan='4')
+                  td.text-center
+                    strong !{content.discount_amount}
+                  td.text-right
+                    strong !{data.discount_amount}
+                tr
+                  td.border-0(colspan='4')
+                  td.text-center
+                    strong !{content.tax_amount}
+                  td.text-right
+                    strong !{data.tax_amount}
+                tr
+                  td.border-0(colspan='4')
+                  td.text-center
+                    strong !{content.total_amount}
+                  td.text-right
+                    strong !{data.total_amount}
+              
+      if isEdited
+        #timeline.tab-pane.fade(role='tabpanel' aria-labelledby='timeline-store-tab')
+          ul.timeline
+            li
+              h6 Paid
+              p.text-secondary
+                | Mg successfully marked invoice #00001 as paid on [date], confirming the successful transaction.
+            li
+              h6 Opened
+              p.text-secondary
+                | Mg moved invoice #00001 to the opened state on [date], signaling readiness for the modifications.
+            li
+              h6 Draft
+              p.text-secondary
+                | Mg initiated invoice #00001 in draft state on [date], awaiting further details for finalization.
+
+    
+    .float-div.fixed-bottom.d-md-none
+        ul.steps
+          li.step.step-success
+            .step-content
+              span.step-circle 1
+              span.step-text Draft
+          li.step.step-success
+            .step-content
+              span.step-circle 2
+              span.step-text Opened
+          li.step.step-success
+            .step-content
+              span.step-circle 3
+              span.step-text Paid

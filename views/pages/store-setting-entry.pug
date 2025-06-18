@@ -1,0 +1,136 @@
+extends ../includes/layout-main
+block content
+  -var isEdited = data._id || data.id;
+
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/entry/entry-header
+
+    //- this is single file upload
+    form.d-none#uploadForm(method='POST' action='/file/upload/products' enctype="multipart/form-data")
+      input#fileInput(type='file' name='uploaded_file' accept="image/png, image/jpeg")
+
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='information')
+        button#information-tab.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+
+      li.nav-item.mx-1(role='printing-design')
+        button#printing-design-tab.nav-link(data-toggle='tab' data-target='#printing-design' type='button' role='tab' aria-controls='printing-design' aria-selected='false')
+          i.bi.bi-printer
+          span.d-none.d-lg-block !{content.common.tab_printing_design}
+
+    include ./../includes/entry/entry-form
+      block inputs
+        #myTabContent.tab-content
+
+          #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')
+            div.form-group.row
+              div.col-md-6.mb-3
+                label.control-label(for='name') !{content.name} *
+                input.form-control.input-sm#name(type='text', name='name', value=data.name, maxlength="55" autocomplete="off" required autofocus)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-6.mb-3
+                label.control-label(for='store_id') !{content.store_name} *
+                select.form-control.input-sm.custom-select.all-select2-picker#storeId(name='store_id' value=data.store_id data-value=data.store_id, data-live-search="true", data-size="8" required)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-6.mb-3
+                label.control-label(for='currency') !{content.currency}
+                select.form-control.input-sm.custom-select.all-select2-picker#currency(name='currency' value=data.currency data-value=data.currency, data-live-search="true", data-size="8")
+                  option(value="MMK") MMK
+                  option(value="USD") USD
+
+              div.col-md-6.mb-3
+                label.control-label(for='rounding') !{content.rounding}
+                select.form-control.input-sm.custom-select.all-select2-picker#rounding(name='rounding' value=data.rounding data-value=data.rounding, data-live-search="true", data-size="8")
+                  option(value="disabled") Disabled
+                  option(value="up") Up
+                  option(value="down") Down
+                  option(value="down") Nearest
+
+              div.col-md-6.mb-3
+                label.control-label(for='timezone') !{content.timezone}
+                select.form-control.input-sm.custom-select.all-select2-picker#timezone(name='timezone' value=data.timezone data-value=data.timezone, data-live-search="true", data-size="8")
+                  option(value="Asia/Yangon") Asia/Yangon
+                  option(value="Asia/Bangkok") Asia/Bangkok
+
+              div.col-md-6.mb-3
+                include ./../includes/common/input-status
+
+            include ./../includes/entry/entry-btn
+
+          #printing-design.tab-pane.fade(role='tabpanel' aria-labelledby='printing-design-tab')
+            div.form-group.d-none 
+              div.row.remove-img-list
+    
+            div.form-group  
+              div.row.img-list
+                - var header_logo =  data.printing && data.printing.header_logo || '';
+                if (!header_logo)
+                  .col-4.col-md-2.col-lg-1.img-container
+                    img.m-1.img.img-thumbnail#add-image(src="/images/heroicons/plus.svg", alt="", srcset="" width="100" height="100")
+                
+                if header_logo
+                  .col-4.col-md-2.col-lg-1.img-container
+                    input.uploaded-files(type="hidden", name="printing[header_logo]", value=`${header_logo}`)
+                    img.m-1.img.img-thumbnail(src=`${header_logo}`, alt="", srcset="" width="100" height="100")
+                    button.btn.btn-sm.remove-file(type="button")
+                      i.bi.bi-trash3
+
+            div.form-group.row
+              div.col-md-6.mb-3
+                label.control-label(for='header_phone_1') !{content.header_phone_1} *
+                input.form-control.input-sm#headerPhone1(type='text', name='printing[header_phone_1]', value=data.printing && data.printing.header_phone_1, maxlength="55" autocomplete="off" required)
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-6.mb-3
+                label.control-label(for='header_phone_2') !{content.header_phone_2} 
+                input.form-control.input-sm#headerPhone2(type='text', name='printing[header_phone_2]', value=data.printing && data.printing.header_phone_2, maxlength="55" autocomplete="off")
+                
+              div.col-md-12.mb-3
+                label.control-label(for='header_addr') !{content.header_addr} *
+                textarea.form-control.input-sm#headerAddr(name='printing[header_addr]', rows='3' required)=value=data.printing && data.printing.header_addr
+                span.invalid-feedback
+                  | !{content.common.err_required}
+
+              div.col-md-12.mb-3
+                label.control-label(for='footer_desc_1') !{content.footer_desc_1}
+                textarea.form-control.input-sm#footerDesc1(name='printing[footer_desc_1]', rows='3')=value=data.printing && data.printing.footer_desc_1
+
+              div.col-md-12.mb-3
+                label.control-label(for='footer_desc_2') !{content.footer_desc_2}
+                textarea.form-control.input-sm#footerDesc2(name='printing[footer_desc_2]', rows='3')=value=data.printing && data.printing.footer_desc_2
+            
+            include ./../includes/entry/entry-btn
+
+    form#postSuccessForm(method='GET', action=page.list.url)
+  
+  script(src="/javascript/pages/upload-file.js")
+  script(src='/javascript/pages/rich-text.js')
+
+  script.
+    $(document).ready(function() {
+      const isEdited = $("input[name='id']").val();
+
+      $('#currency').val('!{data.currency}').change();
+      $('#rounding').val('!{data.rounding}').change();
+      $('#timezone').val('!{data.timezone}').change();
+
+      ajaxLoadOption({
+        type: "GET",
+        url:"/store",
+        showKey: "name",
+        selectId: "#storeId",
+        filterObj: { status: 1 },
+      });
+
+      if (isEdited && typeof isEdited === "string") {
+        var store_id = $('#storeId').data('value');
+        store_id && $('#storeId').val(store_id).change();
+      }
+    });

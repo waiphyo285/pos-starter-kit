@@ -1,0 +1,503 @@
+extends ../includes/layout-panel
+block content
+
+  include ./../includes/modal/modal-logout
+  include ./../includes/modal/modal-theme
+  include ./../includes/modal/modal-generator
+  include ./../includes/modal/modal-new-customer
+  include ./../includes/modal/modal-pos-cart
+
+  .container-fluid
+    .row
+      .col-sm.position-fixed(style='z-index:100')
+        .mx-1.my-2
+          .d-flex.justify-content-between
+            .d-flex(style='min-width: 200px')
+              .input-group.mr-1
+                input#searchInput.form-control.form-control-sm(type='text' placeholder='Search products')
+                .input-group-append
+                  button.btn.material-primary(type='button')
+                    i.bi.bi-search
+
+            .scroll-category-x.d-none.d-md-flex
+              each category in data.categoryList
+                button.btn.btn-sm.m-1.category-chip(style='height: 30px; border-radius: 30px' data-id=category._id)
+                  span.text-dark !{category.name} 
+
+            .btn-group
+              .nav-item
+                button#newCustomer.btn.mx-1(type='button' style='color: var(--primary)' data-toggle="modal", data-target="#dialogNewCustomer")
+                  i.bi.bi-person-plus
+                  span.ml-1.d-none.d-lg-inline
+                    |  !{content.customer}
+
+              //- .nav-item
+              //-   button#newRefund.btn.mx-1(type='button' style='color: var(--primary)')
+              //-     i.bi.bi-plus
+              //-     span.ml-1.d-none.d-lg-inline
+              //-       |  !{content.refund}
+
+              .nav-item.dropdown
+                button#holdCount.btn.mx-1(type='button' style='color: var(--primary)' data-toggle='dropdown' aria-expanded='false')
+                  i.bi.bi-stop-btn
+                  span.ml-1.d-none.d-lg-inline
+                    |  !{content.hold_list}
+                    
+                #holdCountDropdown.dropdown-menu.mt-2(aria-labelledby='holdCount')
+
+              .nav-item
+                button#cartCount.btn.mx-1(type='button' style='color: var(--primary)' data-toggle="modal" data-target="#dialogShoppingCart")
+                  i.bi.bi-cart
+                  span.ml-1.d-none.d-lg-inline
+                    |  !{content.shop_cart}
+                  span.ml-1.badge.badge-pill.badge-danger
+
+    .row.my-3
+
+    .row.mb-3
+      .col-sm.mt-3
+        #itemList.row.mx-1.my-3
+          each item in data.variantList
+            .border.col-4.col-sm-3.col-md-2.col-lg-1.pointer.add-to-cart(data-id=item._id)
+              .showcase.my-2.item-image
+                -var hasImage = item.images && item.images.length > 0;
+                -var itemSrc = hasImage ? item.images[0] : '/images/products/default-32x32.png'
+                img.img.item-img.w-100(src=itemSrc alt='Product image')
+              .details.my-2.text-center
+                small.d-block.item-title !{item.name}
+                small.text-nowrap.d-block.item-price !{item.retail_price}
+    
+    #sampleItem.d-none.border.col-4.col-sm-3.col-md-2.col-lg-1.pointer.add-to-cart
+      .showcase.my-2.item-image
+        img.img.w-100(src='' alt='Product image')
+      .details.my-2.text-center
+        small.d-block.item-title 
+        small.text-nowrap.d-block.item-price 
+
+  .fixed-bottom
+    .d-flex.justify-content-between
+      button#emptyCart.btn.rounded-0.w-100(type='button' style='color: var(--primary)')
+        |  !{content.cancel}
+      button#holdCart.btn.mx-1.rounded-0.w-100(type='button' style='color: var(--primary)') 
+        i.bi.bi-stop-btn
+        |  !{content.hold}
+      button#payCart.btn.rounded-0.w-100(type='button' style='color: var(--primary)') 
+        i.bi.bi-cash
+        |  !{content.pay}
+
+  #hiddenCart
+    table.d-none
+      tbody
+        tr
+          td.text-center.action
+            input.input-hidden.item-id(type='hidden' name="")
+            input.input-hidden.unit-price(type='hidden' value="")
+            button.btn.btn-sm.remove-row(type="button" data-id="")
+              i.text-danger.font-weight-bold.bi.bi-trash
+          td.text-left.product
+            figure.media
+              figcaption.media-body.d-inline-block.text-truncate(style="min-width: 150px;")
+                h6.title
+                  | -
+                dl.param.param-inline
+                  dt.small.key Category:  
+                  dd.small.value -
+          td.quantity
+            .d-flex.justify-content-center
+              .input-group(style="width: 120px")
+                .input-group-prepend
+                  button.btn.material-primary.decrease-qty(type='button' data-operator="-")
+                    i.bi.bi-dash
+                input.form-control.input-sm.value(type='text' role="number" value='1' readonly)
+                .input-group-append
+                  button.btn.material-primary.increase-qty(type='button' data-operator="+")
+                    i.bi.bi-plus
+          td.text-right.amount
+            .text-wrap
+              span.price.sub-total 0
+              span.small.unit-price 0 each
+
+  script(src="../javascript/lib/onscan.js-1.5/onscan.min.js")
+  script(src="../javascript/lib/barcode-gen/jquery/jquery-barcode.min.js")
+  script.
+    $(document).ready(function() {
+      const holdCartUrl = `/api/${v1}/sale-hold`
+      const orderUrl = `/api/${v1}/sale-order`
+      const searchUrl = `/api/${v1}/variant`
+
+      onScan.attachTo(document, {
+        onScan: function(barcode, qty) { 
+          if (!(role === MNG || role === EMP)) {
+            toastrWarning({
+              title: content['modal'].warning,
+              description: content['user-msg'].unauthorized,
+            })
+            return
+          }
+
+          fetchItemByBarcode(searchUrl, barcode)
+            .then(itemId => addItemToCart(orderUrl, itemId))
+            .then(cartId => {
+                updateCartCount("•")
+                localStoreService({ 
+                  key: 'cartId', 
+                  value: cartId, 
+                  method: 'set'
+                });
+            })
+            .catch(warning => {
+              toastrWarning(warning);
+            });
+        },
+      })
+
+      $(window).on('load', function() {
+        const cartId = getLocalStoreData('cartId')
+        const url = `${orderUrl}/${cartId}`
+
+        if (cartId) {
+          panelServiceApi({ url }, function (data) {
+            //- const itemCount = data.data.order_items.length
+            updateCartCount('•')
+          })
+        }
+
+        panelServiceApi({ url: holdCartUrl }, function (data) {
+          createHoldList(data.data)
+        })
+      });
+
+      $('input#searchInput').on('keyup', function (e) {
+        if (e.keyCode === 13 && this.value) {
+          var debounce
+          clearTimeout(debounce)
+          debounce = setTimeout(() => fetchItemByValue(searchUrl, this.value), 0)
+        }
+      })
+
+      $('#cartCount').on("click", function() {
+        const cartId = getLocalStoreData('cartId')
+        const url = `${orderUrl}/${cartId}`
+
+        if (cartId) {
+          panelServiceApi({ url }, function (data) {
+            var htmlRow = ''
+            var itemRow = $('#hiddenCart').find('table > tbody').clone()
+
+            $.each(data.data.order_items, async function (idx, item) {
+              itemRow.find('.action').find('.item-id').attr(
+                { name: `order_items[${idx}]['item_id']`, value: item.item_id }
+              )
+              itemRow.find('.product').find('.title').text(item.item_name)
+              itemRow.find('.product').find('.value').text(item.item_name)
+              itemRow.find('.quantity').find('.value').attr(
+                { name: `order_items[${idx}]['quantity']`, value: item.quantity }
+              )
+              itemRow.find('.amount').find('.sub-total').text(item.subtotal_amount)
+              itemRow.find('.amount').find('.unit-price').text(item.subtotal_amount / item.quantity)
+              htmlRow += itemRow.html()
+            })
+
+            $(".shopping-cart").find("tbody").html(htmlRow)
+            calculateNetTotal()
+          })
+          return;
+        }
+        restoreCartDom()     
+      });
+
+      $("#emptyCart").on('click', function() {
+        const cartId = getLocalStoreData('cartId')
+        const url = `${orderUrl}/${cartId}`
+
+        if (cartId) {
+          panelServiceApi({
+            url: url,
+            type: 'DELETE',
+            showAlert: true
+          }, function (data) {
+            updateCartCount()
+
+            localStoreService({ 
+              key: 'cartId', 
+              method: 'remove'
+            })
+          })
+        }
+      })
+
+      $("#holdCart").on('click', function() {
+        const cartId = getLocalStoreData('cartId')
+
+        panelServiceApi({
+          url: holdCartUrl,
+          type: 'POST',
+          data: { sale_order_id: cartId },
+          showAlert: true
+        }, function (data) {
+          updateCartCount()
+          localStoreService({ 
+            key: 'cartId', 
+            method: 'remove' 
+          })
+        })
+      })
+
+      $("#payCart").on('click', function() {
+        const cartId = getLocalStoreData('cartId')
+        if (cartId) $("#dialogPay").trigger('click')
+      })
+
+      $("body").on('click', '.hold-btn', function() {
+        const holdCartId = $(this).data('id');
+        const url = `${holdCartUrl}/${holdCartId}`;
+
+        if (holdCartId) {
+          panelServiceApi({
+            url: url,
+            type: 'DELETE',
+            showAlert: true
+          }, function (data) {
+            updateCartCount("•")
+            localStoreService({ 
+              method: 'set' ,
+              key: 'cartId',
+              value: data.data.sale_order_id,
+            })
+          }) 
+        }
+      });
+
+      $("body").on("click", ".category-chip", function() {
+        const categoryId = $(this).data("id")
+        var debounce
+        clearTimeout(debounce)
+        debounce = setTimeout(() => fetchItemByCategory(searchUrl, categoryId), 0)
+      })
+
+      $("body").on("click", ".add-to-cart", function() {
+        const itemId = $(this).data("id")
+        const cartId = getLocalStoreData('cartId')
+
+        const data =  { 
+          cart_id: cartId, 
+          item_id: itemId
+        }
+
+        if (!(role === MNG || role === EMP)) {
+          toastrWarning({
+            title: content['modal'].warning,
+            description: content['user-msg'].unauthorized,
+          })
+          return
+        }
+
+        panelServiceApi({
+          url: orderUrl,
+          type: 'POST',
+          data: data,
+          showAlert: true
+        }, function (data) {
+          updateCartCount("•")
+          localStoreService({ 
+            key: 'cartId', 
+            value: data.data._id, 
+            method: 'set'
+          })
+        })
+      });
+
+      $("body").on('click', ".decrease-qty,.increase-qty", function() {
+        const currentR = $(this).closest("tr");
+        const operator = $(this).data('operator') || '+';
+
+        const currentId = currentR.find('.action').find('.item-id').val();
+        const unitPrice = Number(currentR.find(".amount .unit-price").text()) || 0;
+        const currentQty = Number(currentR.find(".quantity input.value").val()) || 1;
+
+        const updatedQty = calculateQuantity(currentQty, 1, operator);
+
+        currentR.find(".quantity input.value").val(updatedQty ? updatedQty : 1);
+        currentR.find(".amount .sub-total").text(updatedQty ? unitPrice * updatedQty : unitPrice);
+
+        calculateNetTotal()
+      });
+
+      $("body").on("click", ".remove-row", function() {
+        const currentR = $(this).closest("tr");
+        currentR.remove()
+        calculateNetTotal()
+      });
+    })
+
+    function getLocalStoreData(key) {
+      const data = localStoreService({ 
+        key: key, 
+        method: 'get' 
+      })
+      return data ? data : undefined
+    }
+
+    function updateCartCount(val='') {
+      $("#cartCount").find('span:nth(1)').text(val)
+    }
+
+    function restoreCartDom () {
+      $('.total-pay').text(0);
+      $('.total-saving').text(0);
+      $(".shopping-cart").find("tbody").empty()
+      $('.total-amount-line-through').css('text-decoration', 'none')
+
+      $('#promoCode').val('')
+      $("#dialogShoppingCart").find('.total-amount').text(0)
+      $('#savingAmount').find('.total-saving-label').addClass('d-none')
+      $('#savingAmount').find('.total-saving-amount').addClass('d-none')
+    }
+
+    function createHoldList (data) {
+      const dropdown = $('#holdCountDropdown').empty();
+    
+      data.forEach((cart, idx) => {
+        if (cart) {
+          $('<button>', {
+              type: 'button',
+              'data-id': cart._id,
+              class: 'dropdown-item btn hold-btn',
+          })
+          .text('Cart No. ' + (idx + 1))
+          .appendTo(dropdown);
+        }
+      });
+    }
+
+    function cloneAndAppendItem(item) {
+      const clonedItem = $("#sampleItem")
+        .clone()
+        .removeAttr('id')
+        .removeClass('d-none')
+
+      var hasImage = item.images && item.images.length > 0;
+      var itemSrc = hasImage ? item.images[0] : '/images/products/default-32x32.png'
+
+      clonedItem.attr("data-id", item._id);
+      clonedItem.find(".item-title").text(item.name);
+      clonedItem.find(".item-image > .img").attr("src", itemSrc); 
+      clonedItem.find(".item-price").text(item.retail_price); 
+
+      $("#itemList").append(clonedItem);
+    }
+
+    function calculateQuantity(val1, val2, op) {
+      const evaluate = {
+        '+': function(a, b) { return a + b },
+        '-': function(a, b) { return a - b },
+      };
+
+      return evaluate[op](val1, val2) 
+    }
+
+    function calculateNetTotal() {
+      let totalAmt = 0;
+
+      $(".price.sub-total").not(":last").each(function() {
+        const price = parseFloat($(this).text());
+        totalAmt = !isNaN(price) ? totalAmt + price : 0;
+      });
+
+      $("#dialogShoppingCart").find('.total-pay').text(totalAmt)
+      $("#dialogShoppingCart").find('.total-amount').text(totalAmt)
+    }
+
+    function fetchItemByValue (url, val) {
+      panelServiceApi({
+        url: url,
+        data: {
+          page: { skip: 0, limit: 30 },
+          search: { name: val, barcode: val },
+        },
+      }, function (data) {
+        $("#itemList").empty();
+
+        for (var i = 0; i < data.data.length; i++) {
+          cloneAndAppendItem(data.data[i]);
+        }
+      })
+    }
+
+    function fetchItemByCategory(url, val) {
+      panelServiceApi({
+        url: url,
+        data: {
+          page: { skip: 0, limit: 30 },
+          filter: { category_id: val },
+        },
+      }, function (data) {
+        $("#itemList").empty();
+
+        for (var i = 0; i < data.data.length; i++) {
+          cloneAndAppendItem(data.data[i]);
+        }
+      })
+    }
+
+    function fetchItemByBarcode(url, barcode) {
+      return new Promise((resolve, reject) => {
+        panelServiceApi({
+          url: url,
+          type: 'GET',
+          data: { filter: { barcode } },
+        }, function (data) {
+          if (data.data.length === 0) {
+            reject({
+              title: content['modal'].warning,
+              description: content['user-msg'].item_not_found,
+            });
+          } else {
+            resolve(data.data[0]._id);
+          }
+        });
+      });
+    }
+
+    function addItemToCart(url, itemId) {
+      return new Promise((resolve, reject) => {
+        panelServiceApi({
+          url: url,
+          type: 'POST',
+          data: {
+            item_id: itemId,
+            cart_id: getLocalStoreData('cartId'),
+          },
+          showAlert: true,
+        }, function (data) {
+          resolve(data.data._id);
+        });
+      });
+    }
+
+    function panelServiceApi(args, callback) {
+      $.ajax({
+        url: args.url,
+        type: args.type || "GET",
+        data: args.data || {},
+        headers: headers,
+        success: function (data) {
+          args.showAlert && handleAlert(data, false)
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+          toastrWarning({
+            type: 'warning',
+            title: content['modal'].warning,
+            description: jqXHR.responseJSON.message || errorThrown,
+          })
+        },
+        complete: function (data) {
+          const response = data.responseJSON;
+          if (response.data && response.code === '200') {
+              if (typeof callback === 'function') {
+                  callback(response);
+              }
+          } 
+        }
+      })
+    }

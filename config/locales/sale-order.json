@@ -1,0 +1,119 @@
+{
+    "en_US": {
+        "list": {
+            "order_no": "Order No.",
+            "remark": "Remark",
+            "printed": "Printed",
+            "state": "State",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        },
+        "view": {
+            "order_no": "Order No.",
+            "product": "Name",
+            "quantity": "Quantity",
+            "unit_price": "Unit Price",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "tax_amount": "Tax",
+            "total_amount": "Balance"
+        },
+        "entry": {
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+            "employee_name": "Employee Name",
+
+            "state": "State",
+            "remark": "Remark",
+            "search_item": "Search barcode",
+
+            "product": "Name",
+            "quantity": "Quantity",
+            "unit_price": "Unit Price",
+            "subtotal_amount": "Total",
+            "discount_amount": "Discount",
+            "total_amount": "Balance",
+            "tax_amount": "Tax"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "order_no": "အမှာစာအမှတ်",
+            "remark": "မှတ်ချက်",
+            "printed": "ပြေစာယူ",
+            "state": "အခြေအနေ",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        },
+        "view": {
+            "order_no": "အမှာစာအမှတ်",
+            "product": "အမျိုးအမည်",
+            "quantity": "အရေအတွက်",
+            "unit_price": "စျေးနှုန်း",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "tax_amount": "အခွန်",
+            "total_amount": "သင့်ငွေ"
+        },
+        "entry": {
+            "owner_name": "ပိုင်ရှင်",
+            "store_name": "ဆိုင်အမည်",
+            "employee_name": "ဝန်ထမ်းအမည်",
+
+            "state": "အခြေအနေ",
+            "remark": "အသေးစိတ်",
+            "search_item": "ဘားကုတ်ဖြင့် ရှာပါ",
+
+            "product": "အမျိုးအမည်",
+            "quantity": "အရေအတွက်",
+            "unit_price": "စျေးနှုန်း",
+            "subtotal_amount": "ပေါင်း",
+            "discount_amount": "လျော့",
+            "total_amount": "သင့်ငွေ",
+            "tax_amount": "အခွန်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "order_no": "หมายเลขคำสั่งซื้อ",
+            "remark": "หมายเหตุ",
+            "printed": "พิมพ์ใบแจ้งหนี้",
+            "state": "สถานะ",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        },
+        "view": {
+            "order_no": "หมายเลขคำสั่งซื้อ",
+            "product": "ชื่อสินค้า",
+            "quantity": "จำนวน",
+            "unit_price": "ราคา",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "tax_amount": "ภาษี",
+            "total_amount": "ยอดรวมทั้งหมด"
+        },
+        "entry": {
+            "owner_name": "เจ้าของ",
+            "store_name": "ชื่อร้าน",
+            "employee_name": "ชื่อพนักงาน",
+
+            "state": "สถานะ",
+            "remark": "รายละเอียด",
+            "search_item": "ค้นหาด้วยบาร์โค้ด",
+
+            "product": "ชื่อสินค้า",
+            "quantity": "จำนวน",
+            "unit_price": "ราคา",
+            "subtotal_amount": "ยอดรวมก่อนลด",
+            "discount_amount": "ส่วนลด",
+            "total_amount": "ยอดรวมทั้งหมด",
+            "tax_amount": "ภาษี"
+        }
+    }
+}

@@ -1,0 +1,53 @@
+{
+    "en_US": {
+        "menu": "Menu",
+        "pos_panel": "POS Panel",
+        "dashboard": "Dashboard",
+        "today_sale": "Today sales",
+        "notification": "Notifications",
+        "language": "Language",
+        "setting": "Settings",
+
+        "en_US": "English",
+        "my_MM": "Myanmar",
+        "th_TH": "Thailand",
+
+        "theme": "Edit theme",
+        "template": "New template",
+        "logout": "Logout"
+    },
+    "my_MM": {
+        "menu": "မီနူး",
+        "pos_panel": "အရောင်းစနစ်",
+        "dashboard": "စီမံခန့်ခွဲရန်",
+        "today_sale": "ယနေ့ရောင်းအား",
+        "notification": "အသိပေးချက်များ",
+        "language": "ဘာသာစကား",
+        "setting": "ဆက်တင်များ",
+
+        "en_US": "အင်္ဂလိပ်",
+        "my_MM": "မြန်မာ",
+        "th_TH": "ထိုင်း",
+
+        "theme": "အရောင်ချိန်",
+        "template": "အပိုင်းသစ်",
+        "logout": "ထွက်မည်"
+    },
+    "th_TH": {
+        "menu": "เมนู",
+        "pos_panel": "แผงขาย",
+        "dashboard": "แผงควบคุม",
+        "today_sale": "ยอดขายวันนี้",
+        "notification": "การแจ้งเตือน",
+        "language": "ภาษา",
+        "setting": "การตั้งค่า",
+
+        "en_US": "อังกฤษ",
+        "my_MM": "พม่า",
+        "th_TH": "ไทย",
+
+        "theme": "แก้ไขธีม",
+        "template": "เทมเพลตใหม่",
+        "logout": "ออกจากระบบ"
+    }
+}

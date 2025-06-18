@@ -1,0 +1,86 @@
+extends ../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../includes/list/list-style
+    include ./../includes/list/list-header
+    include ./../includes/modal/modal-filter-table
+
+    table#example.table.table-striped(style='width:100%')
+      thead
+        tr
+          th #
+          th !{content.name}
+          th !{content.barcode}
+          th !{content.category}
+          th !{content.sub_category}
+          th !{content.owner_name}
+          th !{content.store_name}
+          th !{content.barcode_sym}
+          //- th !{content.is_variant}
+          th !{content.tax_method}
+          th !{content.tax_percent}
+          th !{content.cost}
+          th !{content.retail_price}
+          th !{content.wholesale_price}
+          //- th !{content.description}
+          th !{content.common.list_status}
+          th !{content.common.list_updated_at}
+          th.text-right !{content.common.list_actions}
+      tbody
+
+  include ./../includes/list/list-script
+
+  script.
+    $(document).ready(function() {
+      pageEntry = '!{page.entry.url}';
+      $.fn.dataTable.ext.errMode = 'none';
+      $.fn.dataTable.ext.classes.sPageButton = 'btn material-button material-button-sm material-primary m-1'; 
+
+      table = $('#example').on('error.dt', dataTableCallback)
+        .DataTable({
+          ...dataTableDef('!{page.list.title}'),
+          "ajax": fetchDataDef(v1 + '!{page.list.url}'),
+          "columns": [
+            { "data": "_id" },
+            { "data": "name"},
+            { "data": "barcode"},
+            { "data": "category"},
+            { "data": "sub_category"},
+            { "data": "owner_name"},
+            { "data": "store_name"},
+            { "data": "barcode_sym"},
+            //- { "data": "is_variant"},
+            { "data": "tax_method"},
+            { "data": "tax_percent"},
+            { "data": "cost"},
+            { "data": "retail_price"},
+            { "data": "wholesale_price"},
+            //- { "data": "description" },
+            { "data": "status" },
+            { "data": "updated_at" },
+            { "data": "actions" },
+          ],
+          "columnDefs": [
+            { targets: 0, render: dataTableIndexRenderer() },
+            { targets: 13, render: dataTableActiveRenderer() },
+            { targets: 14, render: dataTableDateTimeRenderer() },
+            { targets: 15, orderable: false, render: dataTableActionsRenderer(
+                ".!{page.entry.url}", "!{page.read}", "!{page.edit}", "!{page.delete}", v1
+              )
+            }
+          ]
+      });
+
+      $("#dialogFilter").on("click", function() {
+        $("#filterModalForm").trigger("submit")
+      })
+
+      $("#filterModalForm").submit(function (e) {
+        e.preventDefault();
+        const listUrl = '!{page.list.url}';
+        const query = $(this).serialize();
+        $('#dialogFilterTable').modal('hide');
+
+        table.ajax.url(`./api/${v1}${listUrl}?${query}`).load();
+      });
+    });

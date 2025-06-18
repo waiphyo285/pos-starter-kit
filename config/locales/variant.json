@@ -1,0 +1,206 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "search": "Search Product",
+
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "product": "Product",
+            "category": "Category",
+            "sub_category": "Sub Category",
+
+            "barcode": "Barcode",
+            "barcode_sym": "Barcode Symbol",
+
+            "cost": "Cost",
+            "stock": "Stock",
+
+            "retail_price": "Retail Price",
+            "wholesale_price": "Wholesale Price",
+
+            "attribute_key": "Attribute Name",
+            "attribute_value": "Attribute Value",
+
+            "min_quantity": "Min Quantity",
+            "unit_price": "Unit Price",
+
+            "tax_method": "Tax Method",
+            "tax_percent": "Tax Percent",
+
+            "type": "Type",
+            "images": "Images",
+            "description": "Description"
+        },
+        "entry": {
+            "name": "Name",
+            "search": "Search Product",
+
+            "owner_name": "Owner Name",
+            "store_name": "Store Name",
+
+            "product": "Product",
+            "category": "Category",
+            "sub_category": "Sub Category",
+
+            "barcode": "Barcode",
+            "barcode_sym": "Barcode Symbol",
+
+            "cost": "Cost",
+            "stock": "Stock",
+
+            "retail_price": "Retail Price",
+            "wholesale_price": "Wholesale Price",
+
+            "attribute_key": "Attribute Name",
+            "attribute_value": "Attribute Value",
+
+            "min_quantity": "Min Quantity",
+            "unit_price": "Unit Price",
+
+            "tax_method": "Tax Method",
+            "tax_percent": "Tax Percent",
+
+            "type": "Type",
+            "images": "Images",
+            "description": "Description"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "search": "ထုတ်ကုန်ရှာပါ",
+
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+
+            "product": "ထုတ်ကုန်",
+            "category": "အမျိုးအစား",
+            "sub_category": "အမျိုးအစားခွဲ",
+
+            "barcode": "ဘားကုဒ်",
+            "barcode_sym": "ဘားကုဒ်ဆင်း",
+
+            "cost": "ဝယ်စျေး",
+            "stock": "အရေအတွက်",
+
+            "retail_price": "လက်လီစျေး",
+            "wholesale_price": "လက်ကားစျေး",
+
+            "attribute_key": "ထုတ်ကုန်ခွဲအမည်",
+            "attribute_value": "ထုတ်ကုန်ခွဲတန်ဖိုး",
+
+            "min_quantity": "အရေအတွက် (Min)",
+            "unit_price": "တခုချင်းစျေးနှုန်း",
+
+            "tax_method": "အခွန်ပုံစံ",
+            "tax_percent": "အခွန် (ရာခိုင်နှုန်း)",
+
+            "type": "ပုံစံ",
+            "images": "ဓာတ်ပုံများ",
+            "description": "အသေးစိတ်"
+        },
+        "entry": {
+            "name": "အမည်",
+            "search": "ထုတ်ကုန်ရှာပါ",
+
+            "owner_name": "ပိုင်ရှင်အမည်",
+            "store_name": "ဆိုင်အမည်",
+
+            "product": "ထုတ်ကုန်",
+            "category": "အမျိုးအစား",
+            "sub_category": "အမျိုးအစားခွဲ",
+
+            "barcode": "ဘားကုဒ်",
+            "barcode_sym": "ဘားကုဒ်ဆင်း",
+
+            "cost": "ဝယ်စျေး",
+            "stock": "အရေအတွက်",
+
+            "retail_price": "လက်လီစျေး",
+            "wholesale_price": "လက်ကားစျေး",
+
+            "attribute_key": "ထုတ်ကုန်ခွဲအမည်",
+            "attribute_value": "ထုတ်ကုန်ခွဲတန်ဖိုး",
+
+            "min_quantity": "အရေအတွက် (Min)",
+            "unit_price": "တခုချင်းစျေးနှုန်း",
+
+            "tax_method": "အခွန်ပုံစံ",
+            "tax_percent": "အခွန် (ရာခိုင်နှုန်း)",
+
+            "type": "ပုံစံ",
+            "images": "ဓာတ်ပုံများ",
+            "description": "အသေးစိတ်"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "search": "ค้นหาผลิตภัณฑ์",
+
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "product": "ผลิตภัณฑ์",
+            "category": "ประเภท",
+            "sub_category": "หมวดหมู่ย่อย",
+
+            "barcode": "บาร์โค้ด",
+            "barcode_sym": "รหัสบาร์โค้ด",
+
+            "cost": "ต้นทุน",
+            "stock": "จำนวน",
+
+            "retail_price": "ราคาขายปลีก",
+            "wholesale_price": "ราคาขายส่ง",
+
+            "attribute_key": "ชื่อคุณสมบัติ",
+            "attribute_value": "ค่าคุณสมบัติ",
+
+            "min_quantity": "จำนวนขั้นต่ำ",
+            "unit_price": "ราคาต่อหน่วย",
+
+            "tax_method": "ประเภทภาษี",
+            "tax_percent": "ภาษี (ร้อยละ)",
+
+            "type": "รูปแบบ",
+            "images": "รูปภาพ",
+            "description": "รายละเอียด"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "search": "ค้นหาผลิตภัณฑ์",
+
+            "owner_name": "ชื่อเจ้าของ",
+            "store_name": "ชื่อร้าน",
+
+            "product": "ผลิตภัณฑ์",
+            "category": "ประเภท",
+            "sub_category": "หมวดหมู่ย่อย",
+
+            "barcode": "บาร์โค้ด",
+            "barcode_sym": "รหัสบาร์โค้ด",
+
+            "cost": "ต้นทุน",
+            "stock": "จำนวน",
+
+            "retail_price": "ราคาขายปลีก",
+            "wholesale_price": "ราคาขายส่ง",
+
+            "attribute_key": "ชื่อคุณสมบัติ",
+            "attribute_value": "ค่าคุณสมบัติ",
+
+            "min_quantity": "จำนวนขั้นต่ำ",
+            "unit_price": "ราคาต่อหน่วย",
+
+            "tax_method": "ประเภทภาษี",
+            "tax_percent": "ภาษี (ร้อยละ)",
+
+            "type": "รูปแบบ",
+            "images": "รูปภาพ",
+            "description": "รายละเอียด"
+        }
+    }
+}

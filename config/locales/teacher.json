@@ -1,0 +1,38 @@
+{
+    "en_US": {
+        "list": {
+            "name": "Name",
+            "age": "Age",
+            "degree": "Degree"
+        },
+        "entry": {
+            "name": "Name",
+            "age": "Age",
+            "degree": "Degree"
+        }
+    },
+    "my_MM": {
+        "list": {
+            "name": "အမည်",
+            "age": "အသက်",
+            "degree": "ဘွဲ့"
+        },
+        "entry": {
+            "name": "အမည်",
+            "age": "အသက်",
+            "degree": "ဘွဲ့"
+        }
+    },
+    "th_TH": {
+        "list": {
+            "name": "ชื่อ",
+            "age": "อายุ",
+            "degree": "ปริญญา"
+        },
+        "entry": {
+            "name": "ชื่อ",
+            "age": "อายุ",
+            "degree": "ปริญญา"
+        }
+    }
+}

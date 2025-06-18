@@ -1,0 +1,149 @@
+{
+    "en_US": {
+        "tab_info": "Information",
+        "tab_profile": "Profile",
+        "tab_setting": "Setting",
+        "tab_security": "Security",
+        "tab_permission": "Permission",
+
+        "tab_logging": "Logging",
+        "tab_timeline": "Timeline",
+        "tab_analytic": "Analytic",
+
+        "tab_store": "Stores",
+        "tab_invoice": "Invoices",
+        "tab_product": "Product",
+        "tab_variant": "Variant",
+        "tab_media": "Media",
+        "tab_pricing": "Pricing",
+        "tab_attribute": "Attribute",
+        "tab_price_attribute": "Price Attribute",
+        "tab_printing_design": "Printing Design",
+
+        "tab_howtouse": "Hot to use",
+        "tab_privacy": "Privacy & Policy",
+
+        "list_status": "Status",
+        "list_actions": "Actions",
+        "list_expired_at": "Expired At",
+        "list_created_at": "Created At",
+        "list_updated_at": "Updated At",
+
+        "btn_cancel": "Cancel",
+        "btn_delete": "Delete",
+
+        "btn_add": "Add",
+        "btn_save": "Save",
+
+        "btn_close": "Close",
+        "btn_reset": "Reset",
+        "btn_filter": "Filter",
+        "btn_search": "Search",
+        "btn_proceed": "Proceed",
+        "btn_update": "Update",
+        "btn_print": "Print",
+
+        "check_status": "Status",
+        "check_renew": "Renew",
+
+        "err_required": "Please fill out this required field."
+    },
+    "my_MM": {
+        "tab_info": "Information",
+        "tab_profile": "ပရိုဖိုင်",
+        "tab_setting": "ဆက်တင်",
+        "tab_security": "လုံခြုံရေး",
+        "tab_permission": "ခွင့်ပြုချက်",
+
+        "tab_logging": "Logging",
+        "tab_timeline": "Timeline",
+        "tab_analytic": "Analytic",
+
+        "tab_store": "စတိုင်းဆိုင်များ",
+        "tab_invoice": "ပြေစာများ",
+        "tab_product": "ထုတ်ကုန်",
+        "tab_variant": "ထုတ်ကုန်ခွဲ",
+        "tab_media": "မီဒီယာ",
+        "tab_pricing": "စျေးနှုန်း",
+        "tab_attribute": "Attribute",
+        "tab_price_attribute": "Price Attribute",
+        "tab_printing_design": "Printing Design",
+
+        "tab_howtouse": "Hot to use",
+        "tab_privacy": "Privacy & Policy",
+
+        "list_status": "မှတ်ချက်",
+        "list_expired_at": "သက်တမ်းရက်",
+        "list_created_at": "ဖန်တီးရက်စွဲ",
+        "list_updated_at": "ပြင်ဆင်ရက်စွဲ",
+        "list_actions": "လုပ်ဆောင်ချက်များ",
+
+        "btn_cancel": "ပယ်ဖျက်",
+        "btn_delete": "ဖျက်ပါ",
+
+        "btn_add": "ထည့်ပါ",
+        "btn_save": "သိမ်းဆည်း",
+
+        "btn_close": "ပိတ်ပါ",
+        "btn_reset": "ပြန်ထား",
+        "btn_filter": "စစ်ထုတ်",
+        "btn_search": "ရှာဖွေ",
+        "btn_proceed": "ရှေ့ဆက်",
+        "btn_update": "ပြင်ဆင်",
+        "btn_print": "ပုံနှိပ်",
+
+        "check_status": "မှတ်ချက်",
+        "check_renew": "သက်တမ်းတိုး",
+
+        "err_required": "Please fill out this required field."
+    },
+    "th_TH": {
+        "tab_info": "ข้อมูล",
+        "tab_profile": "โปรไฟล์",
+        "tab_setting": "การตั้งค่า",
+        "tab_security": "ความปลอดภัย",
+        "tab_permission": "สิทธิ์",
+
+        "tab_logging": "Logging",
+        "tab_timeline": "Timeline",
+        "tab_analytic": "Analytic",
+
+        "tab_store": "ร้านค้า",
+        "tab_invoice": "ใบแจ้งหนี้",
+        "tab_product": "สินค้า",
+        "tab_variant": "ตัวแปรสินค้า",
+        "tab_media": "สื่อ",
+        "tab_pricing": "ราคา",
+        "tab_attribute": "คุณสมบัติ",
+        "tab_price_attribute": "คุณสมบัติราคา",
+        "tab_printing_design": "การออกแบบการพิมพ์",
+
+        "tab_howtouse": "วิธีการใช้",
+        "tab_privacy": "ความเป็นส่วนตัว & นโยบาย",
+
+        "list_status": "หมายเหตุ",
+        "list_expired_at": "วันหมดอายุ",
+        "list_created_at": "วันที่สร้าง",
+        "list_updated_at": "วันที่อัปเดต",
+        "list_actions": "การดำเนินการ",
+
+        "btn_cancel": "ยกเลิก",
+        "btn_delete": "ลบ",
+
+        "btn_add": "เพิ่ม",
+        "btn_save": "บันทึก",
+
+        "btn_close": "ปิด",
+        "btn_reset": "รีเซ็ต",
+        "btn_filter": "กรอง",
+        "btn_search": "ค้นหา",
+        "btn_proceed": "ดำเนินการต่อ",
+        "btn_update": "อัปเดต",
+        "btn_print": "พิมพ์",
+
+        "check_status": "หมายเหตุ",
+        "check_renew": "ต่ออายุ",
+
+        "err_required": "Please fill out this required field."
+    }
+}

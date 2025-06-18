@@ -1,0 +1,71 @@
+extends ../../includes/layout-main
+block content
+  main.border.mx-3.mb-5.p-3(role='main')
+    include ./../../includes/entry/entry-header
+
+    ul#myTab.nav.nav-tabs.mb-3(role='tablist')
+      li.nav-item(role='profile')
+        button#information.nav-link.active(data-toggle='tab' data-target='#information' type='button' role='tab' aria-controls='information' aria-selected='true')
+          i.bi.bi-info-circle
+          span.d-none.d-lg-block !{content.common.tab_info}
+
+    #myTabContent.tab-content
+      #information.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='information-tab')
+        include ./../../includes/entry/entry-form
+          block inputs
+            div.form-group.row
+              div.col-md-6.mb-3
+                label.control-label(for='theme') !{content.theme}
+                select.form-control.input-sm.custom-select.all-select2-picker#mytheme(name='theme' value=data.theme data-value=data.theme, data-live-search="true", data-size="8")
+                  option(value="default") Default
+                  option(value="action") Action
+                  option(value="comedy") Comedy
+                  option(value="crime") Crime
+                  option(value="history") History
+                  option(value="reality") Reality
+                  option(value="news") News
+                  option(value="sport") Sport
+
+              div.col-md-6.mb-3
+                label.control-label(for='locale') !{content.locale}
+                select.form-control.input-sm.custom-select.all-select2-picker#locale(name='locale' value=data.locale data-value=data.locale, data-live-search="true", data-size="8")
+                  option(value="en_US") en_US
+                  option(value="my_MM") my_MM
+                  option(value="th_TH") th_TH
+
+              div.col-md-6.mb-3
+                label.control-label(for='currency') !{content.currency}
+                select.form-control.input-sm.custom-select.all-select2-picker#currency(name='currency' value=data.currency data-value=data.currency, data-live-search="true", data-size="8")
+                  option(value="MMK") MMK
+                  option(value="USD") USD
+
+              div.col-md-6.mb-3
+                label.control-label(for='rounding') !{content.rounding}
+                select.form-control.input-sm.custom-select.all-select2-picker#rounding(name='rounding' value=data.rounding data-value=data.rounding, data-live-search="true", data-size="8")
+                  option(value="disabled") Disabled
+                  option(value="up") Up
+                  option(value="down") Down
+                  option(value="down") Nearest
+
+              div.col-md-6.mb-3
+                label.control-label(for='timezone') !{content.timezone}
+                select.form-control.input-sm.custom-select.all-select2-picker#timezone(name='timezone' value=data.timezone data-value=data.timezone, data-live-search="true", data-size="8")
+                  option(value="Asia/Yangon") Asia/Yangon
+                  option(value="Asia/Bangkok") Asia/Bangkok
+
+            include ./../../includes/entry/entry-btn
+
+  script.
+    $(document).ready(function() {
+      $('#mytheme').val('!{data.theme}').change();
+      $('#locale').val('!{data.locale}').change();
+      $('#currency').val('!{data.currency}').change();
+      $('#rounding').val('!{data.rounding}').change();
+      $('#timezone').val('!{data.timezone}').change();
+
+      localStoreService({
+        key: 'theme',
+        value: '!{data.theme}',
+        method: 'set'
+      })
+    });

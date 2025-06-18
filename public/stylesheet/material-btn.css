@@ -1,0 +1,37 @@
+.material-primary {
+    color: var(--text-white) !important;
+    background: var(--primary);
+}
+
+.material-secondary {
+    color: var(--text-black) !important;
+    background: var(--back-white);
+}
+
+.material-button {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    min-width: 34px;
+    padding: 0px 6px;
+    overflow: hidden;
+    line-height: 34px;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.material-button-sm {
+    height: 28px;
+    min-width: 28px;
+    line-height: 28px;
+}
+
+.material-button:focus,
+.material-button:active {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    opacity: 0.8;
+}
